@@ -1,40 +1,11 @@
-<h1 align="center">Robótica</h1>
-Bienvenido al repositorio del curso de Robótica Industrial. Este curso está diseñado para estudiantes e investigadores interesados en el campo de la robótica y cubre desde conceptos básicos de cinemática y trayectorías con ROS Noetic.
-
-## Estructura del Repositorio
-
-Este repositorio está organizado de la siguiente manera:
-
-- `logos/`: Carpeta que contiene los logos relacionados con el curso.
-- `código/`: Ejemplos de código fuente en Python para diferentes módulos del curso.
-- `README.md`: Este archivo, que proporciona una visión general y guía sobre el repositorio.
-
-## Instalación de ROS Noetic
-El objetivo de la presente práctica es instalar y configurar el entorno de trabajo de ROS Noetic en Ubuntu 20.04.6, empleando una máquina virtual con VMWorkStation Player 17.
-
-## Recursos Adicionales
-
-Para complementar tu aprendizaje en el curso de Mobile Robot, aquí tienes algunos enlaces a recursos externos que podrían ser de tu interés:
-
-- [VM-Player 17.5.1](https://customerconnect.vmware.com/en/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/17_0)
-- [ubuntu20.04.6](https://releases.ubuntu.com/focal/)
-- [Documentación Oficial de ROS Noetic (Robot Operating System)](https://wiki.ros.org/noetic/Installation/Ubuntu)
-- 📄 [📂](./Scripts/)Scripts de instalación de ros
+# Clase Robot URDF
 
 
-### Instalación de Dependencias
-Para configurar el entorno necesario para el curso en un sistema operativo Ubuntu, necesitarás instalar algunas dependencias y configurar tu entorno de desarrollo. 
-Primero Descargue los archivos de instalación ros2_install.sh y install_ros_packages.sh que se encuentran en la carpeta  [📂](./Scripts/)Scripts y siga los pasos que se indican en el video.
+El objetivo de la presente práctica es conocer los conceptos básico de ROS2 Humble (paquete, nodo, topicos, info y rqt), importar los modelos y crear un launcher para la simulación del comportamiento de un robot móvil
+
+### Instalación de paquete Turtlesim
 
 
-<p align="center">
-  <a href="https://youtu.be/sk0WTxr-yic?si=M51wHld4yW2u4Ymt">
-    <img src="./Logos/imagen1.png" height="300">
-  </a>
-</p>
-<p align="center">
-<a href="https://youtu.be/sk0WTxr-yic?si=M51wHld4yW2u4Ymt" target="_blank">**Enlace a Video de instalación - Haga clic aquí para más información**</a>.
-</p>
 
 Abre una terminal y sigue los siguientes pasos.
 
@@ -43,94 +14,149 @@ Presione
 Crtl + alt + t
 
 ```
-Paso 1 - Configura tu source.list:
+Crear un directorio llamado arm_ws y un sub directorio src
 ```bash
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+mkdir -p arm_ws/src
 ```
-Paso 2 - Configura tus Keys:
+Abrir carpeta difrobot_ws:
 ```bash
-sudo apt install curl # if you haven't already installed curl
+cd arm_ws/
 ```
+Compilar proyecto
 ```bash
-curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add
-```
-Verificar si el archivo es ejecutable:
-```bash
-ls -la
-```
-Paso 3 - Instalación:
-
-```bash
-sudo apt update
-```
-```bash
-sudo apt install ros-noetic-desktop-full
-```
-Paso 4 – Configuración del entorno:
-```bash
-echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
-```
-```bash
-source ~/.bashrc
-```
-Paso 5 – Dependencias para construir paquetes:
-```bash
-sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
-```
-Paso 6 – Inicializar rosdep
-```bash
-sudo apt install python3-rosdep
-```
-```bash
-sudo rosdep init
-```
-```bash
-rosdep update
+colcon build
 ```
 
-Paso 7 – Inicializar rosdep
-
+revisar si se crearon las carpetas build, install log y src
 ```bash
-roscore
+ls
+```
+Cambiar a directorio src
+```bash
+cd src/
 ```
 
-![alt text](image.png)
-
-### Clonar repositorio de clase
-En nueva terminal ejecutar los siguientes comandos en el espacio de trabajo principal
-
-Presione Crtl + alt + t
+Crear paquete difrobot_py_examples
 ```bash
-roscore
+ros2 pkg create --build-type ament_python arm_py_examples
 ```
-Presione Crtl + alt + t
+Compilar proyecto
 ```bash
-mkdir -p robot_ws/src
+cd ..
 ```
 ```bash
-cd robo_ws
+colcon build
 ```
 
-Copiar la carpeta openbot_ en la a carpeta robot_ws/src y compilar el proyecto: 
+Crear paquete difrobot_description
+```bash
+cd src/
+```
+```bash
+ros2 pkg create --build-type ament_cmake arm_description
+```
+Compilar proyecto
+```bash
+cd ..
+```
+```bash
+colcon build
+```
+
+
+
+En la terminal buscar la ruta difrobot_wsy ejecutar VsCode:
+```bash
+cd arm_ws
+```
+```bash
+code .
+```
+En Vscode seleccionar la ruta arm_ws/src/arm_description/ crear las carpetas y el archivo mostrado en  la imagen:
+<p align="center">
+<img src="./Logos/CarpetaDes.png" height="600">
+</p>
+
+En el archivo difrobot.urdf.xacro en Visual Studio code, escriba los siguientes comandos:
+```xml
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arm">
+
+   <!-- Links  base-->
+    <link name="world"/>
+
+    <link name="base_link">
+        
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+               
+                <mesh filename="package://arm_description/meshes/basement.STL" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </visual>
+       
+    </link>
+
+     <!-- Joint base_link -->  
+     <joint name="virtual_joint" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint> 
+
+</robot>
+```
+En el archivo CMAKELists agrege el comando con la ruta de archivos meshes y urdf:
+
+```c++
+install(
+  DIRECTORY meshes urdf
+  DESTINATION share/${PROJECT_NAME}
+
+)
+```
+Compilar el paquete difrobot_description en la ruta difrobot_ws
+```bash
+cd arm_ws
+```
+```bash
+colcon build
+```
+En una nueva terminal actualizar el bash:
+```bash
+. install/setup.bash
+```
+instalar en el proyecto el paquete urdf-tutorial
+```bash
+sudo apt-get install ros-humble-urdf-tutorial
+```
+Ejecutar RVIZ con el modelo difrobot.urdf.xacro:
+```bash
+ros2 launch urdf_tutorial display.launch.py model:=/home/ubuntu/arm_ws/src/arm_description/urdf/arm.urdf.xacro
+```
+
+<p align="center">
+<img src="./Logos/Rviz.png" height="600">
+</p>
+
+
+### Compilar proyecto URDF
+
+Clonar repositorio
 
 ```bash
-catkin_make
+git clone --branch Robot-ARM --single-branch https://github.com/xXThanatosXx/MobileRobot.git
+
 ```
-Ejecutar el proyecto:
-Actualizar la ruta del proyecto en la ruta robot_ws/
-```bash
-source devel/setup.bash
-```
-Lanzar el proyecto:
 
 ```bash
-roslaunch openbot_v1_description display.launch
+mv ~/Robot-ARM/arm_ws ~/arm_ws
 ```
-instalar terminal:
 ```bash
-sudo apt-get install terminator
+colcon build --cmake-clean-cache
 ```
-Revisar la versión de Ros instalada:
+Instalar dependencias
 ```bash
-rosversion -d
+rosdep install --from-paths src --ignore-src -r -y
 ```
+
