@@ -150,7 +150,7 @@ git clone --branch Robot-ARM --single-branch https://github.com/xXThanatosXx/Rob
 ```
 
 ```bash
-mv ~/Robot-ARM/arm_ws ~/arm_ws
+mv ~/RoboticaIndustrial/arm_ws ~/arm_ws
 ```
 ```bash
 colcon build --cmake-clean-cache
