@@ -152,6 +152,11 @@ git clone --branch Robot-ARM --single-branch https://github.com/xXThanatosXx/Rob
 ```bash
 mv ~/RoboticaIndustrial/arm_ws ~/arm_ws
 ```
+
+```bash
+cd arm_ws
+```
+
 ```bash
 colcon build --cmake-clean-cache
 ```
