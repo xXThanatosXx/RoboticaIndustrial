@@ -145,7 +145,7 @@ ros2 launch urdf_tutorial display.launch.py model:=/home/ubuntu/arm_ws/src/arm_d
 Clonar repositorio
 
 ```bash
-git clone --branch Robot-ARM --single-branch https://github.com/xXThanatosXx/MobileRobot.git
+git clone --branch Robot-ARM --single-branch https://github.com/xXThanatosXx/RoboticaIndustrial.git
 
 ```
 
