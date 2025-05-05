@@ -46,7 +46,7 @@
     <joint name ="joint_1" type="revolute">
         <parent link="base_link"/>
         <child link = "base_plate"/>
-        <origin xyz="0 0 0.307"/>
+        <origin xyz="0 0 0.307"/>   <!-- Distance image one -->
         <axis xyz="0 0 1"/>
         <limit lower="-${PI / 2}" upper="${PI / 2}" 
                effort="${effort}" velocity="${velocity}"/>
@@ -70,7 +70,7 @@
      <joint name ="joint_2" type="revolute">
         <parent link="base_plate"/>
         <child link = "forward_drive_arm"/>
-        <origin xyz="-0.02 0 0.35"/>
+        <origin xyz="-0.02 0 0.35"/> <!-- Distance image two-->
         <axis xyz="1 0 0"/>
         <limit lower="-${PI / 2}" upper="${PI / 2}"
                 effort="${effort}" velocity="${velocity}"/>
@@ -93,7 +93,7 @@
     <joint name ="joint_3" type="revolute">
         <parent link="forward_drive_arm"/>
         <child link = "horizontal_arm"/>
-        <origin xyz="0 0 0.8"/>
+        <origin xyz="0 0 0.8"/> <!-- Distance image three -->
         <axis xyz="1 0 0"/>
         <limit lower="-${PI / 2}" upper="${PI / 2}"
                effort="${effort}" velocity="${velocity}"/>
@@ -116,7 +116,7 @@
     <joint name ="horizontal_arm_to_claw_support" type="fixed">
         <parent link="horizontal_arm"/>
         <child link = "claw_support"/>
-        <origin xyz="0 0.82 0"/>
+        <origin xyz="0 0.82 0"/> <!-- Distance image four-->
     </joint>
 
     <!-- Link  gripper -->
@@ -146,7 +146,7 @@
     <joint name ="joint_4" type="revolute">
         <parent link="claw_support"/>
         <child link = "gripper_right"/>
-        <origin xyz="-0.04 0.13 -0.1"/>
+        <origin xyz="-0.04 0.13 -0.1"/> <!-- Distance image five -->
         <axis xyz="0 0 1"/>
         <limit lower="-${PI / 2}" upper="0.0" 
         effort="${effort}" velocity="${velocity}"/>
@@ -156,7 +156,7 @@
     <joint name ="joint_5" type="revolute">
         <parent link="claw_support"/>
         <child link = "gripper_left"/>
-        <origin xyz="-0.22 0.13 -0.1"/>
+        <origin xyz="-0.22 0.13 -0.1"/> <!-- Distance image five -->
         <axis xyz="0 0 1"/>
         <limit lower="0.0" upper="${PI / 2}" 
                effort="${effort}" velocity="${velocity}"/>
