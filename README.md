@@ -1,9 +1,63 @@
-# Clase Robot URDF
+# Clase Robto ARM Task Moveit.
 
 
 El objetivo de la presente práctica es conocer los conceptos básico de ROS2 Humble (paquete, nodo, topicos, info y rqt), importar los modelos y crear un launcher para la simulación del comportamiento de un robot móvil
 
-### Instalación de paquete Turtlesim
+
+### Control articular
+
+
+Activar nodo Gazebo
+```bash
+ros2 launch arm_description gazebo.launch.py 
+
+```
+```bash
+
+ros2 launch arm_controller controller.launch.py 
+```
+
+```bash
+ros2 control list_hardware_components
+
+```
+```bash
+ros2 control list_hardware_interfaces
+
+```
+```bash
+
+ros2 topic list
+
+```
+
+in radians
+```bash
+
+ros2 topic pub /gripper_controller/commands std_msgs/msg/Float64MultiArray "layout: " 
+```
+
+### MOveit planing
+```bash
+
+ros2 launch arm_description gazebo.launch.py 
+
+```
+```bash
+
+ros2 launch arm_controller controller.launch.py 
+```
+lanzar nodo moveit
+```bash
+ros2 launch arm_moveit moveit.launch.py 
+
+```
+
+```bash
+sudo apt-get install ros-humble-moveit-planners 
+
+```
+### Action server task
 
 
 
@@ -14,26 +68,30 @@ Presione
 Crtl + alt + t
 
 ```
-Crear un directorio llamado arm_ws y un sub directorio src
+Activar nodo Gazebo
 ```bash
-mkdir -p arm_ws/src
+ros2 launch arm_description gazebo.launch.py 
 ```
-Abrir carpeta difrobot_ws:
+lanzar nodo control
 ```bash
-cd arm_ws/
+ros2 launch arm_controller controller.launch.py 
+
 ```
-Compilar proyecto
+lanzar nodo moveit
 ```bash
-colcon build
+ros2 launch arm_moveit moveit.launch.py 
+
 ```
 
-revisar si se crearon las carpetas build, install log y src
+lanzar en nodo de interacción remota
 ```bash
-ls
+ros2 launch arm_remote remote_interface.launch.py 
+
 ```
-Cambiar a directorio src
+En una nueva terminal activar las trayectorias predefinidas "0,1,2"
 ```bash
-cd src/
+ros2 action send_goal /task_server arm_msgs/action/ArmTask "task_number: 2" 
+
 ```
 
 Crear paquete difrobot_py_examples
