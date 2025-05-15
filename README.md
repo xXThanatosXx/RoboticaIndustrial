@@ -3,6 +3,36 @@
 
 El objetivo de la presente práctica es conocer los conceptos básico de ROS2 Humble (paquete, nodo, topicos, info y rqt), importar los modelos y crear un launcher para la simulación del comportamiento de un robot móvil
 
+# instalar paquetes
+
+```bash
+sudo apt-get update && sudo apt-get install -y \
+     ros-humble-joint-state-publisher-gui \
+     ros-humble-gazebo-ros \
+     ros-humble-xacro \
+     ros-humble-ros2-control \
+     ros-humble-moveit \
+     ros-humble-ros2-controllers \
+     ros-humble-gazebo-ros2-control 
+```
+```bash
+
+sudo apt-get update && sudo apt-get install -y \
+     libserial-dev \
+     python3-pip
+```
+```bash
+
+pip install pyserial
+```
+
+Instalar paquete de planeadores de trayectoria
+
+```bash
+sudo apt-get install ros-humble-moveit-planners 
+```
+
+
 # Clonar repositorio
 
 ```bash
@@ -34,10 +64,7 @@ Presione
 ```bash
 Crtl + alt + t
 ```
-Instalar paquete de planeadores de trayectoria
-```bash
-sudo apt-get install ros-humble-moveit-planners 
-```
+
 cambiar de directorio de trabajo
 ```bash
 cd arm_ws
