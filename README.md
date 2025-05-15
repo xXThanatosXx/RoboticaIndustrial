@@ -1,4 +1,4 @@
-# Clase Robto ARM Task Moveit.
+# Clase Robot ARM Task Moveit.
 
 
 El objetivo de la presente práctica es conocer los conceptos básico de ROS2 Humble (paquete, nodo, topicos, info y rqt), importar los modelos y crear un launcher para la simulación del comportamiento de un robot móvil
