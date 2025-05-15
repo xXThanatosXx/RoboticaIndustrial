@@ -31,7 +31,7 @@ pip install pyserial
 Clonar repositorio
 
 ```bash
-git clone --branch Robot-ARM-Real-Robot --single-branch https://github.com/xXThanatosXx/RoboticaIndustrial.git
+git clone --branch Robot-Arm-Real-Robot --single-branch https://github.com/xXThanatosXx/RoboticaIndustrial.git
 ```
 ```bash
 mv ~/RoboticaIndustrial/arm_ws ~/arm_ws
