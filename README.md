@@ -31,7 +31,7 @@ pip install pyserial
 Clonar repositorio
 
 ```bash
-git clone --branch Robot-ARM-Action --single-branch https://github.com/xXThanatosXx/RoboticaIndustrial.git
+git clone --branch Robot-ARM-Real-Robot --single-branch https://github.com/xXThanatosXx/RoboticaIndustrial.git
 ```
 ```bash
 mv ~/RoboticaIndustrial/arm_ws ~/arm_ws
@@ -82,6 +82,12 @@ ros2 topic list
 
 En radianes cambiar el comportamiento in radians
 ```bash
-
 ros2 topic pub /gripper_controller/commands std_msgs/msg/Float64MultiArray "layout: " 
 ```
+### Ejecutar robot Real con planeación de trayectoria
+```bash
+ros2 launch arm_bringup real_robot.launch.py
+```
+
+
+
