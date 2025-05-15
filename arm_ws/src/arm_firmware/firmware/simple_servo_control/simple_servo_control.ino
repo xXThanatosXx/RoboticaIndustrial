@@ -5,7 +5,7 @@ Servo motor;
 
 void setup() {
   // Attach and Initialize each Servo to the Arduino pin where it is connected
-  motor.attach(11); 
+  motor.attach(8); 
 
   // Set a known starting point for the motor
   motor.write(90);

@@ -4,7 +4,7 @@
   <name>arm_msgs</name>
   <version>0.0.0</version>
   <description>Definition of Interfaces for the arm</description>
-  <maintainer email="faustoandresescobar@gmail.com">Andres Escobar</maintainer>
+  <maintainer email="antonio.brandi@outlook.it">Antonio Brandi</maintainer>
   <license>Apàche 2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
