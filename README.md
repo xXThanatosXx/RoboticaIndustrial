@@ -1,4 +1,4 @@
-# Clase Robto ARM Task Moveit.
+# Clase Robot ARM Real robot Moveit
 
 
 El objetivo de la presente práctica es realizar la ejecución de los nodos de comunicación de moveit con el robot real.
