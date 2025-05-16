@@ -46,14 +46,15 @@ mv ~/RoboticaIndustrial/arm_ws ~/arm_ws
 cd arm_ws
 ```
 ```bash
+rosdep install --from-paths src --ignore-src -r -y
+```
+```bash
 colcon build --cmake-clean-cache
 ```
 ```bash
 rosdep install --from-paths src --ignore-src -r -y
 ```
-```bash
-colcon build
-```
+
 
 ### Control articular en simulación 
 
