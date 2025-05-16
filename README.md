@@ -51,9 +51,7 @@ rosdep install --from-paths src --ignore-src -r -y
 ```bash
 colcon build --cmake-clean-cache
 ```
-```bash
-rosdep install --from-paths src --ignore-src -r -y
-```
+
 
 
 ### Control articular en simulación 
