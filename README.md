@@ -51,7 +51,31 @@ rosdep install --from-paths src --ignore-src -r -y
 ```bash
 colcon build --cmake-clean-cache
 ```
+### Modificar el registro de Gazebo
+```bash
+sudo nano /usr/share/gazebo/setup.sh
+```
 
+Remplezar las lineas
+
+```bash
+export GAZEBO_MASTER_URI=""
+export GAZEBO_MODEL_DATABASE_URI=""
+```
+
+Modificar el registro de gazebo 11
+
+```bash
+sudo nano /usr/share/gazebo-11/setup.sh
+```
+
+```bash
+export GAZEBO_MASTER_URI=""
+export GAZEBO_MODEL_DATABASE_URI=""
+
+```bash
+source /usr/share/gazebo-11/setup.sh
+```
 
 
 ### Control articular en simulación 
