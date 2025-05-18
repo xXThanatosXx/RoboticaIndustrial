@@ -101,4 +101,13 @@ ros2 launch arm_controller slider_controller.launch.py is_sim:=False
 ```
 ### Moution planing task (0,1,2)
 
+```bash
+ros2 launch arm_bringup real_robot.launch.py
+```
+```bash
+ros2 launch arm_remote remote_interface.launch.py is_sim:=False
+```
 
+```bash
+ros2 action send_goal /task_server arm_msgs/action/ArmTask "task_number: 2" 
+```
