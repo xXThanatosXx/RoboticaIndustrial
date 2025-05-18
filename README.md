@@ -89,5 +89,16 @@ ros2 topic pub /gripper_controller/commands std_msgs/msg/Float64MultiArray "layo
 ros2 launch arm_bringup real_robot.launch.py
 ```
 
+### Tarea Slider controller
+
+Lanzar el controllador bringup 
+```bash
+ros2 launch arm_bringup real_robot.launch.py
+```
+Lanzar el slider controller
+```bash
+ros2 launch arm_controller slider_controller.launch.py is_sim:=False
+```
+### Moution planing task (0,1,2)
 
 
