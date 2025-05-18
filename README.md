@@ -130,6 +130,14 @@ Graficar los nodos y tópicos del robot
 ```bash
 rosgraph
 ```
+### Actividad Tres: Mover el robot con los Slider
+
+```bash
+ros2 launch arm_description gazebo.launch.py
+```
+```bash
+ros2 launch arm_controller slider_controller.launch.py
+```
 
 <p align="center">
 <img src="./Logos/Robot.jpeg" height="800">
