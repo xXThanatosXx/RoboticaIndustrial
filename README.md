@@ -6,10 +6,7 @@ Compilación de proyecto robot UR
 
 Para complementar tu aprendizaje en el curso de Robótica Industrial, aquí tienes algunos enlaces a recursos externos que podrían ser de tu interés:
 
-- [Repositorio de Universal Robots](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description)
-- [Repositorio de Universal robots Gazebo Ros2](https://github.com/UniversalRobots/Universal_Robots_ROS2_Gazebo_Simulation)
-- [Documentación Oficial de Universal Robots Driver](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/tree/humble)
-
+- [Repositorio de extensión](https://github.com/SakshayMahna/ros2env)
 
 
 ### Instalación de Dependencias
