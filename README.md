@@ -1,82 +1,53 @@
-<h1 align="center">Robot UR en ROS 2 Humble</h1>
-Compilación de proyecto robot UR
+<h1 align="center">Symoro Install on Docker</h1>
+Creación de contenedor para Software Symoro end Docker.
 
 
 ## Recursos Adicionales
 
 Para complementar tu aprendizaje en el curso de Robótica Industrial, aquí tienes algunos enlaces a recursos externos que podrían ser de tu interés:
 
-- [Repositorio de extensión](https://github.com/SakshayMahna/ros2env)
+- [Repositorio de imagen Symoro](https://hub.docker.com/r/baaluidnrey/symoro)
+- [Instalador de Xming](https://sourceforge.net/projects/xming/)
 
+### Confiuración de Xming
+Instalar Xming y ejecutar Xlaucnh, configurar Display number en 0 como se observa en la imagen.
 
-### Instalación de Dependencias
+![alt text](image-1.png)
 
+### Confiuración de Symoro en Docker.
+Abre una terminal en Docker Hub.
 
-
-Abre una terminal y sigue los siguientes pasos.
-
-Presione 
+Paso 1 - Clonar la imagen de Symoro
 ```bash
-Crtl + alt + t
+docker pull baaluidnrey/symoro
 ```
-Paso 1 - Configurar proyecto:
+Paso 2 - Crear una carpeta en el computador host de Windows de la siguiente forma. Nota cambiar el nombre de usuario de su equipo en la ruta: 
 ```bash
-mdir -p colcon_ws/src
-```
-```bash
-cd colcon_ws/src
-```
-Paso 2 - Configura tus Keys:
-```bash
-git clone -b humble https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
-```
-```bash
-git clone -b humble https://github.com/UniversalRobots/Universal_Robots_ROS2_Gazebo_Simulation.git
+C:\Users\Usuario\Documents\RobotsSymoro
 ```
 
-```bash
-rosdep update && rosdep upgrade --ignore-src  --from-paths . -y
-```
-```bash
-cd colcon_ws
-```
-```bash
-colcon build --symlink-install
-```
+Paso 3 - Crear contenedor en Docker, con carpeta destino en host: 
 
 ```bash
-source /opt/ros/humble/setup.bash
+docker run -d `
+  -e DISPLAY=host.docker.internal:0.0 `
+  -e NO_AT_BRIDGE=1 -e LIBGL_ALWAYS_INDIRECT=1 `
+  -v "C:\Users\Usuario\Documents\RobotsSymoro:/root/symoro-robots" `
+  --name symoro `
+  --restart unless-stopped `
+  baaluidnrey/symoro tail -f /dev/null
 ```
+A continuación, se muestra la ventana de Symoro. Todos los archivos se almacenan en la carpeta compartida con el host.
+
+![alt text](image.png)
+
+
+Paso 4 - Inicio de contenedor Symoro
+```bash
+docker start symoro
+```
+Paso 5 - Detener contenedor Symoro
 
 ```bash
-source install/setup.bash
+docker stop symoro
 ```
-
-Paso 3 - Instalar Driver:
-
-```bash
-sudo apt-get install ros-humble-ur
-```
-
-## Lanzar simulador
-En nueva terminal ejecutar los siguientes comandos en el espacio de trabajo principal
-
-Lanzar simulacion en Gazebo
-```bash
-source install/setup.bash
-```
-```bash
-ros2 launch ur_simulation_gazebo ur_sim_control.launch.py
-```
-Mover el robot UR con el planeador Moveit
-Presione Crtl + alt + t
-```bash
-ros2 launch ur_simulation_gazebo ur_sim_moveit.launch.py
-```
-
-Ejecutar una trayectoria de ejemplo con UR Driver
-```bash
-ros2 launch ur_simulation_gazebo ur_sim_moveit.launch.py
-```
-
-![alt text](Ur.png)
