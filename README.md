@@ -34,7 +34,6 @@ docker run -d `
   -e NO_AT_BRIDGE=1 -e LIBGL_ALWAYS_INDIRECT=1 `
   -v "C:\Users\Usuario\Documents\RobotsSymoro:/root/symoro-robots" `
   --name symoro `
-  --restart unless-stopped `
   baaluidnrey/symoro tail -f /dev/null
 ```
 A continuación, se muestra la ventana de Symoro. Todos los archivos se almacenan en la carpeta compartida con el host.
