@@ -24,7 +24,7 @@ Crtl + alt + t
 ```
 Paso 1 - Configurar proyecto:
 ```bash
-mdir -p colcon_ws/src
+mkdir -p colcon_ws/src
 ```
 ```bash
 cd colcon_ws/src
@@ -38,7 +38,10 @@ git clone -b humble https://github.com/UniversalRobots/Universal_Robots_ROS2_Gaz
 ```
 
 ```bash
-rosdep update && rosdep upgrade --ignore-src  --from-paths . -y
+rosdep update 
+```
+```bash
+rosdep install --from-paths . --ignore-src -r -y
 ```
 ```bash
 cd colcon_ws
