@@ -129,7 +129,10 @@ Port: 50002
 # Test de conexión Polyscope
 - Primero ubique el robor en la posición segura Home (0,-90,0,-90,0,0) grados.
 - Luego modifique la ip del URCaps control externo con la IP del host.
+  
 <img width="801" height="625" alt="image" src="https://github.com/user-attachments/assets/822b05b1-fadc-4525-8409-10e5c4e6c998" />
+
+
 - Ponga en modo robot real y presione el botón de play.
 Ejecute el comando conexión en ros2
 ``` bash
