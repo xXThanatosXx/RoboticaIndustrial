@@ -1,0 +1,22 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages",
+        "/home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages",
+        "/home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages",
+        "/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages",
+        "/home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages",
+        "/home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages",
+        "/home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages",
+        "/home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages",
+        "/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages",
+        "/home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages",
+        "/home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

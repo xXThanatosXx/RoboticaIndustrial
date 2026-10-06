@@ -1,0 +1,4 @@
+Invoking command in '/home/ros/arm_ws/build/arm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_msgs -- -j2 -l2
+Invoked command in '/home/ros/arm_ws/build/arm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_msgs -- -j2 -l2
+Invoking command in '/home/ros/arm_ws/build/arm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_msgs
+Invoked command in '/home/ros/arm_ws/build/arm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_msgs

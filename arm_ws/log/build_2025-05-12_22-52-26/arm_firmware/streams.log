@@ -1,0 +1,48 @@
+[0.109s] Invoking command in '/home/ros/arm_ws/build/arm_firmware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_firmware -- -j2 -l2
+[0.636s] [  0%] Built target ament_cmake_python_copy_arm_firmware
+[0.770s] [35m[1mConsolidate compiler generated dependencies of target simple_serial_receiver[0m
+[0.932s] [ 50%] Built target simple_serial_receiver
+[1.010s] [35m[1mConsolidate compiler generated dependencies of target simple_serial_transmitter[0m
+[1.283s] [100%] Built target simple_serial_transmitter
+[3.977s] running egg_info
+[3.987s] writing arm_firmware.egg-info/PKG-INFO
+[3.990s] writing dependency_links to arm_firmware.egg-info/dependency_links.txt
+[3.992s] writing top-level names to arm_firmware.egg-info/top_level.txt
+[4.007s] reading manifest file 'arm_firmware.egg-info/SOURCES.txt'
+[4.008s] writing manifest file 'arm_firmware.egg-info/SOURCES.txt'
+[4.233s] [100%] Built target ament_cmake_python_build_arm_firmware_egg
+[4.354s] Invoked command in '/home/ros/arm_ws/build/arm_firmware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_firmware -- -j2 -l2
+[4.746s] Invoking command in '/home/ros/arm_ws/build/arm_firmware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_firmware
+[4.793s] -- Install configuration: ""
+[4.798s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/pythonpath.sh
+[4.798s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/pythonpath.dsv
+[4.798s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware-0.0.0-py3.10.egg-info
+[4.804s] -- Installing: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.805s] -- Installing: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.813s] -- Installing: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware-0.0.0-py3.10.egg-info/PKG-INFO
+[4.813s] -- Installing: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware-0.0.0-py3.10.egg-info/top_level.txt
+[4.813s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware
+[4.813s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware/simple_serial_transmitter.py
+[4.819s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware/__init__.py
+[4.825s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware/simple_serial_receiver.py
+[5.070s] Listing '/home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware'...
+[5.120s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/lib/arm_firmware/simple_serial_receiver
+[5.133s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/lib/arm_firmware/simple_serial_transmitter
+[5.134s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/lib/arm_firmware/simple_serial_transmitter.py
+[5.135s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/lib/arm_firmware/simple_serial_receiver.py
+[5.136s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/ament_index/resource_index/package_run_dependencies/arm_firmware
+[5.136s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/ament_index/resource_index/parent_prefix_path/arm_firmware
+[5.136s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/ament_prefix_path.sh
+[5.139s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/ament_prefix_path.dsv
+[5.140s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/path.sh
+[5.146s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/path.dsv
+[5.146s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/local_setup.bash
+[5.146s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/local_setup.sh
+[5.150s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/local_setup.zsh
+[5.157s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/local_setup.dsv
+[5.166s] -- Installing: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/package.dsv
+[5.184s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/ament_index/resource_index/packages/arm_firmware
+[5.184s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/cmake/arm_firmwareConfig.cmake
+[5.184s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/cmake/arm_firmwareConfig-version.cmake
+[5.184s] -- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/package.xml
+[5.185s] Invoked command in '/home/ros/arm_ws/build/arm_firmware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_firmware

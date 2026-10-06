@@ -1,0 +1,274 @@
+[0.068s] Invoking command in '/home/ros/arm_ws/build/arm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_msgs -- -j2 -l2
+[0.499s] [35m[1mConsolidate compiler generated dependencies of target arm_msgs__rosidl_generator_c[0m
+[0.605s] [  1%] Built target arm_msgs__cpp
+[0.655s] [ 12%] Built target arm_msgs__rosidl_generator_c
+[0.799s] [35m[1mConsolidate compiler generated dependencies of target arm_msgs__rosidl_typesupport_cpp[0m
+[1.115s] [ 23%] Built target arm_msgs__rosidl_typesupport_cpp
+[1.160s] [ 23%] Built target ament_cmake_python_copy_arm_msgs
+[1.325s] [35m[1mConsolidate compiler generated dependencies of target arm_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[1.325s] [35m[1mConsolidate compiler generated dependencies of target arm_msgs__rosidl_typesupport_fastrtps_c[0m
+[1.570s] [ 34%] Built target arm_msgs__rosidl_typesupport_fastrtps_cpp
+[1.608s] [ 46%] Built target arm_msgs__rosidl_typesupport_fastrtps_c
+[1.640s] [35m[1mConsolidate compiler generated dependencies of target arm_msgs__rosidl_typesupport_introspection_c[0m
+[1.706s] [35m[1mConsolidate compiler generated dependencies of target arm_msgs__rosidl_typesupport_c[0m
+[1.726s] [ 57%] Built target arm_msgs__rosidl_typesupport_introspection_c
+[1.840s] [ 68%] Built target arm_msgs__rosidl_typesupport_c
+[1.846s] [35m[1mConsolidate compiler generated dependencies of target arm_msgs__rosidl_typesupport_introspection_cpp[0m
+[2.051s] [ 79%] Built target arm_msgs__rosidl_typesupport_introspection_cpp
+[2.257s] [ 79%] Built target arm_msgs
+[2.440s] [ 80%] Built target arm_msgs__py
+[2.698s] [35m[1mConsolidate compiler generated dependencies of target arm_msgs__rosidl_generator_py[0m
+[2.976s] [ 90%] Built target arm_msgs__rosidl_generator_py
+[3.214s] [35m[1mConsolidate compiler generated dependencies of target arm_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.453s] [ 93%] Built target arm_msgs__rosidl_typesupport_fastrtps_c__pyext
+[3.597s] [35m[1mConsolidate compiler generated dependencies of target arm_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[3.782s] [ 96%] Built target arm_msgs__rosidl_typesupport_introspection_c__pyext
+[3.961s] [35m[1mConsolidate compiler generated dependencies of target arm_msgs__rosidl_typesupport_c__pyext[0m
+[4.235s] [100%] Built target arm_msgs__rosidl_typesupport_c__pyext
+[5.233s] running egg_info
+[5.239s] writing arm_msgs.egg-info/PKG-INFO
+[5.245s] writing dependency_links to arm_msgs.egg-info/dependency_links.txt
+[5.245s] writing top-level names to arm_msgs.egg-info/top_level.txt
+[5.257s] reading manifest file 'arm_msgs.egg-info/SOURCES.txt'
+[5.263s] writing manifest file 'arm_msgs.egg-info/SOURCES.txt'
+[5.469s] [100%] Built target ament_cmake_python_build_arm_msgs_egg
+[5.578s] Invoked command in '/home/ros/arm_ws/build/arm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_msgs -- -j2 -l2
+[8.135s] Invoking command in '/home/ros/arm_ws/build/arm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_msgs
+[8.200s] -- Install configuration: ""
+[8.203s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/ament_index/resource_index/rosidl_interfaces/arm_msgs
+[8.205s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs
+[8.206s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg
+[8.213s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.213s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[8.219s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/euler_to_quaternion.h
+[8.223s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[8.223s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__functions.c
+[8.223s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__functions.c
+[8.223s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__struct.h
+[8.230s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__functions.c
+[8.230s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__functions.h
+[8.238s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__type_support.h
+[8.238s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__type_support.h
+[8.238s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__functions.h
+[8.238s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__type_support.h
+[8.238s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__functions.h
+[8.238s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__struct.h
+[8.239s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__struct.h
+[8.239s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/add_two_ints.h
+[8.239s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/quaternion_to_euler.h
+[8.242s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[8.242s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/fibonacci.h
+[8.248s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/arm_task.h
+[8.248s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[8.248s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__functions.c
+[8.248s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__struct.h
+[8.254s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__functions.h
+[8.254s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__struct.h
+[8.255s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__functions.c
+[8.256s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__functions.h
+[8.259s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__type_support.h
+[8.259s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__type_support.h
+[8.260s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/library_path.sh
+[8.260s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/library_path.dsv
+[8.260s] -- Installing: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_generator_c.so
+[8.267s] -- Set runtime path of "/home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_generator_c.so" to ""
+[8.267s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs
+[8.268s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg
+[8.268s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.268s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[8.276s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[8.276s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_fastrtps_c.h
+[8.276s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_fastrtps_c.h
+[8.277s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__rosidl_typesupport_fastrtps_c.h
+[8.277s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[8.277s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[8.277s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_fastrtps_c.h
+[8.277s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h
+[8.282s] -- Installing: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_fastrtps_c.so
+[8.283s] -- Set runtime path of "/home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[8.284s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs
+[8.284s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[8.284s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/euler_to_quaternion.hpp
+[8.284s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/quaternion_to_euler.hpp
+[8.284s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[8.284s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__traits.hpp
+[8.291s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__struct.hpp
+[8.291s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__struct.hpp
+[8.291s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__builder.hpp
+[8.292s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__traits.hpp
+[8.292s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__traits.hpp
+[8.299s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__builder.hpp
+[8.299s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__builder.hpp
+[8.299s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__struct.hpp
+[8.300s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/add_two_ints.hpp
+[8.300s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[8.300s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/arm_task.hpp
+[8.301s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[8.301s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__builder.hpp
+[8.301s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__traits.hpp
+[8.305s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__builder.hpp
+[8.305s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__traits.hpp
+[8.309s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__struct.hpp
+[8.313s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__struct.hpp
+[8.313s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/fibonacci.hpp
+[8.313s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs
+[8.314s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg
+[8.314s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.320s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[8.321s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[8.322s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_fastrtps_cpp.hpp
+[8.322s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__rosidl_typesupport_fastrtps_cpp.hpp
+[8.328s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/dds_fastrtps
+[8.328s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_fastrtps_cpp.hpp
+[8.328s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[8.328s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[8.329s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/dds_fastrtps
+[8.329s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp
+[8.329s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_fastrtps_cpp.hpp
+[8.337s] -- Installing: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_fastrtps_cpp.so
+[8.338s] -- Set runtime path of "/home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.338s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs
+[8.338s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg
+[8.339s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.339s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[8.339s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[8.339s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_introspection_c.h
+[8.339s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__type_support.c
+[8.346s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_introspection_c.h
+[8.346s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__rosidl_typesupport_introspection_c.h
+[8.346s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__type_support.c
+[8.347s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__type_support.c
+[8.347s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[8.347s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[8.347s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__type_support.c
+[8.356s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__type_support.c
+[8.356s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__rosidl_typesupport_introspection_c.h
+[8.356s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_introspection_c.h
+[8.356s] -- Installing: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_introspection_c.so
+[8.357s] -- Set runtime path of "/home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_introspection_c.so" to ""
+[8.357s] -- Installing: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_c.so
+[8.357s] -- Set runtime path of "/home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_c.so" to ""
+[8.357s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs
+[8.357s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv
+[8.357s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail
+[8.357s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__type_support.cpp
+[8.357s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__type_support.cpp
+[8.366s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__type_support.cpp
+[8.366s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_introspection_cpp.hpp
+[8.367s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__rosidl_typesupport_introspection_cpp.hpp
+[8.367s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_introspection_cpp.hpp
+[8.367s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action
+[8.367s] -- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail
+[8.367s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp
+[8.367s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_introspection_cpp.hpp
+[8.372s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__type_support.cpp
+[8.372s] -- Installing: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__type_support.cpp
+[8.372s] -- Installing: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_introspection_cpp.so
+[8.372s] -- Set runtime path of "/home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[8.373s] -- Installing: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_cpp.so
+[8.373s] -- Set runtime path of "/home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_cpp.so" to ""
+[8.373s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/pythonpath.sh
+[8.373s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/pythonpath.dsv
+[8.381s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info
+[8.381s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.384s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.384s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[8.384s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[8.384s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs
+[8.385s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.385s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_c.c
+[8.385s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.392s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/libarm_msgs__rosidl_generator_py.so
+[8.392s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.392s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.392s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/__init__.py
+[8.392s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv
+[8.392s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_add_two_ints.py
+[8.392s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_add_two_ints_s.c
+[8.392s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_quaternion_to_euler.py
+[8.393s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/__init__.py
+[8.393s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_euler_to_quaternion_s.c
+[8.393s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_euler_to_quaternion.py
+[8.393s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_quaternion_to_euler_s.c
+[8.393s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action
+[8.393s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_fibonacci.py
+[8.393s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_arm_task.py
+[8.400s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_arm_task_s.c
+[8.400s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/__init__.py
+[8.400s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_fibonacci_s.c
+[8.400s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.510s] Listing '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs'...
+[8.510s] Compiling '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/__init__.py'...
+[8.510s] Listing '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action'...
+[8.517s] Compiling '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/__init__.py'...
+[8.517s] Compiling '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_arm_task.py'...
+[8.517s] Compiling '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_fibonacci.py'...
+[8.519s] Listing '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv'...
+[8.519s] Compiling '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/__init__.py'...
+[8.519s] Compiling '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_add_two_ints.py'...
+[8.519s] Compiling '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_euler_to_quaternion.py'...
+[8.527s] Compiling '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_quaternion_to_euler.py'...
+[8.565s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.566s] -- Set runtime path of "/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.571s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.573s] -- Set runtime path of "/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.577s] -- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.578s] -- Set runtime path of "/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.582s] -- Installing: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_generator_py.so
+[8.587s] -- Set runtime path of "/home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_generator_py.so" to ""
+[8.588s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/AddTwoInts.idl
+[8.589s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion.idl
+[8.591s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler.idl
+[8.599s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/action/Fibonacci.idl
+[8.602s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/action/ArmTask.idl
+[8.603s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/AddTwoInts.srv
+[8.606s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/AddTwoInts_Request.msg
+[8.610s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/AddTwoInts_Response.msg
+[8.612s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion.srv
+[8.616s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion_Request.msg
+[8.620s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion_Response.msg
+[8.620s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler.srv
+[8.626s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler_Request.msg
+[8.627s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler_Response.msg
+[8.629s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/action/Fibonacci.action
+[8.629s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/action/ArmTask.action
+[8.635s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/ament_index/resource_index/package_run_dependencies/arm_msgs
+[8.637s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/ament_index/resource_index/parent_prefix_path/arm_msgs
+[8.644s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/ament_prefix_path.sh
+[8.644s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/ament_prefix_path.dsv
+[8.649s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/path.sh
+[8.650s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/path.dsv
+[8.654s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/local_setup.bash
+[8.654s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/local_setup.sh
+[8.655s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/local_setup.zsh
+[8.659s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/local_setup.dsv
+[8.663s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/package.dsv
+[8.663s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/ament_index/resource_index/packages/arm_msgs
+[8.665s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_cExport.cmake
+[8.671s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_cExport-noconfig.cmake
+[8.672s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[8.673s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.677s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_cppExport.cmake
+[8.679s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.683s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.688s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cExport.cmake
+[8.689s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.693s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cExport.cmake
+[8.696s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[8.697s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[8.702s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.705s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cppExport.cmake
+[8.707s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[8.713s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_pyExport.cmake
+[8.713s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_pyExport-noconfig.cmake
+[8.717s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/rosidl_cmake-extras.cmake
+[8.720s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.720s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.724s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[8.724s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[8.727s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.728s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.732s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgsConfig.cmake
+[8.733s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgsConfig-version.cmake
+[8.738s] -- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/package.xml
+[8.763s] Invoked command in '/home/ros/arm_ws/build/arm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_msgs

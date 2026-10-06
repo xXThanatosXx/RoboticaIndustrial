@@ -1,0 +1,6 @@
+Invoking command in '/home/ros/arm_ws/build/arm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/arm_ws/src/arm_msgs -DCMAKE_INSTALL_PREFIX=/home/ros/arm_ws/install/arm_msgs
+Invoked command in '/home/ros/arm_ws/build/arm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/arm_ws/src/arm_msgs -DCMAKE_INSTALL_PREFIX=/home/ros/arm_ws/install/arm_msgs
+Invoking command in '/home/ros/arm_ws/build/arm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_msgs -- -j4 -l4
+Invoked command in '/home/ros/arm_ws/build/arm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_msgs -- -j4 -l4
+Invoking command in '/home/ros/arm_ws/build/arm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_msgs
+Invoked command in '/home/ros/arm_ws/build/arm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_msgs

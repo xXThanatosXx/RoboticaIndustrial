@@ -1,0 +1,10 @@
+{
+  "package_name": "arm_msgs",
+  "non_idl_tuples": [
+    "/home/ros/arm_ws/src/arm_msgs:srv/AddTwoInts.srv",
+    "/home/ros/arm_ws/src/arm_msgs:srv/EulerToQuaternion.srv",
+    "/home/ros/arm_ws/src/arm_msgs:srv/QuaternionToEuler.srv",
+    "/home/ros/arm_ws/src/arm_msgs:action/Fibonacci.action",
+    "/home/ros/arm_ws/src/arm_msgs:action/ArmTask.action"
+  ]
+}
