@@ -1,30 +1,10 @@
-<h1 align="center">Robótica</h1>
-Bienvenido al repositorio del curso de Robótica Industrial. Este curso está diseñado para estudiantes e investigadores interesados en el campo de la robótica y cubre desde conceptos básicos de cinemática y trayectorías con ROS Noetic.
-
-## Estructura del Repositorio
-
-Este repositorio está organizado de la siguiente manera:
-
-- `logos/`: Carpeta que contiene los logos relacionados con el curso.
-- `código/`: Ejemplos de código fuente en Python para diferentes módulos del curso.
-- `README.md`: Este archivo, que proporciona una visión general y guía sobre el repositorio.
-
-## Instalación de ROS Noetic
-El objetivo de la presente práctica es instalar y configurar el entorno de trabajo de ROS Noetic en Ubuntu 20.04.6, empleando una máquina virtual con VMWorkStation Player 17.
-
-## Recursos Adicionales
-
-Para complementar tu aprendizaje en el curso de Mobile Robot, aquí tienes algunos enlaces a recursos externos que podrían ser de tu interés:
-
-- [VM-Player 17.5.1](https://customerconnect.vmware.com/en/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/17_0)
-- [ubuntu20.04.6](https://releases.ubuntu.com/focal/)
-- [Documentación Oficial de ROS Noetic (Robot Operating System)](https://wiki.ros.org/noetic/Installation/Ubuntu)
-- 📄 [📂](./Scripts/)Scripts de instalación de ros
+# Clase Turtle Sim
 
 
-### Instalación de Dependencias
-Para configurar el entorno necesario para el curso en un sistema operativo Ubuntu, necesitarás instalar algunas dependencias y configurar tu entorno de desarrollo. 
-Primero Descargue los archivos de instalación ros2_install.sh y install_ros_packages.sh que se encuentran en la carpeta  [📂](./Scripts/)Scripts y siga los pasos que se indican en el video.
+El objetivo de la presente práctica es conocer los conceptos básico de ROS2 Humble (paquete, nodo, topicos, info y rqt), para la simulación del comportamiento de un robot móvil
+
+### Instalación de paquete Turtlesim
+
 
 
 <p align="center">
@@ -32,6 +12,7 @@ Primero Descargue los archivos de instalación ros2_install.sh y install_ros_pac
     <img src="./Logos/imagen1.png" height="300">
   </a>
 </p>
+
 <p align="center">
 <a href="https://youtu.be/sk0WTxr-yic?si=M51wHld4yW2u4Ymt" target="_blank">**Enlace a Video de instalación - Haga clic aquí para más información**</a>.
 </p>
@@ -43,94 +24,324 @@ Presione
 Crtl + alt + t
 
 ```
-Paso 1 - Configura tu source.list:
 ```bash
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt install ros-humble-turtlesim
 ```
-Paso 2 - Configura tus Keys:
+Revisar si los paquetes están instalados:
 ```bash
-sudo apt install curl # if you haven't already installed curl
+ros2 pkg executables turtlesim
 ```
+En la terminal debe aparecer los siguientes paquetes:
+
+<p align="center">
+<img src="./Logos/Turtle%20pkgs.png" height="100">
+</p>
+
+## Nodo
+Los nodos son las unidades básicas de ejecución en ROS y cada uno se encarga de una tarea específica, como controlar un sensor, realizar cálculos, procesar datos, o controlar actuadores.
+  
+Ejecutar el simulador Turtlesim en la terminal:
 ```bash
-curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add
+ros2 run turtlesim turtlesim_node
 ```
-Verificar si el archivo es ejecutable:
+Ejecutar el paquete de Teleoperación en una nueva terminal:
 ```bash
-ls -la
+Presione CRTL + SHIFT + t
 ```
-Paso 3 - Instalación:
 
 ```bash
-sudo apt update
+ros2 run turtlesim turtle_teleop_key
+```
+Debe aparaecer un ventana como se muestra a continuación:
+<p align="center">
+<img src="./Logos/Tortuga.png" height="300">
+</p>
+
+Emplee las teclas de flechas para desplazar  y las letras (G,B,V,C,D,E,R,T), para orientar la tortuga sobre la terminal de teleoperación.
+<p align="center">
+<img src="./Logos/Teleop.png" height="300">
+</p>
+
+<p align="center">
+<img src="./Logos/TortugaTeleop.png" height="300">
+</p>
+
+Revisar nodos activos en ros es...
+```bash
+ros2 node list
+```
+<p align="center">
+<img src="./Logos/nodelist.png" height="70">
+</p>
+
+## TOPIC
+Los topics en ROS proporcionan una manera eficiente y flexible de intercambiar datos entre nodos, lo que facilita la construcción de sistemas robóticos complejos mediante la composición de nodos con funciones específicas.
+Revisar tópicos activos
+```bash
+ros2 topic list
+```
+<p align="center">
+<img src="./Logos/topiclist.png" height="100">
+</p>
+
+## Service
+
+Un servicio en ROS (Robot Operating System) es una forma de comunicación entre nodos que se basa en el modelo de petición-respuesta. A diferencia de los topics, que están diseñados para un flujo de datos unidireccional y continuo bajo el paradigma de publicación-suscripción, los servicios permiten una interacción bidireccional y síncrona entre dos nodos. Un nodo ofrece un servicio bajo un nombre específico, mientras que otro nodo puede llamar a este servicio, enviando un mensaje de petición y esperando recibir un mensaje de respuesta.
+
+
+- `Comunicación síncrona`
+- `Bidireccional`
+- `Operaciones definidas`
+
+Revisar servicios activos en ROS:
+```bash
+ros2 service list
+```
+<p align="center">
+<img src="./Logos/servicelist.png" height="300">
+</p>
+
+## Action
+
+es un medio de comunicación entre nodos diseñado para ejecutar tareas que toman un tiempo considerable y para las cuales es deseable obtener retroalimentación sobre el progreso de la tarea. A diferencia de los servicios en ROS, que son adecuados para solicitudes síncronas de petición-respuesta que se esperan completar rápidamente, las acciones permiten una interacción más compleja y de larga duración entre nodos.
+
+- `Comunicación Asíncrona`
+- `Retroalimentación durante la Ejecución`
+- `Cancelación de Tareas`
+
+
+Revisar acciones activas en ROS:
+```bash
+ros2 action list
+```
+<p align="center">
+<img src="./Logos/action.png" height="50">
+</p>
+
+Ejecutar rqt y abrir plugins (Dynamic Reconfigure, topic monitor, Matplot):
+En el servicio de service caller, anexe una nueva tortuga "turtle2" en las cordenadas x,y (1,1)
+
+```bash
+rqt
+```
+<p align="center">
+<img src="./Logos/RQT.png" height="300">
+</p>
+
+<p align="center">
+<img src="./Logos/Plugins.png" height="500">
+</p>
+
+
+
+```bash
+rqt_graph
 ```
 ```bash
-sudo apt install ros-noetic-desktop-full
-```
-Paso 4 – Configuración del entorno:
-```bash
-echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2/cmd_vel
 ```
 ```bash
-source ~/.bashrc
-```
-Paso 5 – Dependencias para construir paquetes:
-```bash
-sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
-```
-Paso 6 – Inicializar rosdep
-```bash
-sudo apt install python3-rosdep
+ros2 topic info /turtle2/cmd_vel
 ```
 ```bash
-sudo rosdep init
-```
-```bash
-rosdep update
+ros2 topic echo /turtle2/cmd_vel
 ```
 
-Paso 7 – Inicializar rosdep
-
 ```bash
-roscore
+ros2 topic list -t
+```
+```bash
+ros2 interface show geometry_msgs/msg/Twist
+```
+```bash
+ros2 topic pub --rate 1 /turtle2/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0,  y: 0.0, z: 1.8}}"
+```
+```bash
+ros2 topic type /turtle2/pose
 ```
 
-![alt text](image.png)
-
-### Clonar repositorio de clase
-En nueva terminal ejecutar los siguientes comandos en el espacio de trabajo principal
-
-Presione Crtl + alt + t
 ```bash
-roscore
-```
-Presione Crtl + alt + t
-```bash
-mkdir -p robot_ws/src
-```
-```bash
-cd robo_ws
+ros2 topic echo /turtle1/pose
 ```
 
-Copiar la carpeta openbot_ en la a carpeta robot_ws/src y compilar el proyecto: 
+## Crear Nodo Python para extrar mensajes de posición
+- Crear la carpeta difrobot y sub carpeta src, organice los archivos como se muestra en la imagen:
+
+<p align="center">
+<img src="./Logos/image.png" height="300">
+</p>
 
 ```bash
-catkin_make
+mkdir -p difrobot_ws/src
 ```
-Ejecutar el proyecto:
-Actualizar la ruta del proyecto en la ruta robot_ws/
 ```bash
-source devel/setup.bash
+cd difrobot_ws/
 ```
-Lanzar el proyecto:
+```bash
+colcon build
+```
+```bash
+cd src/
+```
+```bash
+ros2 pkg create --build-type ament_python difrobot_py_examples
+```
+```bash
+cd ..
+```
+```bash
+colcon build
+```
+- copiar el archivo simple_turtlesim_kinematics.py en la carpeta difrobot_py_examples
+- Modificar el contenido de la los archivos package.xml y setup.py
+
+
+package.xml
+```xml
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>difrobot_py_examples</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="ros@todo.todo">ros</maintainer>
+  <license>TODO: License declaration</license>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>rcl_interfaces</depend>
+  <depend>turtlesim</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+```
+setup.py
+```python
+from setuptools import find_packages, setup
+
+package_name = 'difrobot_py_examples'
+
+setup(
+    name=package_name,
+    version='0.0.0',
+    packages=find_packages(exclude=['test']),
+    data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
+        ('share/' + package_name, ['package.xml']),
+    ],
+    install_requires=['setuptools'],
+    zip_safe=True,
+    maintainer='ros',
+    maintainer_email='ros@todo.todo',
+    description='TODO: Package description',
+    license='TODO: License declaration',
+    tests_require=['pytest'],
+    entry_points={
+        'console_scripts': [
+            'simple_turtlesim_kinematics = difrobot_py_examples.simple_turtlesim_kinematics:main',
+        ],
+    },
+)
+
+```
+
+- rclpy: Es la librería de ROS 2 para Python. Proporciona las herramientas necesarias para crear nodos y manejar la comunicación en un sistema ROS 2.
+- Node: Clase base para la creación de nodos en ROS 2.
+- Pose: Es el tipo de mensaje que define la posición y orientación de un objeto en 2D, utilizado en la simulación turtlesim.
+- math: Librería estándar de Python que proporciona funciones matemáticas.
+
+simple_turtlesim_kinematics.py
+
+```python
+import rclpy
+from rclpy.node import Node
+from turtlesim.msg import Pose
+import math
+
+
+class SimpleTurtlesimKinematics(Node):
+    
+    def __init__(self):
+        super().__init__("simple_turtlesim_kinematics")
+        self.turtle1_pose_sub_ = self.create_subscription(Pose, "/turtle1/pose", self.turtle1PoseCallback, 10) 
+        self.turtle2_pose_sub_ = self.create_subscription(Pose, "/turtle2/pose", self.turtle2PoseCallback, 10)
+
+        self.last_turtle1_pose_ = Pose()
+        self.last_turtle2_pose_ = Pose()
+
+    
+    def turtle1PoseCallback(self, pose):
+        self.last_turtle1_pose_ = pose
+
+
+    def turtle2PoseCallback(self, pose):
+        self.last_turtle2_pose_ = pose
+        Tx = self.last_turtle2_pose_.x - self.last_turtle1_pose_.x
+        Ty = self.last_turtle2_pose_.y - self.last_turtle1_pose_.y
+        theta_rad = self.last_turtle2_pose_.theta - self.last_turtle1_pose_.theta
+        theta_deg = 180 * theta_rad / 3.14
+        self.get_logger().info("""\n
+                      Translation Vector turtle1 -> turtle2\n
+                      Tx: %f\n
+                      Ty: %f\n
+                      Rotation Matrix turtle1 -> turtle2\n 
+                      theta (rad): %f\n
+                      theta (deg): %f\n
+                      |R11   R12|:  |%f %f|\n
+                      |R21   R22|   |%f %f|\n""" %
+                      (
+                        Tx, Ty, theta_rad, theta_deg,
+                        math.cos(theta_rad), -math.sin(theta_rad),
+                        math.sin(theta_rad), math.cos(theta_rad)
+                      )
+                    )
+        
+
+def main():
+    rclpy.init()
+
+    simple_turtlesim_kinematics = SimpleTurtlesimKinematics()
+    rclpy.spin(simple_turtlesim_kinematics)
+    
+    simple_turtlesim_kinematics.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+```
+```bash
+colcon build 
+```
 
 ```bash
-roslaunch openbot_v1_description display.launch
+. install/setup.bash 
 ```
-instalar terminal:
+Crear una tortuga
 ```bash
-sudo apt-get install terminator
+ros2 service call /spawn turtlesim/srv/Spawn "x: 2.0
+y: 2.0
+theta: 0.0
+name: 'turtle2'" 
 ```
-Revisar la versión de Ros instalada:
+
+Ejecutar el script
+
 ```bash
-rosversion -d
+ros2 run difrobot_py_examples simple_turtlesim_kinematics 
+```
+
+## Restablecer ventana RQT
+Como volver a la configuración de ventanas en rqt en ros2 humble
+```bash
+rm -rf ~/.config/ros.org/rqt_gui.ini
+
 ```
