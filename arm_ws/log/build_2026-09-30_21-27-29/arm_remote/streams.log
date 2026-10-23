@@ -1,0 +1,107 @@
+[0.032s] Invoking command in '/home/ros/arm_ws/build/arm_remote': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ros/arm_ws/src/arm_remote -DCMAKE_INSTALL_PREFIX=/home/ros/arm_ws/install/arm_remote
+[0.162s] -- The C compiler identification is GNU 11.4.0
+[0.300s] -- The CXX compiler identification is GNU 11.4.0
+[0.316s] -- Detecting C compiler ABI info
+[0.482s] -- Detecting C compiler ABI info - done
+[0.495s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.496s] -- Detecting C compile features
+[0.498s] -- Detecting C compile features - done
+[0.504s] -- Detecting CXX compiler ABI info
+[0.670s] -- Detecting CXX compiler ABI info - done
+[0.681s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.681s] -- Detecting CXX compile features
+[0.682s] -- Detecting CXX compile features - done
+[0.688s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.001s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.186s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[1.283s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.293s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.313s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.340s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.375s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.557s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.568s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.845s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.911s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.978s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.013s] -- Looking for pthread.h
+[2.157s] -- Looking for pthread.h - found
+[2.158s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.325s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.327s] -- Found Threads: TRUE  
+[2.494s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[2.566s] -- Found rclcpp_components: 16.0.15 (/opt/ros/humble/share/rclcpp_components/cmake)
+[2.657s] -- Found arm_msgs: 0.0.0 (/home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake)
+[2.695s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[2.793s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[3.367s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[3.514s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[3.555s] -- Found rclcpp_lifecycle: 16.0.15 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[3.636s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[3.864s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[3.953s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.954s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.328s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[4.411s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[4.468s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[4.579s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[4.952s] -- Configuring done
+[5.062s] -- Generating done
+[5.082s] -- Build files have been written to: /home/ros/arm_ws/build/arm_remote
+[5.114s] Invoked command in '/home/ros/arm_ws/build/arm_remote' returned '0': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ros/arm_ws/src/arm_remote -DCMAKE_INSTALL_PREFIX=/home/ros/arm_ws/install/arm_remote
+[5.117s] Invoking command in '/home/ros/arm_ws/build/arm_remote': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros/arm_ws/build/arm_remote -- -j4 -l4
+[5.252s] Consolidate compiler generated dependencies of target task_server_node
+[5.253s] Consolidate compiler generated dependencies of target task_server
+[5.290s] [  0%] Built target ament_cmake_python_copy_arm_remote
+[5.303s] [ 25%] Building CXX object CMakeFiles/task_server_node.dir/rclcpp_components/node_main_task_server_node.cpp.o
+[5.457s] [ 50%] Building CXX object CMakeFiles/task_server.dir/src/task_server.cpp.o
+[5.944s] running egg_info
+[5.946s] writing arm_remote.egg-info/PKG-INFO
+[5.948s] writing dependency_links to arm_remote.egg-info/dependency_links.txt
+[5.949s] writing top-level names to arm_remote.egg-info/top_level.txt
+[5.957s] reading manifest file 'arm_remote.egg-info/SOURCES.txt'
+[5.957s] writing manifest file 'arm_remote.egg-info/SOURCES.txt'
+[6.017s] [ 50%] Built target ament_cmake_python_build_arm_remote_egg
+[15.202s] [ 75%] Linking CXX executable task_server_node
+[15.564s] [ 75%] Built target task_server_node
+[29.237s] [100%] Linking CXX shared library libtask_server.so
+[30.261s] [100%] Built target task_server
+[30.287s] Invoked command in '/home/ros/arm_ws/build/arm_remote' returned '0': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros/arm_ws/build/arm_remote -- -j4 -l4
+[30.293s] Invoking command in '/home/ros/arm_ws/build/arm_remote': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros/arm_ws/build/arm_remote
+[30.308s] -- Install configuration: ""
+[30.310s] -- Installing: /home/ros/arm_ws/install/arm_remote/lib/arm_remote/task_server_node
+[30.310s] -- Set runtime path of "/home/ros/arm_ws/install/arm_remote/lib/arm_remote/task_server_node" to ""
+[30.311s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/pythonpath.sh
+[30.311s] -- Installing: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/pythonpath.dsv
+[30.311s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info
+[30.312s] -- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/dependency_links.txt
+[30.312s] -- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/SOURCES.txt
+[30.312s] -- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/PKG-INFO
+[30.312s] -- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/top_level.txt
+[30.314s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote
+[30.315s] -- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote/alexa_interface.py
+[30.315s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote/__init__.py
+[30.422s] Listing '/home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote'...
+[30.422s] Compiling '/home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote/alexa_interface.py'...
+[30.445s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/launch
+[30.446s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/launch/remote_interface.launch.py
+[30.450s] -- Installing: /home/ros/arm_ws/install/arm_remote/lib/libtask_server.so
+[30.455s] -- Set runtime path of "/home/ros/arm_ws/install/arm_remote/lib/libtask_server.so" to ""
+[30.456s] -- Installing: /home/ros/arm_ws/install/arm_remote/lib/arm_remote/alexa_interface.py
+[30.456s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/package_run_dependencies/arm_remote
+[30.456s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/parent_prefix_path/arm_remote
+[30.457s] -- Installing: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/ament_prefix_path.sh
+[30.457s] -- Installing: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/ament_prefix_path.dsv
+[30.458s] -- Installing: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/path.sh
+[30.458s] -- Installing: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/path.dsv
+[30.458s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.bash
+[30.459s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.sh
+[30.459s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.zsh
+[30.459s] -- Installing: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.dsv
+[30.459s] -- Installing: /home/ros/arm_ws/install/arm_remote/share/arm_remote/package.dsv
+[30.461s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/packages/arm_remote
+[30.462s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/rclcpp_components/arm_remote
+[30.462s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/cmake/arm_remoteConfig.cmake
+[30.462s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/cmake/arm_remoteConfig-version.cmake
+[30.463s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/package.xml
+[30.470s] Invoked command in '/home/ros/arm_ws/build/arm_remote' returned '0': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros/arm_ws/build/arm_remote

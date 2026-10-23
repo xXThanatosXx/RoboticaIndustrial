@@ -1,0 +1,55 @@
+[0.092s] Invoking command in '/home/ros/arm_ws/build/arm_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/arm_ws/src/arm_moveit -DCMAKE_INSTALL_PREFIX=/home/ros/arm_ws/install/arm_moveit
+[0.481s] -- The C compiler identification is GNU 11.4.0
+[0.833s] -- The CXX compiler identification is GNU 11.4.0
+[0.894s] -- Detecting C compiler ABI info
+[1.385s] -- Detecting C compiler ABI info - done
+[1.429s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.430s] -- Detecting C compile features
+[1.434s] -- Detecting C compile features - done
+[1.461s] -- Detecting CXX compiler ABI info
+[2.083s] -- Detecting CXX compiler ABI info - done
+[2.164s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.169s] -- Detecting CXX compile features
+[2.169s] -- Detecting CXX compile features - done
+[2.194s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.185s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.858s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.485s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.522s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.533s] -- Added test 'lint_cmake' to check CMake code style
+[4.534s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.551s] -- Added test 'xmllint' to check XML markup files
+[4.572s] -- Configuring done
+[4.609s] -- Generating done
+[4.632s] -- Build files have been written to: /home/ros/arm_ws/build/arm_moveit
+[4.693s] Invoked command in '/home/ros/arm_ws/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/arm_ws/src/arm_moveit -DCMAKE_INSTALL_PREFIX=/home/ros/arm_ws/install/arm_moveit
+[4.714s] Invoking command in '/home/ros/arm_ws/build/arm_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_moveit -- -j2 -l2
+[5.107s] Invoked command in '/home/ros/arm_ws/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_moveit -- -j2 -l2
+[5.435s] Invoking command in '/home/ros/arm_ws/build/arm_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_moveit
+[5.488s] -- Install configuration: ""
+[5.488s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/launch
+[5.499s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/launch/moveit.launch.py
+[5.499s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config
+[5.507s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/initial_positions.yaml
+[5.508s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/moveit_controllers.yaml
+[5.508s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/pilz_cartesian_limits.yaml
+[5.516s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/kinematics.yaml
+[5.516s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/arm.srdf
+[5.517s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/moveit.rviz
+[5.517s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/joint_limits.yaml
+[5.517s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/ament_index/resource_index/package_run_dependencies/arm_moveit
+[5.517s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/ament_index/resource_index/parent_prefix_path/arm_moveit
+[5.521s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/environment/ament_prefix_path.sh
+[5.522s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/environment/ament_prefix_path.dsv
+[5.522s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/environment/path.sh
+[5.522s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/environment/path.dsv
+[5.522s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/local_setup.bash
+[5.529s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/local_setup.sh
+[5.529s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/local_setup.zsh
+[5.529s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/local_setup.dsv
+[5.533s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/package.dsv
+[5.536s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/ament_index/resource_index/packages/arm_moveit
+[5.536s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/cmake/arm_moveitConfig.cmake
+[5.540s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/cmake/arm_moveitConfig-version.cmake
+[5.541s] -- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/package.xml
+[5.548s] Invoked command in '/home/ros/arm_ws/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_moveit

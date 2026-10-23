@@ -1,0 +1,61 @@
+[35m[1mConsolidate compiler generated dependencies of target simple_publisher[0m
+[  9%] Built target simple_publisher
+[35m[1mConsolidate compiler generated dependencies of target simple_subscriber[0m
+[ 18%] Built target simple_subscriber
+[35m[1mConsolidate compiler generated dependencies of target simple_parameter[0m
+[ 27%] Built target simple_parameter
+[35m[1mConsolidate compiler generated dependencies of target simple_service_server[0m
+[ 36%] Built target simple_service_server
+[35m[1mConsolidate compiler generated dependencies of target simple_service_client[0m
+[ 45%] Built target simple_service_client
+[35m[1mConsolidate compiler generated dependencies of target simple_action_server[0m
+[ 54%] Built target simple_action_server
+[35m[1mConsolidate compiler generated dependencies of target simple_action_server_node[0m
+[ 63%] Built target simple_action_server_node
+[35m[1mConsolidate compiler generated dependencies of target simple_action_client[0m
+[ 72%] Built target simple_action_client
+[35m[1mConsolidate compiler generated dependencies of target simple_action_client_node[0m
+[ 81%] Built target simple_action_client_node
+[35m[1mConsolidate compiler generated dependencies of target simple_moveit_interface[0m
+[ 90%] Built target simple_moveit_interface
+[35m[1mConsolidate compiler generated dependencies of target simple_lifecycle_node[0m
+[100%] Built target simple_lifecycle_node
+-- Install configuration: ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_action_server_node
+-- Set runtime path of "/home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_action_server_node" to ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_action_client_node
+-- Set runtime path of "/home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_action_client_node" to ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_publisher
+-- Set runtime path of "/home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_publisher" to ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_subscriber
+-- Set runtime path of "/home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_subscriber" to ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_parameter
+-- Set runtime path of "/home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_parameter" to ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_service_server
+-- Set runtime path of "/home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_service_server" to ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_service_client
+-- Set runtime path of "/home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_service_client" to ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_moveit_interface
+-- Set runtime path of "/home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_moveit_interface" to ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_lifecycle_node
+-- Set runtime path of "/home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_lifecycle_node" to ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/lib/libsimple_action_server.so
+-- Set runtime path of "/home/ros/arm_ws/install/arm_cpp_examples/lib/libsimple_action_server.so" to ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/lib/libsimple_action_client.so
+-- Set runtime path of "/home/ros/arm_ws/install/arm_cpp_examples/lib/libsimple_action_client.so" to ""
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/package_run_dependencies/arm_cpp_examples
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/parent_prefix_path/arm_cpp_examples
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/ament_prefix_path.sh
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/ament_prefix_path.dsv
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/path.sh
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/path.dsv
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.bash
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.sh
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.zsh
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.dsv
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/package.dsv
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/packages/arm_cpp_examples
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/rclcpp_components/arm_cpp_examples
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/cmake/arm_cpp_examplesConfig.cmake
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/cmake/arm_cpp_examplesConfig-version.cmake
+-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/package.xml

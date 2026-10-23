@@ -1,0 +1,49 @@
+[0.077s] Invoking command in '/home/ros/arm_ws/build/arm_remote': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros/arm_ws/build/arm_remote -- -j2 -l2
+[0.613s] [35m[1mConsolidate compiler generated dependencies of target task_server[0m
+[0.784s] [ 50%] Built target task_server
+[0.969s] [35m[1mConsolidate compiler generated dependencies of target task_server_node[0m
+[1.167s] [100%] Built target task_server_node
+[1.661s] [100%] Built target ament_cmake_python_copy_arm_remote
+[4.667s] running egg_info
+[4.675s] writing arm_remote.egg-info/PKG-INFO
+[4.678s] writing dependency_links to arm_remote.egg-info/dependency_links.txt
+[4.685s] writing top-level names to arm_remote.egg-info/top_level.txt
+[4.719s] reading manifest file 'arm_remote.egg-info/SOURCES.txt'
+[4.724s] writing manifest file 'arm_remote.egg-info/SOURCES.txt'
+[4.985s] [100%] Built target ament_cmake_python_build_arm_remote_egg
+[5.093s] Invoked command in '/home/ros/arm_ws/build/arm_remote' returned '0': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros/arm_ws/build/arm_remote -- -j2 -l2
+[5.677s] Invoking command in '/home/ros/arm_ws/build/arm_remote': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros/arm_ws/build/arm_remote
+[5.709s] -- Install configuration: ""
+[5.718s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/lib/arm_remote/task_server_node
+[5.721s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/pythonpath.sh
+[5.722s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/pythonpath.dsv
+[5.723s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info
+[5.726s] -- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.726s] -- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.732s] -- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/PKG-INFO
+[5.732s] -- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/top_level.txt
+[5.733s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote
+[5.733s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote/alexa_interface.py
+[5.738s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote/__init__.py
+[6.027s] Listing '/home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote'...
+[6.064s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/launch
+[6.064s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/launch/remote_interface.launch.py
+[6.073s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/lib/libtask_server.so
+[6.073s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/lib/arm_remote/alexa_interface.py
+[6.073s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/package_run_dependencies/arm_remote
+[6.081s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/parent_prefix_path/arm_remote
+[6.081s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/ament_prefix_path.sh
+[6.082s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/ament_prefix_path.dsv
+[6.086s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/path.sh
+[6.090s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/path.dsv
+[6.091s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.bash
+[6.092s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.sh
+[6.092s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.zsh
+[6.092s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.dsv
+[6.092s] -- Installing: /home/ros/arm_ws/install/arm_remote/share/arm_remote/package.dsv
+[6.093s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/packages/arm_remote
+[6.093s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/rclcpp_components/arm_remote
+[6.093s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/cmake/arm_remoteConfig.cmake
+[6.093s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/cmake/arm_remoteConfig-version.cmake
+[6.099s] -- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/package.xml
+[6.111s] Invoked command in '/home/ros/arm_ws/build/arm_remote' returned '0': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros/arm_ws/build/arm_remote

@@ -1,0 +1,42 @@
+[0.101s] Invoking command in '/home/ros/arm_ws/build/arm_utils': CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/home/ros/arm_ws/install/arm_utils:/home/ros/arm_ws/install/arm_remote:/home/ros/arm_ws/install/arm_cpp_examples:/home/ros/arm_ws/install/arm_moveit:/home/ros/arm_ws/install/arm_firmware:/home/ros/arm_ws/install/arm_description:/home/ros/arm_ws/install/arm_controller:/home/ros/arm_ws/install/arm_bringup:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:/home/ros/arm_ws/install/arm_remote/lib:/home/ros/arm_ws/install/arm_cpp_examples/lib:/home/ros/arm_ws/install/arm_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/arm_ws/build/arm_utils -- -j2 -l2
+[0.585s] [100%] Built target angle_conversion
+[0.866s] [100%] Built target ament_cmake_python_copy_arm_utils
+[3.049s] running egg_info
+[3.057s] writing arm_utils.egg-info/PKG-INFO
+[3.057s] writing dependency_links to arm_utils.egg-info/dependency_links.txt
+[3.062s] writing top-level names to arm_utils.egg-info/top_level.txt
+[3.084s] reading manifest file 'arm_utils.egg-info/SOURCES.txt'
+[3.090s] writing manifest file 'arm_utils.egg-info/SOURCES.txt'
+[3.287s] [100%] Built target ament_cmake_python_build_arm_utils_egg
+[3.386s] Invoked command in '/home/ros/arm_ws/build/arm_utils' returned '0': CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/home/ros/arm_ws/install/arm_utils:/home/ros/arm_ws/install/arm_remote:/home/ros/arm_ws/install/arm_cpp_examples:/home/ros/arm_ws/install/arm_moveit:/home/ros/arm_ws/install/arm_firmware:/home/ros/arm_ws/install/arm_description:/home/ros/arm_ws/install/arm_controller:/home/ros/arm_ws/install/arm_bringup:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:/home/ros/arm_ws/install/arm_remote/lib:/home/ros/arm_ws/install/arm_cpp_examples/lib:/home/ros/arm_ws/install/arm_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ros/arm_ws/build/arm_utils -- -j2 -l2
+[3.707s] Invoking command in '/home/ros/arm_ws/build/arm_utils': CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/home/ros/arm_ws/install/arm_utils:/home/ros/arm_ws/install/arm_remote:/home/ros/arm_ws/install/arm_cpp_examples:/home/ros/arm_ws/install/arm_moveit:/home/ros/arm_ws/install/arm_firmware:/home/ros/arm_ws/install/arm_description:/home/ros/arm_ws/install/arm_controller:/home/ros/arm_ws/install/arm_bringup:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:/home/ros/arm_ws/install/arm_remote/lib:/home/ros/arm_ws/install/arm_cpp_examples/lib:/home/ros/arm_ws/install/arm_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/arm_ws/build/arm_utils
+[3.775s] -- Install configuration: ""
+[3.775s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/pythonpath.sh
+[3.776s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/pythonpath.dsv
+[3.780s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info
+[3.781s] -- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.784s] -- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.785s] -- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/PKG-INFO
+[3.785s] -- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/top_level.txt
+[3.785s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils
+[3.785s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils/__init__.py
+[3.786s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils/angle_conversion.py
+[4.071s] Listing '/home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils'...
+[4.096s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/lib/arm_utils/angle_conversion
+[4.096s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/lib/arm_utils/angle_conversion.py
+[4.101s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/ament_index/resource_index/package_run_dependencies/arm_utils
+[4.101s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/ament_index/resource_index/parent_prefix_path/arm_utils
+[4.102s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/ament_prefix_path.sh
+[4.102s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/ament_prefix_path.dsv
+[4.102s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/path.sh
+[4.102s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/path.dsv
+[4.103s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.bash
+[4.112s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.sh
+[4.115s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.zsh
+[4.116s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.dsv
+[4.122s] -- Installing: /home/ros/arm_ws/install/arm_utils/share/arm_utils/package.dsv
+[4.122s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/ament_index/resource_index/packages/arm_utils
+[4.122s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/cmake/arm_utilsConfig.cmake
+[4.122s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/cmake/arm_utilsConfig-version.cmake
+[4.123s] -- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/package.xml
+[4.145s] Invoked command in '/home/ros/arm_ws/build/arm_utils' returned '0': CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/home/ros/arm_ws/install/arm_utils:/home/ros/arm_ws/install/arm_remote:/home/ros/arm_ws/install/arm_cpp_examples:/home/ros/arm_ws/install/arm_moveit:/home/ros/arm_ws/install/arm_firmware:/home/ros/arm_ws/install/arm_description:/home/ros/arm_ws/install/arm_controller:/home/ros/arm_ws/install/arm_bringup:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:/home/ros/arm_ws/install/arm_remote/lib:/home/ros/arm_ws/install/arm_cpp_examples/lib:/home/ros/arm_ws/install/arm_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ros/arm_ws/build/arm_utils

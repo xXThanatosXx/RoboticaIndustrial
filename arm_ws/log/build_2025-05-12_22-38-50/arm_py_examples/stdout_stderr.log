@@ -1,0 +1,59 @@
+running egg_info
+creating ../../build/arm_py_examples/arm_py_examples.egg-info
+writing ../../build/arm_py_examples/arm_py_examples.egg-info/PKG-INFO
+writing dependency_links to ../../build/arm_py_examples/arm_py_examples.egg-info/dependency_links.txt
+writing entry points to ../../build/arm_py_examples/arm_py_examples.egg-info/entry_points.txt
+writing requirements to ../../build/arm_py_examples/arm_py_examples.egg-info/requires.txt
+writing top-level names to ../../build/arm_py_examples/arm_py_examples.egg-info/top_level.txt
+writing manifest file '../../build/arm_py_examples/arm_py_examples.egg-info/SOURCES.txt'
+reading manifest file '../../build/arm_py_examples/arm_py_examples.egg-info/SOURCES.txt'
+writing manifest file '../../build/arm_py_examples/arm_py_examples.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ros/arm_ws/build/arm_py_examples/build
+creating /home/ros/arm_ws/build/arm_py_examples/build/lib
+creating /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+copying arm_py_examples/simple_publisher.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+copying arm_py_examples/simple_service_server.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+copying arm_py_examples/simple_action_server.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+copying arm_py_examples/simple_service_client.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+copying arm_py_examples/simple_action_client.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+copying arm_py_examples/__init__.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+copying arm_py_examples/simple_subscriber.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+copying arm_py_examples/simple_parameter.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+running install
+running install_lib
+creating /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_publisher.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_service_server.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_action_server.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_service_client.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_action_client.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/__init__.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_subscriber.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_parameter.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_publisher.py to simple_publisher.cpython-310.pyc
+byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_service_server.py to simple_service_server.cpython-310.pyc
+byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_action_server.py to simple_action_server.cpython-310.pyc
+byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_service_client.py to simple_service_client.cpython-310.pyc
+byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_action_client.py to simple_action_client.cpython-310.pyc
+byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_subscriber.py to simple_subscriber.cpython-310.pyc
+byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_parameter.py to simple_parameter.cpython-310.pyc
+running install_data
+creating /home/ros/arm_ws/install/arm_py_examples/share/ament_index
+creating /home/ros/arm_ws/install/arm_py_examples/share/ament_index/resource_index
+creating /home/ros/arm_ws/install/arm_py_examples/share/ament_index/resource_index/packages
+copying resource/arm_py_examples -> /home/ros/arm_ws/install/arm_py_examples/share/ament_index/resource_index/packages
+copying package.xml -> /home/ros/arm_ws/install/arm_py_examples/share/arm_py_examples
+running install_egg_info
+Copying ../../build/arm_py_examples/arm_py_examples.egg-info to /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples-0.0.0-py3.10.egg-info
+running install_scripts
+Installing simple_action_client script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+Installing simple_action_server script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+Installing simple_parameter script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+Installing simple_publisher script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+Installing simple_service_client script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+Installing simple_service_server script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+Installing simple_subscriber script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+writing list of installed files to '/home/ros/arm_ws/build/arm_py_examples/install.log'

@@ -1,0 +1,43 @@
+[0.178s] Invoking command in '/home/ros/arm_ws/build/arm_cpp_examples': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros/arm_ws/build/arm_cpp_examples -- -j2 -l2
+[0.950s] [  9%] Built target simple_publisher
+[1.213s] [ 18%] Built target simple_subscriber
+[1.485s] [ 27%] Built target simple_parameter
+[1.710s] [ 36%] Built target simple_service_server
+[1.997s] [ 45%] Built target simple_service_client
+[2.298s] [ 54%] Built target simple_action_server
+[2.486s] [ 63%] Built target simple_action_server_node
+[2.734s] [ 72%] Built target simple_action_client
+[2.999s] [ 81%] Built target simple_action_client_node
+[3.677s] [ 90%] Built target simple_moveit_interface
+[3.960s] [100%] Built target simple_lifecycle_node
+[4.040s] Invoked command in '/home/ros/arm_ws/build/arm_cpp_examples' returned '0': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros/arm_ws/build/arm_cpp_examples -- -j2 -l2
+[5.109s] Invoking command in '/home/ros/arm_ws/build/arm_cpp_examples': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros/arm_ws/build/arm_cpp_examples
+[5.189s] -- Install configuration: ""
+[5.202s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_action_server_node
+[5.209s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_action_client_node
+[5.222s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_publisher
+[5.230s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_subscriber
+[5.236s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_parameter
+[5.246s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_service_server
+[5.258s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_service_client
+[5.261s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_moveit_interface
+[5.271s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_lifecycle_node
+[5.283s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/libsimple_action_server.so
+[5.291s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/libsimple_action_client.so
+[5.292s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/package_run_dependencies/arm_cpp_examples
+[5.294s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/parent_prefix_path/arm_cpp_examples
+[5.296s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/ament_prefix_path.sh
+[5.298s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/ament_prefix_path.dsv
+[5.298s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/path.sh
+[5.298s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/path.dsv
+[5.298s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.bash
+[5.298s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.sh
+[5.298s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.zsh
+[5.298s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.dsv
+[5.302s] -- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/package.dsv
+[5.303s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/packages/arm_cpp_examples
+[5.303s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/rclcpp_components/arm_cpp_examples
+[5.304s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/cmake/arm_cpp_examplesConfig.cmake
+[5.304s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/cmake/arm_cpp_examplesConfig-version.cmake
+[5.304s] -- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/package.xml
+[5.324s] Invoked command in '/home/ros/arm_ws/build/arm_cpp_examples' returned '0': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros/arm_ws/build/arm_cpp_examples

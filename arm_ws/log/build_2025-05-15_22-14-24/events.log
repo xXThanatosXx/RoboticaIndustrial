@@ -1,0 +1,982 @@
+[0.000000] (-) TimerEvent: {}
+[0.000823] (arm_bringup) JobQueued: {'identifier': 'arm_bringup', 'dependencies': OrderedDict()}
+[0.000955] (arm_controller) JobQueued: {'identifier': 'arm_controller', 'dependencies': OrderedDict()}
+[0.001003] (arm_description) JobQueued: {'identifier': 'arm_description', 'dependencies': OrderedDict()}
+[0.001069] (arm_firmware) JobQueued: {'identifier': 'arm_firmware', 'dependencies': OrderedDict()}
+[0.001109] (arm_moveit) JobQueued: {'identifier': 'arm_moveit', 'dependencies': OrderedDict()}
+[0.001143] (arm_msgs) JobQueued: {'identifier': 'arm_msgs', 'dependencies': OrderedDict()}
+[0.001174] (arm_cpp_examples) JobQueued: {'identifier': 'arm_cpp_examples', 'dependencies': OrderedDict([('arm_msgs', '/home/ros/arm_ws/install/arm_msgs')])}
+[0.001214] (arm_py_examples) JobQueued: {'identifier': 'arm_py_examples', 'dependencies': OrderedDict([('arm_msgs', '/home/ros/arm_ws/install/arm_msgs')])}
+[0.001304] (arm_remote) JobQueued: {'identifier': 'arm_remote', 'dependencies': OrderedDict([('arm_msgs', '/home/ros/arm_ws/install/arm_msgs')])}
+[0.001378] (arm_utils) JobQueued: {'identifier': 'arm_utils', 'dependencies': OrderedDict([('arm_msgs', '/home/ros/arm_ws/install/arm_msgs')])}
+[0.006104] (arm_msgs) JobStarted: {'identifier': 'arm_msgs'}
+[0.056743] (arm_bringup) JobStarted: {'identifier': 'arm_bringup'}
+[0.098209] (-) TimerEvent: {}
+[0.104819] (arm_bringup) JobProgress: {'identifier': 'arm_bringup', 'progress': 'cmake'}
+[0.116029] (arm_bringup) JobProgress: {'identifier': 'arm_bringup', 'progress': 'build'}
+[0.121400] (arm_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_bringup', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.174307] (arm_msgs) JobProgress: {'identifier': 'arm_msgs', 'progress': 'cmake'}
+[0.188630] (arm_msgs) JobProgress: {'identifier': 'arm_msgs', 'progress': 'build'}
+[0.190856] (arm_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_msgs', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.223340] (-) TimerEvent: {}
+[0.344583] (-) TimerEvent: {}
+[0.445166] (-) TimerEvent: {}
+[0.546237] (-) TimerEvent: {}
+[0.651658] (-) TimerEvent: {}
+[0.754601] (-) TimerEvent: {}
+[0.857364] (-) TimerEvent: {}
+[0.959250] (-) TimerEvent: {}
+[1.061894] (-) TimerEvent: {}
+[1.163633] (-) TimerEvent: {}
+[1.188861] (arm_bringup) CommandEnded: {'returncode': 0}
+[1.266786] (-) TimerEvent: {}
+[1.368946] (-) TimerEvent: {}
+[1.387899] (arm_msgs) StdoutLine: {'line': b'[  1%] Built target arm_msgs__cpp\n'}
+[1.471008] (-) TimerEvent: {}
+[1.567788] (arm_bringup) JobProgress: {'identifier': 'arm_bringup', 'progress': 'install'}
+[1.573600] (-) TimerEvent: {}
+[1.680667] (-) TimerEvent: {}
+[1.722435] (arm_msgs) StdoutLine: {'line': b'[ 12%] Built target arm_msgs__rosidl_generator_c\n'}
+[1.741802] (arm_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/arm_ws/build/arm_bringup'], 'cwd': '/home/ros/arm_ws/build/arm_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.783686] (-) TimerEvent: {}
+[1.826652] (arm_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.838093] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/launch\n'}
+[1.840753] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/launch/simulated_robot.launch.py\n'}
+[1.847132] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/launch/real_robot.launch.py\n'}
+[1.850930] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/ament_index/resource_index/package_run_dependencies/arm_bringup\n'}
+[1.851283] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/ament_index/resource_index/parent_prefix_path/arm_bringup\n'}
+[1.852905] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/environment/ament_prefix_path.sh\n'}
+[1.853259] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/environment/ament_prefix_path.dsv\n'}
+[1.854599] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/environment/path.sh\n'}
+[1.854860] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/environment/path.dsv\n'}
+[1.855022] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/local_setup.bash\n'}
+[1.855141] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/local_setup.sh\n'}
+[1.855245] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/local_setup.zsh\n'}
+[1.855363] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/local_setup.dsv\n'}
+[1.858520] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/package.dsv\n'}
+[1.858946] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/ament_index/resource_index/packages/arm_bringup\n'}
+[1.859105] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/cmake/arm_bringupConfig.cmake\n'}
+[1.859338] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/cmake/arm_bringupConfig-version.cmake\n'}
+[1.859518] (arm_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/package.xml\n'}
+[1.868610] (arm_bringup) CommandEnded: {'returncode': 0}
+[1.888044] (-) TimerEvent: {}
+[1.995033] (-) TimerEvent: {}
+[2.122776] (-) TimerEvent: {}
+[2.141638] (arm_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_arm_msgs\n'}
+[2.232215] (-) TimerEvent: {}
+[2.337287] (-) TimerEvent: {}
+[2.438004] (-) TimerEvent: {}
+[2.458021] (arm_bringup) JobEnded: {'identifier': 'arm_bringup', 'rc': 0}
+[2.466977] (arm_controller) JobStarted: {'identifier': 'arm_controller'}
+[2.544669] (-) TimerEvent: {}
+[2.599409] (arm_controller) JobProgress: {'identifier': 'arm_controller', 'progress': 'cmake'}
+[2.636338] (arm_controller) JobProgress: {'identifier': 'arm_controller', 'progress': 'build'}
+[2.636677] (arm_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_controller', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.647941] (-) TimerEvent: {}
+[2.719719] (arm_msgs) StdoutLine: {'line': b'[ 23%] Built target arm_msgs__rosidl_typesupport_cpp\n'}
+[2.748098] (-) TimerEvent: {}
+[2.849741] (-) TimerEvent: {}
+[2.952388] (-) TimerEvent: {}
+[3.024229] (arm_msgs) StdoutLine: {'line': b'[ 34%] Built target arm_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.059235] (-) TimerEvent: {}
+[3.162299] (-) TimerEvent: {}
+[3.266574] (-) TimerEvent: {}
+[3.371586] (-) TimerEvent: {}
+[3.412365] (arm_msgs) StdoutLine: {'line': b'[ 46%] Built target arm_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.473009] (-) TimerEvent: {}
+[3.582610] (-) TimerEvent: {}
+[3.684412] (-) TimerEvent: {}
+[3.729737] (arm_controller) StdoutLine: {'line': b'[ 50%] Built target slider_control\n'}
+[3.784966] (-) TimerEvent: {}
+[3.802315] (arm_msgs) StdoutLine: {'line': b'[ 57%] Built target arm_msgs__rosidl_typesupport_introspection_c\n'}
+[3.888210] (-) TimerEvent: {}
+[3.989091] (-) TimerEvent: {}
+[4.033914] (arm_controller) StdoutLine: {'line': b'[100%] Built target arm_controller\n'}
+[4.089622] (-) TimerEvent: {}
+[4.099732] (arm_msgs) StdoutLine: {'line': b'[ 68%] Built target arm_msgs__rosidl_typesupport_c\n'}
+[4.189784] (-) TimerEvent: {}
+[4.297636] (-) TimerEvent: {}
+[4.341593] (arm_controller) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_copy_arm_controller\n'}
+[4.398226] (-) TimerEvent: {}
+[4.417712] (arm_msgs) StdoutLine: {'line': b'[ 79%] Built target arm_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.503831] (-) TimerEvent: {}
+[4.608711] (-) TimerEvent: {}
+[4.710668] (-) TimerEvent: {}
+[4.813565] (-) TimerEvent: {}
+[4.914791] (-) TimerEvent: {}
+[5.017590] (-) TimerEvent: {}
+[5.123554] (-) TimerEvent: {}
+[5.225651] (-) TimerEvent: {}
+[5.326266] (-) TimerEvent: {}
+[5.429362] (-) TimerEvent: {}
+[5.533578] (-) TimerEvent: {}
+[5.638601] (-) TimerEvent: {}
+[5.739571] (-) TimerEvent: {}
+[5.840571] (-) TimerEvent: {}
+[5.943280] (-) TimerEvent: {}
+[6.047762] (-) TimerEvent: {}
+[6.148612] (-) TimerEvent: {}
+[6.253833] (-) TimerEvent: {}
+[6.357828] (-) TimerEvent: {}
+[6.468566] (-) TimerEvent: {}
+[6.571010] (-) TimerEvent: {}
+[6.641145] (arm_controller) StdoutLine: {'line': b'running egg_info\n'}
+[6.655443] (arm_controller) StdoutLine: {'line': b'writing arm_controller.egg-info/PKG-INFO\n'}
+[6.659856] (arm_controller) StdoutLine: {'line': b'writing dependency_links to arm_controller.egg-info/dependency_links.txt\n'}
+[6.669580] (arm_controller) StdoutLine: {'line': b'writing top-level names to arm_controller.egg-info/top_level.txt\n'}
+[6.674628] (-) TimerEvent: {}
+[6.706700] (arm_controller) StdoutLine: {'line': b"reading manifest file 'arm_controller.egg-info/SOURCES.txt'\n"}
+[6.719570] (arm_controller) StdoutLine: {'line': b"writing manifest file 'arm_controller.egg-info/SOURCES.txt'\n"}
+[6.779271] (-) TimerEvent: {}
+[6.882648] (-) TimerEvent: {}
+[6.943670] (arm_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[6.948903] (arm_msgs) StdoutLine: {'line': b'writing arm_msgs.egg-info/PKG-INFO\n'}
+[6.949650] (arm_controller) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_arm_controller_egg\n'}
+[6.955590] (arm_msgs) StdoutLine: {'line': b'writing dependency_links to arm_msgs.egg-info/dependency_links.txt\n'}
+[6.958627] (arm_msgs) StdoutLine: {'line': b'writing top-level names to arm_msgs.egg-info/top_level.txt\n'}
+[6.983995] (arm_msgs) StdoutLine: {'line': b"reading manifest file 'arm_msgs.egg-info/SOURCES.txt'\n"}
+[6.985165] (-) TimerEvent: {}
+[7.000715] (arm_msgs) StdoutLine: {'line': b"writing manifest file 'arm_msgs.egg-info/SOURCES.txt'\n"}
+[7.035283] (arm_controller) CommandEnded: {'returncode': 0}
+[7.085390] (-) TimerEvent: {}
+[7.189331] (-) TimerEvent: {}
+[7.198753] (arm_msgs) StdoutLine: {'line': b'[ 79%] Built target ament_cmake_python_build_arm_msgs_egg\n'}
+[7.291006] (-) TimerEvent: {}
+[7.391717] (-) TimerEvent: {}
+[7.415574] (arm_msgs) StdoutLine: {'line': b'[ 79%] Built target arm_msgs\n'}
+[7.449198] (arm_controller) JobProgress: {'identifier': 'arm_controller', 'progress': 'install'}
+[7.449410] (arm_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/arm_ws/build/arm_controller'], 'cwd': '/home/ros/arm_ws/build/arm_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.494988] (-) TimerEvent: {}
+[7.500987] (arm_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.501243] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/arm_controller.xml\n'}
+[7.501366] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/pythonpath.sh\n'}
+[7.502078] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/pythonpath.dsv\n'}
+[7.502293] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller-0.0.0-py3.10.egg-info\n'}
+[7.502411] (arm_controller) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[7.502564] (arm_controller) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[7.506713] (arm_controller) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[7.507239] (arm_controller) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[7.507449] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller\n'}
+[7.509832] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller/slider_control.py\n'}
+[7.510010] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller/__init__.py\n'}
+[7.598985] (-) TimerEvent: {}
+[7.668650] (arm_msgs) StdoutLine: {'line': b'[ 80%] Built target arm_msgs__py\n'}
+[7.700615] (-) TimerEvent: {}
+[7.750554] (arm_controller) StdoutLine: {'line': b"Listing '/home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller'...\n"}
+[7.804057] (-) TimerEvent: {}
+[7.804936] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/lib/arm_controller/slider_control\n'}
+[7.820840] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/lib/libarm_controller.so\n'}
+[7.826573] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/include/include\n'}
+[7.827047] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/include/include/arm_controller\n'}
+[7.828011] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/include/include/arm_controller/arm_interface.hpp\n'}
+[7.828621] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/launch\n'}
+[7.829077] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/launch/controller.launch.py\n'}
+[7.829299] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/launch/slider_controller.launch.py\n'}
+[7.832752] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/config\n'}
+[7.833450] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/config/arm_controllers.yaml\n'}
+[7.835906] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/lib/arm_controller/slider_control.py\n'}
+[7.836113] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/library_path.sh\n'}
+[7.836296] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/library_path.dsv\n'}
+[7.836507] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/ament_index/resource_index/package_run_dependencies/arm_controller\n'}
+[7.840550] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/ament_index/resource_index/parent_prefix_path/arm_controller\n'}
+[7.840951] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.sh\n'}
+[7.841138] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.dsv\n'}
+[7.841323] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/path.sh\n'}
+[7.841435] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/path.dsv\n'}
+[7.846924] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/local_setup.bash\n'}
+[7.847229] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/local_setup.sh\n'}
+[7.847397] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/local_setup.zsh\n'}
+[7.848888] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/local_setup.dsv\n'}
+[7.849276] (arm_controller) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_controller/share/arm_controller/package.dsv\n'}
+[7.853003] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/ament_index/resource_index/packages/arm_controller\n'}
+[7.853420] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/arm_controller\n'}
+[7.855038] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.855293] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.856922] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.857285] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig.cmake\n'}
+[7.858155] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig-version.cmake\n'}
+[7.858428] (arm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/package.xml\n'}
+[7.864936] (arm_controller) CommandEnded: {'returncode': 0}
+[7.904572] (-) TimerEvent: {}
+[7.971172] (arm_msgs) StdoutLine: {'line': b'[ 90%] Built target arm_msgs__rosidl_generator_py\n'}
+[8.009594] (-) TimerEvent: {}
+[8.113565] (-) TimerEvent: {}
+[8.219461] (-) TimerEvent: {}
+[8.234445] (arm_msgs) StdoutLine: {'line': b'[ 93%] Built target arm_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[8.322331] (-) TimerEvent: {}
+[8.429623] (-) TimerEvent: {}
+[8.465702] (arm_controller) JobEnded: {'identifier': 'arm_controller', 'rc': 0}
+[8.473611] (arm_description) JobStarted: {'identifier': 'arm_description'}
+[8.476777] (arm_msgs) StdoutLine: {'line': b'[ 96%] Built target arm_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[8.526598] (arm_description) JobProgress: {'identifier': 'arm_description', 'progress': 'cmake'}
+[8.531611] (-) TimerEvent: {}
+[8.550673] (arm_description) JobProgress: {'identifier': 'arm_description', 'progress': 'build'}
+[8.550855] (arm_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_description', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.640112] (-) TimerEvent: {}
+[8.740907] (-) TimerEvent: {}
+[8.800733] (arm_msgs) StdoutLine: {'line': b'[100%] Built target arm_msgs__rosidl_typesupport_c__pyext\n'}
+[8.841055] (-) TimerEvent: {}
+[8.893035] (arm_msgs) CommandEnded: {'returncode': 0}
+[8.943589] (-) TimerEvent: {}
+[8.978755] (arm_description) CommandEnded: {'returncode': 0}
+[9.044757] (-) TimerEvent: {}
+[9.149115] (-) TimerEvent: {}
+[9.249191] (arm_description) JobProgress: {'identifier': 'arm_description', 'progress': 'install'}
+[9.249443] (-) TimerEvent: {}
+[9.250302] (arm_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/arm_ws/build/arm_description'], 'cwd': '/home/ros/arm_ws/build/arm_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.349589] (-) TimerEvent: {}
+[9.353812] (arm_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.354244] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/launch\n'}
+[9.354410] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/launch/display.launch.py\n'}
+[9.354579] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/launch/gazebo.launch.py\n'}
+[9.354702] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes\n'}
+[9.354830] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/triangular_link.STL\n'}
+[9.354955] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/basement.STL\n'}
+[9.356894] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/plate.STL\n'}
+[9.357110] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/base_plate.STL\n'}
+[9.357233] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/horizontal_arm.STL\n'}
+[9.357345] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/right_finger.STL\n'}
+[9.357452] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/vertical_drive_arm.STL\n'}
+[9.361981] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/forward_drive_arm.STL\n'}
+[9.364903] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/link.STL\n'}
+[9.365210] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/round_plate.STL\n'}
+[9.369586] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/claw_support.STL\n'}
+[9.369827] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/left_finger.STL\n'}
+[9.370017] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/servo_plate.STL\n'}
+[9.370140] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models\n'}
+[9.370250] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane\n'}
+[9.370356] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model.config\n'}
+[9.370460] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_4.sdf\n'}
+[9.370642] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_3.sdf\n'}
+[9.370852] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model.sdf\n'}
+[9.370998] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_2.sdf\n'}
+[9.371134] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun\n'}
+[9.371272] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun/model.config\n'}
+[9.371405] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun/model-1_4.sdf\n'}
+[9.378951] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun/model-1_3.sdf\n'}
+[9.379170] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun/model.sdf\n'}
+[9.379294] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun/model-1_2.sdf\n'}
+[9.379402] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/urdf\n'}
+[9.384938] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/urdf/arm_ros2_control.xacro\n'}
+[9.385290] (arm_description) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_description/share/arm_description/urdf/arm_gazebo.xacro\n'}
+[9.385561] (arm_description) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_description/share/arm_description/urdf/arm.urdf.xacro\n'}
+[9.385787] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/rviz\n'}
+[9.385984] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/rviz/display.rviz\n'}
+[9.386160] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/ament_index/resource_index/package_run_dependencies/arm_description\n'}
+[9.386386] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/ament_index/resource_index/parent_prefix_path/arm_description\n'}
+[9.392075] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.sh\n'}
+[9.398783] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.dsv\n'}
+[9.399447] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/environment/path.sh\n'}
+[9.401939] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/environment/path.dsv\n'}
+[9.402247] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/local_setup.bash\n'}
+[9.403527] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/local_setup.sh\n'}
+[9.409882] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/local_setup.zsh\n'}
+[9.410127] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/local_setup.dsv\n'}
+[9.410360] (arm_description) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_description/share/arm_description/package.dsv\n'}
+[9.410742] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/ament_index/resource_index/packages/arm_description\n'}
+[9.411035] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig.cmake\n'}
+[9.411284] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig-version.cmake\n'}
+[9.417920] (arm_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/package.xml\n'}
+[9.418177] (arm_description) CommandEnded: {'returncode': 0}
+[9.450839] (-) TimerEvent: {}
+[9.556639] (-) TimerEvent: {}
+[9.657413] (-) TimerEvent: {}
+[9.762414] (-) TimerEvent: {}
+[9.788921] (arm_description) JobEnded: {'identifier': 'arm_description', 'rc': 0}
+[9.798713] (arm_firmware) JobStarted: {'identifier': 'arm_firmware'}
+[9.853317] (arm_firmware) JobProgress: {'identifier': 'arm_firmware', 'progress': 'cmake'}
+[9.864197] (-) TimerEvent: {}
+[9.867221] (arm_firmware) JobProgress: {'identifier': 'arm_firmware', 'progress': 'build'}
+[9.874066] (arm_firmware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_firmware', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_firmware', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_firmware'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.965603] (-) TimerEvent: {}
+[10.068589] (-) TimerEvent: {}
+[10.172664] (-) TimerEvent: {}
+[10.274730] (-) TimerEvent: {}
+[10.378632] (-) TimerEvent: {}
+[10.479293] (-) TimerEvent: {}
+[10.521968] (arm_firmware) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_arm_firmware\n'}
+[10.581591] (-) TimerEvent: {}
+[10.683763] (-) TimerEvent: {}
+[10.773244] (arm_firmware) StdoutLine: {'line': b'[ 50%] Built target simple_serial_receiver\n'}
+[10.787069] (-) TimerEvent: {}
+[10.890681] (-) TimerEvent: {}
+[10.992537] (-) TimerEvent: {}
+[11.081688] (arm_firmware) StdoutLine: {'line': b'[100%] Built target simple_serial_transmitter\n'}
+[11.092713] (-) TimerEvent: {}
+[11.198015] (-) TimerEvent: {}
+[11.301729] (-) TimerEvent: {}
+[11.407142] (-) TimerEvent: {}
+[11.507965] (-) TimerEvent: {}
+[11.610130] (-) TimerEvent: {}
+[11.684074] (arm_msgs) JobProgress: {'identifier': 'arm_msgs', 'progress': 'install'}
+[11.684270] (arm_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/arm_ws/build/arm_msgs'], 'cwd': '/home/ros/arm_ws/build/arm_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[11.710796] (-) TimerEvent: {}
+[11.761440] (arm_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.762785] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/ament_index/resource_index/rosidl_interfaces/arm_msgs\n'}
+[11.763047] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs\n'}
+[11.763260] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg\n'}
+[11.768537] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[11.768972] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv\n'}
+[11.772596] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/euler_to_quaternion.h\n'}
+[11.772971] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail\n'}
+[11.773157] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__functions.c\n'}
+[11.773317] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__functions.c\n'}
+[11.773507] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__struct.h\n'}
+[11.773796] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__functions.c\n'}
+[11.773961] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__functions.h\n'}
+[11.774119] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__type_support.h\n'}
+[11.774271] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__type_support.h\n'}
+[11.774423] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__functions.h\n'}
+[11.781143] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__type_support.h\n'}
+[11.781651] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__functions.h\n'}
+[11.781964] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__struct.h\n'}
+[11.786492] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__struct.h\n'}
+[11.790919] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/add_two_ints.h\n'}
+[11.791260] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/quaternion_to_euler.h\n'}
+[11.791967] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action\n'}
+[11.792380] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/fibonacci.h\n'}
+[11.799404] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/arm_task.h\n'}
+[11.800660] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail\n'}
+[11.800933] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__functions.c\n'}
+[11.803188] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__struct.h\n'}
+[11.808108] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__functions.h\n'}
+[11.808798] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__struct.h\n'}
+[11.808991] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__functions.c\n'}
+[11.809226] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__functions.h\n'}
+[11.817815] (-) TimerEvent: {}
+[11.818409] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__type_support.h\n'}
+[11.819042] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__type_support.h\n'}
+[11.819304] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/library_path.sh\n'}
+[11.823383] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/library_path.dsv\n'}
+[11.827214] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_generator_c.so\n'}
+[11.832368] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs\n'}
+[11.833322] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg\n'}
+[11.833682] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[11.840174] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv\n'}
+[11.841735] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail\n'}
+[11.842147] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_fastrtps_c.h\n'}
+[11.845169] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_fastrtps_c.h\n'}
+[11.845346] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__rosidl_typesupport_fastrtps_c.h\n'}
+[11.845769] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action\n'}
+[11.852419] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail\n'}
+[11.852925] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_fastrtps_c.h\n'}
+[11.853237] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h\n'}
+[11.857413] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[11.858009] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs\n'}
+[11.858314] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv\n'}
+[11.858983] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/euler_to_quaternion.hpp\n'}
+[11.859219] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/quaternion_to_euler.hpp\n'}
+[11.859372] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail\n'}
+[11.871304] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__traits.hpp\n'}
+[11.876197] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__struct.hpp\n'}
+[11.876850] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__struct.hpp\n'}
+[11.877293] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__builder.hpp\n'}
+[11.883972] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__traits.hpp\n'}
+[11.884277] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__traits.hpp\n'}
+[11.884806] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__builder.hpp\n'}
+[11.885143] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__builder.hpp\n'}
+[11.885350] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__struct.hpp\n'}
+[11.898048] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/add_two_ints.hpp\n'}
+[11.898343] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action\n'}
+[11.898667] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/arm_task.hpp\n'}
+[11.898882] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail\n'}
+[11.899231] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__builder.hpp\n'}
+[11.906696] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__traits.hpp\n'}
+[11.907358] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__builder.hpp\n'}
+[11.912775] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__traits.hpp\n'}
+[11.912945] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__struct.hpp\n'}
+[11.913249] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__struct.hpp\n'}
+[11.917777] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/fibonacci.hpp\n'}
+[11.918089] (-) TimerEvent: {}
+[11.921584] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs\n'}
+[11.922205] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg\n'}
+[11.922435] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[11.927934] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv\n'}
+[11.928169] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail\n'}
+[11.928504] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.933622] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.934004] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/dds_fastrtps\n'}
+[11.934270] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.938702] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action\n'}
+[11.939101] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail\n'}
+[11.939313] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/dds_fastrtps\n'}
+[11.939484] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.939629] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.939740] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[11.939851] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs\n'}
+[11.939982] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg\n'}
+[11.940234] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[11.940364] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv\n'}
+[11.948012] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail\n'}
+[11.948403] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_introspection_c.h\n'}
+[11.948869] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__type_support.c\n'}
+[11.955095] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_introspection_c.h\n'}
+[11.960079] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__rosidl_typesupport_introspection_c.h\n'}
+[11.961120] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__type_support.c\n'}
+[11.963719] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__type_support.c\n'}
+[11.963999] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action\n'}
+[11.964211] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail\n'}
+[11.964419] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__type_support.c\n'}
+[11.964791] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__type_support.c\n'}
+[11.965036] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__rosidl_typesupport_introspection_c.h\n'}
+[11.965287] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_introspection_c.h\n'}
+[11.973716] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_introspection_c.so\n'}
+[11.974068] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_c.so\n'}
+[11.974285] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs\n'}
+[11.974527] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv\n'}
+[11.974755] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail\n'}
+[11.981738] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__type_support.cpp\n'}
+[11.982248] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__type_support.cpp\n'}
+[11.983004] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__type_support.cpp\n'}
+[11.987723] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.992726] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/add_two_ints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.993251] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.993828] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action\n'}
+[11.994142] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail\n'}
+[11.994361] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.003884] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.004124] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/fibonacci__type_support.cpp\n'}
+[12.004558] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/include/arm_msgs/arm_msgs/action/detail/arm_task__type_support.cpp\n'}
+[12.004856] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[12.005236] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_typesupport_cpp.so\n'}
+[12.012793] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/pythonpath.sh\n'}
+[12.013083] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/pythonpath.dsv\n'}
+[12.013238] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info\n'}
+[12.013852] (arm_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[12.014185] (arm_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[12.014418] (arm_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[12.014623] (arm_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[12.014764] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs\n'}
+[12.014896] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.015105] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[12.015263] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.015395] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/libarm_msgs__rosidl_generator_py.so\n'}
+[12.021848] (-) TimerEvent: {}
+[12.022877] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.029574] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.029930] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/__init__.py\n'}
+[12.030266] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv\n'}
+[12.030422] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_add_two_ints.py\n'}
+[12.030623] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_add_two_ints_s.c\n'}
+[12.030823] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_quaternion_to_euler.py\n'}
+[12.031020] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/__init__.py\n'}
+[12.031219] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_euler_to_quaternion_s.c\n'}
+[12.039708] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_euler_to_quaternion.py\n'}
+[12.040084] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv/_quaternion_to_euler_s.c\n'}
+[12.041283] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action\n'}
+[12.044687] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_fibonacci.py\n'}
+[12.045365] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_arm_task.py\n'}
+[12.045687] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_arm_task_s.c\n'}
+[12.045905] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/__init__.py\n'}
+[12.046142] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action/_fibonacci_s.c\n'}
+[12.046392] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.122003] (-) TimerEvent: {}
+[12.226242] (-) TimerEvent: {}
+[12.308622] (arm_msgs) StdoutLine: {'line': b"Listing '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs'...\n"}
+[12.309339] (arm_msgs) StdoutLine: {'line': b"Listing '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/action'...\n"}
+[12.310039] (arm_msgs) StdoutLine: {'line': b"Listing '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/srv'...\n"}
+[12.329553] (-) TimerEvent: {}
+[12.365118] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.370957] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.390861] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages/arm_msgs/arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.393964] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/lib/libarm_msgs__rosidl_generator_py.so\n'}
+[12.398902] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/AddTwoInts.idl\n'}
+[12.404594] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion.idl\n'}
+[12.405265] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler.idl\n'}
+[12.406340] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/action/Fibonacci.idl\n'}
+[12.406952] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/action/ArmTask.idl\n'}
+[12.407336] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/AddTwoInts.srv\n'}
+[12.409769] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/AddTwoInts_Request.msg\n'}
+[12.410013] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/AddTwoInts_Response.msg\n'}
+[12.410138] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion.srv\n'}
+[12.410247] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion_Request.msg\n'}
+[12.410369] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/EulerToQuaternion_Response.msg\n'}
+[12.412601] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler.srv\n'}
+[12.415619] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler_Request.msg\n'}
+[12.416092] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/srv/QuaternionToEuler_Response.msg\n'}
+[12.416413] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/action/Fibonacci.action\n'}
+[12.416887] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/action/ArmTask.action\n'}
+[12.421077] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/ament_index/resource_index/package_run_dependencies/arm_msgs\n'}
+[12.421527] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/ament_index/resource_index/parent_prefix_path/arm_msgs\n'}
+[12.422899] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/ament_prefix_path.sh\n'}
+[12.423155] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/ament_prefix_path.dsv\n'}
+[12.423285] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/path.sh\n'}
+[12.423446] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/environment/path.dsv\n'}
+[12.428874] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/local_setup.bash\n'}
+[12.430385] (-) TimerEvent: {}
+[12.431544] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/local_setup.sh\n'}
+[12.431982] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/local_setup.zsh\n'}
+[12.437115] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/local_setup.dsv\n'}
+[12.437564] (arm_msgs) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/package.dsv\n'}
+[12.437828] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/ament_index/resource_index/packages/arm_msgs\n'}
+[12.438446] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_cExport.cmake\n'}
+[12.443257] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[12.447048] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[12.447440] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[12.451087] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_cppExport.cmake\n'}
+[12.451267] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[12.455968] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[12.458833] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[12.462545] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[12.463230] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cExport.cmake\n'}
+[12.463459] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[12.469541] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[12.470544] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[12.471071] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[12.471324] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[12.477064] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_pyExport.cmake\n'}
+[12.477375] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/export_arm_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[12.477612] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[12.478099] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.478365] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.480731] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.480949] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[12.481146] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[12.481256] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[12.481436] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgsConfig.cmake\n'}
+[12.481609] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/cmake/arm_msgsConfig-version.cmake\n'}
+[12.481719] (arm_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_msgs/share/arm_msgs/package.xml\n'}
+[12.500519] (arm_msgs) CommandEnded: {'returncode': 0}
+[12.532172] (-) TimerEvent: {}
+[12.633941] (-) TimerEvent: {}
+[12.739118] (-) TimerEvent: {}
+[12.846766] (-) TimerEvent: {}
+[12.947973] (-) TimerEvent: {}
+[13.048992] (-) TimerEvent: {}
+[13.150855] (-) TimerEvent: {}
+[13.251594] (-) TimerEvent: {}
+[13.353131] (-) TimerEvent: {}
+[13.457431] (-) TimerEvent: {}
+[13.559095] (-) TimerEvent: {}
+[13.624191] (arm_firmware) StdoutLine: {'line': b'running egg_info\n'}
+[13.624451] (arm_firmware) StdoutLine: {'line': b'writing arm_firmware.egg-info/PKG-INFO\n'}
+[13.627893] (arm_firmware) StdoutLine: {'line': b'writing dependency_links to arm_firmware.egg-info/dependency_links.txt\n'}
+[13.628063] (arm_firmware) StdoutLine: {'line': b'writing top-level names to arm_firmware.egg-info/top_level.txt\n'}
+[13.638195] (arm_firmware) StdoutLine: {'line': b"reading manifest file 'arm_firmware.egg-info/SOURCES.txt'\n"}
+[13.652539] (arm_firmware) StdoutLine: {'line': b"writing manifest file 'arm_firmware.egg-info/SOURCES.txt'\n"}
+[13.665361] (-) TimerEvent: {}
+[13.768021] (-) TimerEvent: {}
+[13.869890] (-) TimerEvent: {}
+[13.909647] (arm_firmware) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_arm_firmware_egg\n'}
+[13.973805] (-) TimerEvent: {}
+[14.024419] (arm_firmware) CommandEnded: {'returncode': 0}
+[14.074583] (-) TimerEvent: {}
+[14.178104] (-) TimerEvent: {}
+[14.280970] (-) TimerEvent: {}
+[14.384203] (-) TimerEvent: {}
+[14.465493] (arm_firmware) JobProgress: {'identifier': 'arm_firmware', 'progress': 'install'}
+[14.466153] (arm_firmware) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/arm_ws/build/arm_firmware'], 'cwd': '/home/ros/arm_ws/build/arm_firmware', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_firmware'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.484879] (-) TimerEvent: {}
+[14.576852] (arm_firmware) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.584046] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/pythonpath.sh\n'}
+[14.584426] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/pythonpath.dsv\n'}
+[14.584660] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware-0.0.0-py3.10.egg-info\n'}
+[14.584834] (arm_firmware) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[14.584989] (-) TimerEvent: {}
+[14.587223] (arm_firmware) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[14.591591] (arm_firmware) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[14.592272] (arm_firmware) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[14.594152] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware\n'}
+[14.600565] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware/simple_serial_transmitter.py\n'}
+[14.600998] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware/__init__.py\n'}
+[14.601234] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware/simple_serial_receiver.py\n'}
+[14.685218] (-) TimerEvent: {}
+[14.788182] (-) TimerEvent: {}
+[14.850016] (arm_firmware) StdoutLine: {'line': b"Listing '/home/ros/arm_ws/install/arm_firmware/local/lib/python3.10/dist-packages/arm_firmware'...\n"}
+[14.888417] (-) TimerEvent: {}
+[14.895995] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/lib/arm_firmware/simple_serial_receiver\n'}
+[14.910547] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/lib/arm_firmware/simple_serial_transmitter\n'}
+[14.912749] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/lib/arm_firmware/simple_serial_transmitter.py\n'}
+[14.916252] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/lib/arm_firmware/simple_serial_receiver.py\n'}
+[14.916736] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/ament_index/resource_index/package_run_dependencies/arm_firmware\n'}
+[14.916939] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/ament_index/resource_index/parent_prefix_path/arm_firmware\n'}
+[14.917223] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/ament_prefix_path.sh\n'}
+[14.917346] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/ament_prefix_path.dsv\n'}
+[14.920933] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/path.sh\n'}
+[14.921931] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/environment/path.dsv\n'}
+[14.922218] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/local_setup.bash\n'}
+[14.922439] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/local_setup.sh\n'}
+[14.926696] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/local_setup.zsh\n'}
+[14.926937] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/local_setup.dsv\n'}
+[14.927080] (arm_firmware) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/package.dsv\n'}
+[14.929208] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/ament_index/resource_index/packages/arm_firmware\n'}
+[14.929993] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/cmake/arm_firmwareConfig.cmake\n'}
+[14.930289] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/cmake/arm_firmwareConfig-version.cmake\n'}
+[14.930449] (arm_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_firmware/share/arm_firmware/package.xml\n'}
+[14.946678] (arm_firmware) CommandEnded: {'returncode': 0}
+[14.988809] (-) TimerEvent: {}
+[15.024098] (arm_msgs) JobEnded: {'identifier': 'arm_msgs', 'rc': 0}
+[15.029333] (arm_moveit) JobStarted: {'identifier': 'arm_moveit'}
+[15.074055] (arm_moveit) JobProgress: {'identifier': 'arm_moveit', 'progress': 'cmake'}
+[15.096670] (arm_moveit) JobProgress: {'identifier': 'arm_moveit', 'progress': 'build'}
+[15.096900] (-) TimerEvent: {}
+[15.101812] (arm_moveit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_moveit', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_moveit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_moveit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.199228] (-) TimerEvent: {}
+[15.299977] (-) TimerEvent: {}
+[15.401125] (-) TimerEvent: {}
+[15.504047] (-) TimerEvent: {}
+[15.539994] (arm_firmware) JobEnded: {'identifier': 'arm_firmware', 'rc': 0}
+[15.544539] (arm_cpp_examples) JobStarted: {'identifier': 'arm_cpp_examples'}
+[15.591787] (arm_moveit) CommandEnded: {'returncode': 0}
+[15.611045] (-) TimerEvent: {}
+[15.675391] (arm_cpp_examples) JobProgress: {'identifier': 'arm_cpp_examples', 'progress': 'cmake'}
+[15.693890] (arm_cpp_examples) JobProgress: {'identifier': 'arm_cpp_examples', 'progress': 'build'}
+[15.705103] (arm_cpp_examples) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_cpp_examples', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_cpp_examples', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ros/arm_ws/install/arm_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_cpp_examples'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble')]), 'shell': False}
+[15.727137] (-) TimerEvent: {}
+[15.836143] (-) TimerEvent: {}
+[15.940197] (-) TimerEvent: {}
+[15.951698] (arm_moveit) JobProgress: {'identifier': 'arm_moveit', 'progress': 'install'}
+[15.961857] (arm_moveit) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/arm_ws/build/arm_moveit'], 'cwd': '/home/ros/arm_ws/build/arm_moveit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_moveit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[16.043500] (arm_moveit) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.044088] (-) TimerEvent: {}
+[16.049700] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/launch\n'}
+[16.050057] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/launch/moveit.launch.py\n'}
+[16.050268] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config\n'}
+[16.050410] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/initial_positions.yaml\n'}
+[16.050599] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/moveit_controllers.yaml\n'}
+[16.050722] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/pilz_cartesian_limits.yaml\n'}
+[16.050827] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/kinematics.yaml\n'}
+[16.050950] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/arm.srdf\n'}
+[16.051057] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/moveit.rviz\n'}
+[16.051240] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/config/joint_limits.yaml\n'}
+[16.051445] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/ament_index/resource_index/package_run_dependencies/arm_moveit\n'}
+[16.061637] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/ament_index/resource_index/parent_prefix_path/arm_moveit\n'}
+[16.061936] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/environment/ament_prefix_path.sh\n'}
+[16.062083] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/environment/ament_prefix_path.dsv\n'}
+[16.062331] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/environment/path.sh\n'}
+[16.065519] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/environment/path.dsv\n'}
+[16.065854] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/local_setup.bash\n'}
+[16.066142] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/local_setup.sh\n'}
+[16.066432] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/local_setup.zsh\n'}
+[16.070152] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/local_setup.dsv\n'}
+[16.070583] (arm_moveit) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/package.dsv\n'}
+[16.076093] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/ament_index/resource_index/packages/arm_moveit\n'}
+[16.080620] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/cmake/arm_moveitConfig.cmake\n'}
+[16.081018] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/cmake/arm_moveitConfig-version.cmake\n'}
+[16.081288] (arm_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_moveit/share/arm_moveit/package.xml\n'}
+[16.091849] (arm_moveit) CommandEnded: {'returncode': 0}
+[16.146097] (-) TimerEvent: {}
+[16.247004] (-) TimerEvent: {}
+[16.348739] (-) TimerEvent: {}
+[16.451546] (-) TimerEvent: {}
+[16.477526] (arm_moveit) JobEnded: {'identifier': 'arm_moveit', 'rc': 0}
+[16.481425] (arm_py_examples) JobStarted: {'identifier': 'arm_py_examples'}
+[16.496547] (arm_cpp_examples) StdoutLine: {'line': b'[  9%] Built target simple_publisher\n'}
+[16.553588] (-) TimerEvent: {}
+[16.659627] (-) TimerEvent: {}
+[16.759987] (arm_cpp_examples) StdoutLine: {'line': b'[ 18%] Built target simple_subscriber\n'}
+[16.760276] (-) TimerEvent: {}
+[16.862570] (-) TimerEvent: {}
+[16.970390] (-) TimerEvent: {}
+[17.031797] (arm_cpp_examples) StdoutLine: {'line': b'[ 27%] Built target simple_parameter\n'}
+[17.072275] (-) TimerEvent: {}
+[17.179154] (-) TimerEvent: {}
+[17.256695] (arm_cpp_examples) StdoutLine: {'line': b'[ 36%] Built target simple_service_server\n'}
+[17.281048] (-) TimerEvent: {}
+[17.386718] (-) TimerEvent: {}
+[17.489174] (-) TimerEvent: {}
+[17.543227] (arm_cpp_examples) StdoutLine: {'line': b'[ 45%] Built target simple_service_client\n'}
+[17.589917] (-) TimerEvent: {}
+[17.692974] (-) TimerEvent: {}
+[17.794129] (-) TimerEvent: {}
+[17.843361] (arm_cpp_examples) StdoutLine: {'line': b'[ 54%] Built target simple_action_server\n'}
+[17.896173] (-) TimerEvent: {}
+[17.999569] (-) TimerEvent: {}
+[18.032808] (arm_cpp_examples) StdoutLine: {'line': b'[ 63%] Built target simple_action_server_node\n'}
+[18.099570] (-) TimerEvent: {}
+[18.201608] (-) TimerEvent: {}
+[18.280339] (arm_cpp_examples) StdoutLine: {'line': b'[ 72%] Built target simple_action_client\n'}
+[18.301766] (-) TimerEvent: {}
+[18.404663] (-) TimerEvent: {}
+[18.505290] (-) TimerEvent: {}
+[18.545559] (arm_cpp_examples) StdoutLine: {'line': b'[ 81%] Built target simple_action_client_node\n'}
+[18.606403] (-) TimerEvent: {}
+[18.711560] (-) TimerEvent: {}
+[18.812093] (-) TimerEvent: {}
+[18.914891] (-) TimerEvent: {}
+[19.017854] (-) TimerEvent: {}
+[19.120952] (-) TimerEvent: {}
+[19.222320] (arm_cpp_examples) StdoutLine: {'line': b'[ 90%] Built target simple_moveit_interface\n'}
+[19.224231] (-) TimerEvent: {}
+[19.327090] (-) TimerEvent: {}
+[19.429725] (-) TimerEvent: {}
+[19.506793] (arm_cpp_examples) StdoutLine: {'line': b'[100%] Built target simple_lifecycle_node\n'}
+[19.530575] (-) TimerEvent: {}
+[19.586652] (arm_cpp_examples) CommandEnded: {'returncode': 0}
+[19.633553] (-) TimerEvent: {}
+[19.738192] (-) TimerEvent: {}
+[19.842617] (-) TimerEvent: {}
+[19.944965] (-) TimerEvent: {}
+[20.046686] (-) TimerEvent: {}
+[20.151924] (-) TimerEvent: {}
+[20.255929] (-) TimerEvent: {}
+[20.358189] (-) TimerEvent: {}
+[20.460907] (-) TimerEvent: {}
+[20.562968] (-) TimerEvent: {}
+[20.645636] (arm_cpp_examples) JobProgress: {'identifier': 'arm_cpp_examples', 'progress': 'install'}
+[20.655286] (arm_cpp_examples) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/arm_ws/build/arm_cpp_examples'], 'cwd': '/home/ros/arm_ws/build/arm_cpp_examples', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ros/arm_ws/install/arm_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_cpp_examples'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble')]), 'shell': False}
+[20.666166] (-) TimerEvent: {}
+[20.735934] (arm_cpp_examples) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.748112] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_action_server_node\n'}
+[20.755882] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_action_client_node\n'}
+[20.765998] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_publisher\n'}
+[20.769072] (-) TimerEvent: {}
+[20.776999] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_subscriber\n'}
+[20.783111] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_parameter\n'}
+[20.793162] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_service_server\n'}
+[20.804461] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_service_client\n'}
+[20.808327] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_moveit_interface\n'}
+[20.817971] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/arm_cpp_examples/simple_lifecycle_node\n'}
+[20.829592] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/libsimple_action_server.so\n'}
+[20.837439] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/lib/libsimple_action_client.so\n'}
+[20.839330] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/package_run_dependencies/arm_cpp_examples\n'}
+[20.840617] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/parent_prefix_path/arm_cpp_examples\n'}
+[20.840876] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/ament_prefix_path.sh\n'}
+[20.844338] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/ament_prefix_path.dsv\n'}
+[20.844772] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/path.sh\n'}
+[20.844911] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/environment/path.dsv\n'}
+[20.845024] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.bash\n'}
+[20.845128] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.sh\n'}
+[20.845230] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.zsh\n'}
+[20.845345] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/local_setup.dsv\n'}
+[20.845447] (arm_cpp_examples) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/package.dsv\n'}
+[20.849992] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/packages/arm_cpp_examples\n'}
+[20.850351] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/ament_index/resource_index/rclcpp_components/arm_cpp_examples\n'}
+[20.850551] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/cmake/arm_cpp_examplesConfig.cmake\n'}
+[20.850793] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/cmake/arm_cpp_examplesConfig-version.cmake\n'}
+[20.851024] (arm_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_cpp_examples/share/arm_cpp_examples/package.xml\n'}
+[20.870896] (arm_cpp_examples) CommandEnded: {'returncode': 0}
+[20.872071] (-) TimerEvent: {}
+[20.983041] (-) TimerEvent: {}
+[21.088587] (-) TimerEvent: {}
+[21.190807] (-) TimerEvent: {}
+[21.295649] (-) TimerEvent: {}
+[21.400160] (-) TimerEvent: {}
+[21.505607] (-) TimerEvent: {}
+[21.606351] (-) TimerEvent: {}
+[21.707796] (-) TimerEvent: {}
+[21.808647] (-) TimerEvent: {}
+[21.917523] (-) TimerEvent: {}
+[22.009994] (arm_cpp_examples) JobEnded: {'identifier': 'arm_cpp_examples', 'rc': 0}
+[22.016326] (arm_remote) JobStarted: {'identifier': 'arm_remote'}
+[22.036617] (-) TimerEvent: {}
+[22.061730] (arm_remote) JobProgress: {'identifier': 'arm_remote', 'progress': 'cmake'}
+[22.077170] (arm_remote) JobProgress: {'identifier': 'arm_remote', 'progress': 'build'}
+[22.077398] (arm_remote) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_remote', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_remote', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ros/arm_ws/install/arm_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_remote'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble')]), 'shell': False}
+[22.141042] (-) TimerEvent: {}
+[22.244830] (-) TimerEvent: {}
+[22.349550] (-) TimerEvent: {}
+[22.454569] (-) TimerEvent: {}
+[22.557039] (-) TimerEvent: {}
+[22.628716] (arm_remote) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target task_server\x1b[0m\n'}
+[22.657910] (-) TimerEvent: {}
+[22.760917] (-) TimerEvent: {}
+[22.799783] (arm_remote) StdoutLine: {'line': b'[ 50%] Built target task_server\n'}
+[22.862269] (-) TimerEvent: {}
+[22.963735] (-) TimerEvent: {}
+[22.985045] (arm_remote) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target task_server_node\x1b[0m\n'}
+[23.063901] (-) TimerEvent: {}
+[23.170553] (-) TimerEvent: {}
+[23.183179] (arm_remote) StdoutLine: {'line': b'[100%] Built target task_server_node\n'}
+[23.275646] (-) TimerEvent: {}
+[23.376722] (-) TimerEvent: {}
+[23.479582] (-) TimerEvent: {}
+[23.580343] (-) TimerEvent: {}
+[23.676606] (arm_remote) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_copy_arm_remote\n'}
+[23.682611] (-) TimerEvent: {}
+[23.785901] (-) TimerEvent: {}
+[23.887325] (-) TimerEvent: {}
+[23.988700] (arm_py_examples) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/arm_py_examples', 'build', '--build-base', '/home/ros/arm_ws/build/arm_py_examples/build', 'install', '--record', '/home/ros/arm_ws/build/arm_py_examples/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ros/arm_ws/src/arm_py_examples', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:', 'USER': 'ros', 'LC_TIME': 'es_CO.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ros/arm_ws/install/arm_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ros', 'OLDPWD': '/home/ros', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_CO.UTF-8', 'MANAGERPID': '1022', 'SYSTEMD_EXEC_PID': '1648', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3316', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'ros', 'JOURNAL_STREAM': '8:21986', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ros', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380', 'INVOCATION_ID': 'edc79796a9204906952502603e82de6b', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_CO.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'es_CO.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_CO.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_CO.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_CO.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ros/arm_ws/build/arm_py_examples', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ros/arm_ws/build/arm_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages:/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_CO.UTF-8', 'LC_PAPER': 'es_CO.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ros/arm_ws/install/arm_msgs'}, 'shell': False}
+[23.993012] (-) TimerEvent: {}
+[24.097082] (-) TimerEvent: {}
+[24.200822] (-) TimerEvent: {}
+[24.301454] (-) TimerEvent: {}
+[24.409569] (-) TimerEvent: {}
+[24.509969] (-) TimerEvent: {}
+[24.611919] (-) TimerEvent: {}
+[24.712403] (-) TimerEvent: {}
+[24.812952] (-) TimerEvent: {}
+[24.916731] (-) TimerEvent: {}
+[25.021644] (-) TimerEvent: {}
+[25.123674] (-) TimerEvent: {}
+[25.229880] (-) TimerEvent: {}
+[25.331708] (-) TimerEvent: {}
+[25.435727] (-) TimerEvent: {}
+[25.536970] (-) TimerEvent: {}
+[25.641612] (-) TimerEvent: {}
+[25.742543] (-) TimerEvent: {}
+[25.844584] (-) TimerEvent: {}
+[25.945723] (-) TimerEvent: {}
+[26.046830] (-) TimerEvent: {}
+[26.149114] (-) TimerEvent: {}
+[26.253683] (-) TimerEvent: {}
+[26.356650] (-) TimerEvent: {}
+[26.458614] (-) TimerEvent: {}
+[26.562651] (-) TimerEvent: {}
+[26.668261] (-) TimerEvent: {}
+[26.681071] (arm_remote) StdoutLine: {'line': b'running egg_info\n'}
+[26.690820] (arm_remote) StdoutLine: {'line': b'writing arm_remote.egg-info/PKG-INFO\n'}
+[26.693654] (arm_remote) StdoutLine: {'line': b'writing dependency_links to arm_remote.egg-info/dependency_links.txt\n'}
+[26.701019] (arm_remote) StdoutLine: {'line': b'writing top-level names to arm_remote.egg-info/top_level.txt\n'}
+[26.734663] (arm_remote) StdoutLine: {'line': b"reading manifest file 'arm_remote.egg-info/SOURCES.txt'\n"}
+[26.739971] (arm_remote) StdoutLine: {'line': b"writing manifest file 'arm_remote.egg-info/SOURCES.txt'\n"}
+[26.770025] (-) TimerEvent: {}
+[26.873868] (-) TimerEvent: {}
+[26.923612] (arm_py_examples) StdoutLine: {'line': b'running egg_info\n'}
+[26.931438] (arm_py_examples) StdoutLine: {'line': b'writing ../../build/arm_py_examples/arm_py_examples.egg-info/PKG-INFO\n'}
+[26.935323] (arm_py_examples) StdoutLine: {'line': b'writing dependency_links to ../../build/arm_py_examples/arm_py_examples.egg-info/dependency_links.txt\n'}
+[26.941625] (arm_py_examples) StdoutLine: {'line': b'writing entry points to ../../build/arm_py_examples/arm_py_examples.egg-info/entry_points.txt\n'}
+[26.944790] (arm_py_examples) StdoutLine: {'line': b'writing requirements to ../../build/arm_py_examples/arm_py_examples.egg-info/requires.txt\n'}
+[26.946896] (arm_py_examples) StdoutLine: {'line': b'writing top-level names to ../../build/arm_py_examples/arm_py_examples.egg-info/top_level.txt\n'}
+[26.970919] (arm_py_examples) StdoutLine: {'line': b"reading manifest file '../../build/arm_py_examples/arm_py_examples.egg-info/SOURCES.txt'\n"}
+[26.975060] (-) TimerEvent: {}
+[26.978861] (arm_py_examples) StdoutLine: {'line': b"writing manifest file '../../build/arm_py_examples/arm_py_examples.egg-info/SOURCES.txt'\n"}
+[26.979280] (arm_py_examples) StdoutLine: {'line': b'running build\n'}
+[26.984601] (arm_py_examples) StdoutLine: {'line': b'running build_py\n'}
+[26.991670] (arm_py_examples) StdoutLine: {'line': b'running install\n'}
+[26.991968] (arm_py_examples) StdoutLine: {'line': b'running install_lib\n'}
+[27.001355] (arm_remote) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_arm_remote_egg\n'}
+[27.004397] (arm_py_examples) StdoutLine: {'line': b'running install_data\n'}
+[27.004747] (arm_py_examples) StdoutLine: {'line': b'running install_egg_info\n'}
+[27.021272] (arm_py_examples) StdoutLine: {'line': b"removing '/home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[27.025066] (arm_py_examples) StdoutLine: {'line': b'Copying ../../build/arm_py_examples/arm_py_examples.egg-info to /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples-0.0.0-py3.10.egg-info\n'}
+[27.034061] (arm_py_examples) StdoutLine: {'line': b'running install_scripts\n'}
+[27.076456] (-) TimerEvent: {}
+[27.107356] (arm_remote) CommandEnded: {'returncode': 0}
+[27.180008] (-) TimerEvent: {}
+[27.227587] (arm_py_examples) StdoutLine: {'line': b'Installing simple_action_client script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples\n'}
+[27.234452] (arm_py_examples) StdoutLine: {'line': b'Installing simple_action_server script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples\n'}
+[27.234967] (arm_py_examples) StdoutLine: {'line': b'Installing simple_parameter script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples\n'}
+[27.248151] (arm_py_examples) StdoutLine: {'line': b'Installing simple_publisher script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples\n'}
+[27.249791] (arm_py_examples) StdoutLine: {'line': b'Installing simple_service_client script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples\n'}
+[27.250159] (arm_py_examples) StdoutLine: {'line': b'Installing simple_service_server script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples\n'}
+[27.250394] (arm_py_examples) StdoutLine: {'line': b'Installing simple_subscriber script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples\n'}
+[27.250900] (arm_py_examples) StdoutLine: {'line': b"writing list of installed files to '/home/ros/arm_ws/build/arm_py_examples/install.log'\n"}
+[27.281189] (-) TimerEvent: {}
+[27.386646] (-) TimerEvent: {}
+[27.445399] (arm_py_examples) CommandEnded: {'returncode': 0}
+[27.492655] (-) TimerEvent: {}
+[27.542598] (arm_py_examples) JobEnded: {'identifier': 'arm_py_examples', 'rc': 0}
+[27.544507] (arm_utils) JobStarted: {'identifier': 'arm_utils'}
+[27.593628] (-) TimerEvent: {}
+[27.639845] (arm_utils) JobProgress: {'identifier': 'arm_utils', 'progress': 'cmake'}
+[27.673761] (arm_utils) JobProgress: {'identifier': 'arm_utils', 'progress': 'build'}
+[27.673975] (arm_utils) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_utils', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ros/arm_ws/install/arm_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_utils'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble')]), 'shell': False}
+[27.688770] (arm_remote) JobProgress: {'identifier': 'arm_remote', 'progress': 'install'}
+[27.688841] (arm_remote) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/arm_ws/build/arm_remote'], 'cwd': '/home/ros/arm_ws/build/arm_remote', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ros/arm_ws/install/arm_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_remote'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble')]), 'shell': False}
+[27.696636] (-) TimerEvent: {}
+[27.725578] (arm_remote) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.733798] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/lib/arm_remote/task_server_node\n'}
+[27.737583] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/pythonpath.sh\n'}
+[27.737841] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/pythonpath.dsv\n'}
+[27.738809] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info\n'}
+[27.741751] (arm_remote) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[27.742088] (arm_remote) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[27.742381] (arm_remote) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[27.748344] (arm_remote) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[27.748814] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote\n'}
+[27.749177] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote/alexa_interface.py\n'}
+[27.749442] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote/__init__.py\n'}
+[27.796835] (-) TimerEvent: {}
+[27.899798] (-) TimerEvent: {}
+[28.000229] (-) TimerEvent: {}
+[28.043562] (arm_remote) StdoutLine: {'line': b"Listing '/home/ros/arm_ws/install/arm_remote/local/lib/python3.10/dist-packages/arm_remote'...\n"}
+[28.079715] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/launch\n'}
+[28.080122] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/launch/remote_interface.launch.py\n'}
+[28.088873] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/lib/libtask_server.so\n'}
+[28.089140] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/lib/arm_remote/alexa_interface.py\n'}
+[28.089274] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/package_run_dependencies/arm_remote\n'}
+[28.097107] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/parent_prefix_path/arm_remote\n'}
+[28.097661] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/ament_prefix_path.sh\n'}
+[28.097986] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/ament_prefix_path.dsv\n'}
+[28.098259] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/path.sh\n'}
+[28.102798] (-) TimerEvent: {}
+[28.103294] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/environment/path.dsv\n'}
+[28.106588] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.bash\n'}
+[28.107982] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.sh\n'}
+[28.108203] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.zsh\n'}
+[28.108336] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/local_setup.dsv\n'}
+[28.108617] (arm_remote) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_remote/share/arm_remote/package.dsv\n'}
+[28.108796] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/packages/arm_remote\n'}
+[28.109008] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/ament_index/resource_index/rclcpp_components/arm_remote\n'}
+[28.109127] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/cmake/arm_remoteConfig.cmake\n'}
+[28.109260] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/cmake/arm_remoteConfig-version.cmake\n'}
+[28.115602] (arm_remote) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_remote/share/arm_remote/package.xml\n'}
+[28.126865] (arm_remote) CommandEnded: {'returncode': 0}
+[28.194701] (arm_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target angle_conversion\x1b[0m\n'}
+[28.210578] (-) TimerEvent: {}
+[28.312933] (-) TimerEvent: {}
+[28.339227] (arm_utils) StdoutLine: {'line': b'[100%] Built target angle_conversion\n'}
+[28.415631] (-) TimerEvent: {}
+[28.519643] (-) TimerEvent: {}
+[28.623837] (-) TimerEvent: {}
+[28.645375] (arm_utils) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_copy_arm_utils\n'}
+[28.730164] (-) TimerEvent: {}
+[28.746822] (arm_remote) JobEnded: {'identifier': 'arm_remote', 'rc': 0}
+[28.830795] (-) TimerEvent: {}
+[28.933757] (-) TimerEvent: {}
+[29.035012] (-) TimerEvent: {}
+[29.136642] (-) TimerEvent: {}
+[29.239937] (-) TimerEvent: {}
+[29.340875] (-) TimerEvent: {}
+[29.443734] (-) TimerEvent: {}
+[29.544306] (-) TimerEvent: {}
+[29.645894] (-) TimerEvent: {}
+[29.747114] (-) TimerEvent: {}
+[29.849665] (-) TimerEvent: {}
+[29.950674] (-) TimerEvent: {}
+[30.052850] (-) TimerEvent: {}
+[30.154996] (-) TimerEvent: {}
+[30.240835] (arm_utils) StdoutLine: {'line': b'running egg_info\n'}
+[30.245190] (arm_utils) StdoutLine: {'line': b'writing arm_utils.egg-info/PKG-INFO\n'}
+[30.245710] (arm_utils) StdoutLine: {'line': b'writing dependency_links to arm_utils.egg-info/dependency_links.txt\n'}
+[30.248869] (arm_utils) StdoutLine: {'line': b'writing top-level names to arm_utils.egg-info/top_level.txt\n'}
+[30.257568] (arm_utils) StdoutLine: {'line': b"reading manifest file 'arm_utils.egg-info/SOURCES.txt'\n"}
+[30.257980] (-) TimerEvent: {}
+[30.260106] (arm_utils) StdoutLine: {'line': b"writing manifest file 'arm_utils.egg-info/SOURCES.txt'\n"}
+[30.359116] (-) TimerEvent: {}
+[30.374551] (arm_utils) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_arm_utils_egg\n'}
+[30.426169] (arm_utils) CommandEnded: {'returncode': 0}
+[30.459890] (-) TimerEvent: {}
+[30.561558] (-) TimerEvent: {}
+[30.662854] (-) TimerEvent: {}
+[30.680582] (arm_utils) JobProgress: {'identifier': 'arm_utils', 'progress': 'install'}
+[30.680693] (arm_utils) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/arm_ws/build/arm_utils'], 'cwd': '/home/ros/arm_ws/build/arm_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ros/arm_ws/install/arm_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1022'), ('SYSTEMD_EXEC_PID', '1648'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3316'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:21986'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1380,unix/ros-virtual-machine:/tmp/.ICE-unix/1380'), ('INVOCATION_ID', 'edc79796a9204906952502603e82de6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:372fd3a6-256e-4266-af31-21df5690bb1b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_utils'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ros/arm_ws/install/arm_msgs:/opt/ros/humble')]), 'shell': False}
+[30.733609] (arm_utils) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.734544] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/pythonpath.sh\n'}
+[30.737385] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/pythonpath.dsv\n'}
+[30.739075] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info\n'}
+[30.739323] (arm_utils) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[30.739571] (arm_utils) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[30.741570] (arm_utils) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[30.741817] (arm_utils) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[30.741957] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils\n'}
+[30.742065] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils/__init__.py\n'}
+[30.742167] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils/angle_conversion.py\n'}
+[30.766148] (-) TimerEvent: {}
+[30.867700] (arm_utils) StdoutLine: {'line': b"Listing '/home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils'...\n"}
+[30.871561] (-) TimerEvent: {}
+[30.887026] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/lib/arm_utils/angle_conversion\n'}
+[30.890560] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/lib/arm_utils/angle_conversion.py\n'}
+[30.891112] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/ament_index/resource_index/package_run_dependencies/arm_utils\n'}
+[30.891576] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/ament_index/resource_index/parent_prefix_path/arm_utils\n'}
+[30.891909] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/ament_prefix_path.sh\n'}
+[30.892108] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/ament_prefix_path.dsv\n'}
+[30.892323] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/path.sh\n'}
+[30.895714] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/path.dsv\n'}
+[30.896865] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.bash\n'}
+[30.897171] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.sh\n'}
+[30.897408] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.zsh\n'}
+[30.897759] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.dsv\n'}
+[30.898004] (arm_utils) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_utils/share/arm_utils/package.dsv\n'}
+[30.898219] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/ament_index/resource_index/packages/arm_utils\n'}
+[30.898435] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/cmake/arm_utilsConfig.cmake\n'}
+[30.901953] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/cmake/arm_utilsConfig-version.cmake\n'}
+[30.902237] (arm_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/package.xml\n'}
+[30.912273] (arm_utils) CommandEnded: {'returncode': 0}
+[30.973593] (-) TimerEvent: {}
+[31.075652] (-) TimerEvent: {}
+[31.180228] (-) TimerEvent: {}
+[31.283171] (-) TimerEvent: {}
+[31.344084] (arm_utils) JobEnded: {'identifier': 'arm_utils', 'rc': 0}
+[31.355762] (-) EventReactorShutdown: {}

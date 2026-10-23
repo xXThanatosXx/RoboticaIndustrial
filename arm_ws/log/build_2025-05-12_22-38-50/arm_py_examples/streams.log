@@ -1,0 +1,61 @@
+[5.017s] Invoking command in '/home/ros/arm_ws/src/arm_py_examples': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/build/arm_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages:/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/arm_py_examples build --build-base /home/ros/arm_ws/build/arm_py_examples/build install --record /home/ros/arm_ws/build/arm_py_examples/install.log --single-version-externally-managed install_data
+[7.315s] running egg_info
+[7.323s] creating ../../build/arm_py_examples/arm_py_examples.egg-info
+[7.325s] writing ../../build/arm_py_examples/arm_py_examples.egg-info/PKG-INFO
+[7.329s] writing dependency_links to ../../build/arm_py_examples/arm_py_examples.egg-info/dependency_links.txt
+[7.333s] writing entry points to ../../build/arm_py_examples/arm_py_examples.egg-info/entry_points.txt
+[7.333s] writing requirements to ../../build/arm_py_examples/arm_py_examples.egg-info/requires.txt
+[7.333s] writing top-level names to ../../build/arm_py_examples/arm_py_examples.egg-info/top_level.txt
+[7.334s] writing manifest file '../../build/arm_py_examples/arm_py_examples.egg-info/SOURCES.txt'
+[7.345s] reading manifest file '../../build/arm_py_examples/arm_py_examples.egg-info/SOURCES.txt'
+[7.354s] writing manifest file '../../build/arm_py_examples/arm_py_examples.egg-info/SOURCES.txt'
+[7.354s] running build
+[7.355s] running build_py
+[7.355s] creating /home/ros/arm_ws/build/arm_py_examples/build
+[7.364s] creating /home/ros/arm_ws/build/arm_py_examples/build/lib
+[7.366s] creating /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+[7.366s] copying arm_py_examples/simple_publisher.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+[7.366s] copying arm_py_examples/simple_service_server.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+[7.374s] copying arm_py_examples/simple_action_server.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+[7.375s] copying arm_py_examples/simple_service_client.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+[7.375s] copying arm_py_examples/simple_action_client.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+[7.379s] copying arm_py_examples/__init__.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+[7.379s] copying arm_py_examples/simple_subscriber.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+[7.380s] copying arm_py_examples/simple_parameter.py -> /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples
+[7.384s] running install
+[7.385s] running install_lib
+[7.385s] creating /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+[7.385s] copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_publisher.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+[7.391s] copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_service_server.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+[7.391s] copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_action_server.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+[7.392s] copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_service_client.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+[7.393s] copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_action_client.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+[7.394s] copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/__init__.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+[7.394s] copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_subscriber.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+[7.394s] copying /home/ros/arm_ws/build/arm_py_examples/build/lib/arm_py_examples/simple_parameter.py -> /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples
+[7.394s] byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_publisher.py to simple_publisher.cpython-310.pyc
+[7.394s] byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_service_server.py to simple_service_server.cpython-310.pyc
+[7.397s] byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_action_server.py to simple_action_server.cpython-310.pyc
+[7.397s] byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_service_client.py to simple_service_client.cpython-310.pyc
+[7.397s] byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_action_client.py to simple_action_client.cpython-310.pyc
+[7.397s] byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/__init__.py to __init__.cpython-310.pyc
+[7.402s] byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_subscriber.py to simple_subscriber.cpython-310.pyc
+[7.402s] byte-compiling /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples/simple_parameter.py to simple_parameter.cpython-310.pyc
+[7.402s] running install_data
+[7.403s] creating /home/ros/arm_ws/install/arm_py_examples/share/ament_index
+[7.403s] creating /home/ros/arm_ws/install/arm_py_examples/share/ament_index/resource_index
+[7.403s] creating /home/ros/arm_ws/install/arm_py_examples/share/ament_index/resource_index/packages
+[7.403s] copying resource/arm_py_examples -> /home/ros/arm_ws/install/arm_py_examples/share/ament_index/resource_index/packages
+[7.403s] copying package.xml -> /home/ros/arm_ws/install/arm_py_examples/share/arm_py_examples
+[7.403s] running install_egg_info
+[7.408s] Copying ../../build/arm_py_examples/arm_py_examples.egg-info to /home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages/arm_py_examples-0.0.0-py3.10.egg-info
+[7.408s] running install_scripts
+[7.492s] Installing simple_action_client script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+[7.492s] Installing simple_action_server script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+[7.494s] Installing simple_parameter script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+[7.494s] Installing simple_publisher script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+[7.498s] Installing simple_service_client script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+[7.498s] Installing simple_service_server script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+[7.499s] Installing simple_subscriber script to /home/ros/arm_ws/install/arm_py_examples/lib/arm_py_examples
+[7.502s] writing list of installed files to '/home/ros/arm_ws/build/arm_py_examples/install.log'
+[7.631s] Invoked command in '/home/ros/arm_ws/src/arm_py_examples' returned '0': AMENT_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/arm_ws/install/arm_msgs LD_LIBRARY_PATH=/home/ros/arm_ws/install/arm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ros/arm_ws/build/arm_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/arm_ws/install/arm_py_examples/lib/python3.10/site-packages:/home/ros/arm_ws/install/arm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/arm_py_examples build --build-base /home/ros/arm_ws/build/arm_py_examples/build install --record /home/ros/arm_ws/build/arm_py_examples/install.log --single-version-externally-managed install_data

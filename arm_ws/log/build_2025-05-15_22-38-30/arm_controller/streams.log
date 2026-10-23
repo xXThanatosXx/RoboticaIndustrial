@@ -1,0 +1,59 @@
+[0.165s] Invoking command in '/home/ros/arm_ws/build/arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_controller -- -j2 -l2
+[0.879s] [ 50%] Built target slider_control
+[1.252s] [100%] Built target arm_controller
+[1.608s] [100%] Built target ament_cmake_python_copy_arm_controller
+[4.276s] running egg_info
+[4.283s] writing arm_controller.egg-info/PKG-INFO
+[4.289s] writing dependency_links to arm_controller.egg-info/dependency_links.txt
+[4.293s] writing top-level names to arm_controller.egg-info/top_level.txt
+[4.316s] reading manifest file 'arm_controller.egg-info/SOURCES.txt'
+[4.324s] writing manifest file 'arm_controller.egg-info/SOURCES.txt'
+[4.649s] [100%] Built target ament_cmake_python_build_arm_controller_egg
+[4.783s] Invoked command in '/home/ros/arm_ws/build/arm_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_controller -- -j2 -l2
+[5.368s] Invoking command in '/home/ros/arm_ws/build/arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_controller
+[5.467s] -- Install configuration: ""
+[5.467s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/arm_controller.xml
+[5.467s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/pythonpath.sh
+[5.467s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/pythonpath.dsv
+[5.468s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller-0.0.0-py3.10.egg-info
+[5.468s] -- Installing: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.468s] -- Installing: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.479s] -- Installing: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller-0.0.0-py3.10.egg-info/PKG-INFO
+[5.481s] -- Installing: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller-0.0.0-py3.10.egg-info/top_level.txt
+[5.481s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller
+[5.481s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller/slider_control.py
+[5.481s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller/__init__.py
+[5.796s] Listing '/home/ros/arm_ws/install/arm_controller/local/lib/python3.10/dist-packages/arm_controller'...
+[5.847s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/lib/arm_controller/slider_control
+[5.858s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/lib/libarm_controller.so
+[5.869s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/include/include
+[5.870s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/include/include/arm_controller
+[5.870s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/include/include/arm_controller/arm_interface.hpp
+[5.873s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/launch
+[5.879s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/launch/controller.launch.py
+[5.879s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/launch/slider_controller.launch.py
+[5.879s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/config
+[5.879s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/config/arm_controllers.yaml
+[5.879s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/lib/arm_controller/slider_control.py
+[5.885s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/library_path.sh
+[5.886s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/library_path.dsv
+[5.895s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/ament_index/resource_index/package_run_dependencies/arm_controller
+[5.895s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/ament_index/resource_index/parent_prefix_path/arm_controller
+[5.895s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.sh
+[5.896s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.dsv
+[5.901s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/path.sh
+[5.901s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/environment/path.dsv
+[5.901s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/local_setup.bash
+[5.901s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/local_setup.sh
+[5.901s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/local_setup.zsh
+[5.901s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/local_setup.dsv
+[5.909s] -- Installing: /home/ros/arm_ws/install/arm_controller/share/arm_controller/package.dsv
+[5.910s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/ament_index/resource_index/packages/arm_controller
+[5.910s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/arm_controller
+[5.910s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.911s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[5.911s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.911s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig.cmake
+[5.911s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig-version.cmake
+[5.920s] -- Up-to-date: /home/ros/arm_ws/install/arm_controller/share/arm_controller/package.xml
+[5.937s] Invoked command in '/home/ros/arm_ws/build/arm_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/arm_ws/install/arm_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_controller

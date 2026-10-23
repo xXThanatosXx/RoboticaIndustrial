@@ -1,0 +1,5 @@
+/home/ros/arm_ws/build/arm_msgs/rosidl_adapter/arm_msgs:srv/AddTwoInts.idl
+/home/ros/arm_ws/build/arm_msgs/rosidl_adapter/arm_msgs:srv/EulerToQuaternion.idl
+/home/ros/arm_ws/build/arm_msgs/rosidl_adapter/arm_msgs:srv/QuaternionToEuler.idl
+/home/ros/arm_ws/build/arm_msgs/rosidl_adapter/arm_msgs:action/Fibonacci.idl
+/home/ros/arm_ws/build/arm_msgs/rosidl_adapter/arm_msgs:action/ArmTask.idl

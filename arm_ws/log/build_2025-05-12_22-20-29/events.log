@@ -1,0 +1,1097 @@
+[0.000000] (-) TimerEvent: {}
+[0.000398] (arm_bringup) JobQueued: {'identifier': 'arm_bringup', 'dependencies': OrderedDict()}
+[0.000585] (arm_controller) JobQueued: {'identifier': 'arm_controller', 'dependencies': OrderedDict()}
+[0.000649] (arm_description) JobQueued: {'identifier': 'arm_description', 'dependencies': OrderedDict()}
+[0.000703] (arm_firmware) JobQueued: {'identifier': 'arm_firmware', 'dependencies': OrderedDict()}
+[0.000754] (arm_moveit) JobQueued: {'identifier': 'arm_moveit', 'dependencies': OrderedDict()}
+[0.000801] (arm_msgs) JobQueued: {'identifier': 'arm_msgs', 'dependencies': OrderedDict()}
+[0.000846] (arm_cpp_examples) JobQueued: {'identifier': 'arm_cpp_examples', 'dependencies': OrderedDict([('arm_msgs', '/home/ros/arm_ws/install/arm_msgs')])}
+[0.000905] (arm_py_examples) JobQueued: {'identifier': 'arm_py_examples', 'dependencies': OrderedDict([('arm_msgs', '/home/ros/arm_ws/install/arm_msgs')])}
+[0.000992] (arm_remote) JobQueued: {'identifier': 'arm_remote', 'dependencies': OrderedDict([('arm_msgs', '/home/ros/arm_ws/install/arm_msgs')])}
+[0.001062] (arm_utils) JobQueued: {'identifier': 'arm_utils', 'dependencies': OrderedDict([('arm_msgs', '/home/ros/arm_ws/install/arm_msgs')])}
+[0.001118] (arm_msgs) JobStarted: {'identifier': 'arm_msgs'}
+[0.019537] (arm_bringup) JobStarted: {'identifier': 'arm_bringup'}
+[0.044815] (arm_msgs) JobProgress: {'identifier': 'arm_msgs', 'progress': 'cmake'}
+[0.044978] (arm_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/ros/arm_ws/src/arm_msgs', '-DCMAKE_INSTALL_PREFIX=/home/ros/arm_ws/install/arm_msgs'], 'cwd': '/home/ros/arm_ws/build/arm_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '979'), ('SYSTEMD_EXEC_PID', '1347'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4526'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:20866'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1316,unix/ros-virtual-machine:/tmp/.ICE-unix/1316'), ('INVOCATION_ID', '00487b699f7d4c798b6f2c9b5207b5fc'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1623e010-cd7e-4313-86eb-01e292c650ef'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.057762] (arm_bringup) JobProgress: {'identifier': 'arm_bringup', 'progress': 'cmake'}
+[0.061260] (arm_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/ros/arm_ws/src/arm_bringup', '-DCMAKE_INSTALL_PREFIX=/home/ros/arm_ws/install/arm_bringup'], 'cwd': '/home/ros/arm_ws/build/arm_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '979'), ('SYSTEMD_EXEC_PID', '1347'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4526'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:20866'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1316,unix/ros-virtual-machine:/tmp/.ICE-unix/1316'), ('INVOCATION_ID', '00487b699f7d4c798b6f2c9b5207b5fc'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1623e010-cd7e-4313-86eb-01e292c650ef'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.096524] (-) TimerEvent: {}
+[0.199080] (-) TimerEvent: {}
+[0.224763] (arm_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.258908] (arm_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.299273] (-) TimerEvent: {}
+[0.401075] (-) TimerEvent: {}
+[0.438439] (arm_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.472846] (arm_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.505288] (-) TimerEvent: {}
+[0.531151] (arm_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.583579] (arm_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.605270] (-) TimerEvent: {}
+[0.709102] (-) TimerEvent: {}
+[0.810036] (-) TimerEvent: {}
+[0.820072] (arm_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.837046] (arm_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.838820] (arm_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.841107] (arm_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.849422] (arm_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.892363] (arm_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.912109] (-) TimerEvent: {}
+[0.918115] (arm_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.920127] (arm_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.920461] (arm_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.950057] (arm_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.012264] (-) TimerEvent: {}
+[1.115152] (-) TimerEvent: {}
+[1.215920] (-) TimerEvent: {}
+[1.243158] (arm_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.282055] (arm_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.283394] (arm_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.287314] (arm_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.293123] (arm_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.311036] (arm_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.316202] (-) TimerEvent: {}
+[1.337403] (arm_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.341228] (arm_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.341495] (arm_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.361449] (arm_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.416435] (-) TimerEvent: {}
+[1.517114] (-) TimerEvent: {}
+[1.618114] (-) TimerEvent: {}
+[1.719155] (-) TimerEvent: {}
+[1.793153] (arm_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.819287] (-) TimerEvent: {}
+[1.857280] (arm_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.919677] (-) TimerEvent: {}
+[2.021245] (-) TimerEvent: {}
+[2.050335] (arm_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[2.122042] (-) TimerEvent: {}
+[2.139542] (arm_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.156053] (arm_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.183065] (arm_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.222193] (-) TimerEvent: {}
+[2.227029] (arm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.300036] (arm_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.306107] (arm_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[2.309051] (arm_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/ros/arm_ws/build/arm_bringup\n'}
+[2.311161] (arm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.316470] (arm_bringup) CommandEnded: {'returncode': 0}
+[2.324179] (arm_bringup) JobProgress: {'identifier': 'arm_bringup', 'progress': 'build'}
+[2.331319] (-) TimerEvent: {}
+[2.334075] (arm_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_bringup', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '979'), ('SYSTEMD_EXEC_PID', '1347'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4526'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:20866'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1316,unix/ros-virtual-machine:/tmp/.ICE-unix/1316'), ('INVOCATION_ID', '00487b699f7d4c798b6f2c9b5207b5fc'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1623e010-cd7e-4313-86eb-01e292c650ef'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.393013] (arm_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.431477] (-) TimerEvent: {}
+[2.474554] (arm_bringup) CommandEnded: {'returncode': 0}
+[2.533057] (-) TimerEvent: {}
+[2.630803] (arm_bringup) JobProgress: {'identifier': 'arm_bringup', 'progress': 'install'}
+[2.633374] (-) TimerEvent: {}
+[2.653449] (arm_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/arm_ws/build/arm_bringup'], 'cwd': '/home/ros/arm_ws/build/arm_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '979'), ('SYSTEMD_EXEC_PID', '1347'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4526'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:20866'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1316,unix/ros-virtual-machine:/tmp/.ICE-unix/1316'), ('INVOCATION_ID', '00487b699f7d4c798b6f2c9b5207b5fc'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1623e010-cd7e-4313-86eb-01e292c650ef'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.699290] (arm_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.699717] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/launch\n'}
+[2.702452] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/launch/simulated_robot.launch.py\n'}
+[2.702812] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/launch/real_robot.launch.py\n'}
+[2.702959] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/ament_index/resource_index/package_run_dependencies/arm_bringup\n'}
+[2.703439] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/ament_index/resource_index/parent_prefix_path/arm_bringup\n'}
+[2.703662] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/environment/ament_prefix_path.sh\n'}
+[2.706369] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/environment/ament_prefix_path.dsv\n'}
+[2.709232] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/environment/path.sh\n'}
+[2.709592] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/environment/path.dsv\n'}
+[2.713259] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/local_setup.bash\n'}
+[2.716809] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/local_setup.sh\n'}
+[2.721578] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/local_setup.zsh\n'}
+[2.721841] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/local_setup.dsv\n'}
+[2.722200] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/package.dsv\n'}
+[2.723153] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/ament_index/resource_index/packages/arm_bringup\n'}
+[2.726161] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/cmake/arm_bringupConfig.cmake\n'}
+[2.726437] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/cmake/arm_bringupConfig-version.cmake\n'}
+[2.726651] (arm_bringup) StdoutLine: {'line': b'-- Installing: /home/ros/arm_ws/install/arm_bringup/share/arm_bringup/package.xml\n'}
+[2.726859] (arm_bringup) CommandEnded: {'returncode': 0}
+[2.733483] (-) TimerEvent: {}
+[2.834467] (-) TimerEvent: {}
+[2.897132] (arm_bringup) JobEnded: {'identifier': 'arm_bringup', 'rc': 0}
+[2.897990] (arm_controller) JobStarted: {'identifier': 'arm_controller'}
+[2.927668] (arm_controller) JobProgress: {'identifier': 'arm_controller', 'progress': 'cmake'}
+[2.932077] (arm_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/ros/arm_ws/src/arm_controller', '-DCMAKE_INSTALL_PREFIX=/home/ros/arm_ws/install/arm_controller'], 'cwd': '/home/ros/arm_ws/build/arm_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '979'), ('SYSTEMD_EXEC_PID', '1347'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4526'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:20866'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1316,unix/ros-virtual-machine:/tmp/.ICE-unix/1316'), ('INVOCATION_ID', '00487b699f7d4c798b6f2c9b5207b5fc'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1623e010-cd7e-4313-86eb-01e292c650ef'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.939898] (-) TimerEvent: {}
+[3.040985] (-) TimerEvent: {}
+[3.140181] (arm_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.141112] (-) TimerEvent: {}
+[3.248443] (-) TimerEvent: {}
+[3.352143] (-) TimerEvent: {}
+[3.418021] (arm_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.454030] (-) TimerEvent: {}
+[3.462271] (arm_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.554311] (-) TimerEvent: {}
+[3.656418] (-) TimerEvent: {}
+[3.758954] (-) TimerEvent: {}
+[3.782086] (arm_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.817870] (arm_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.821283] (arm_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.827047] (arm_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.831177] (arm_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.856212] (arm_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.859194] (-) TimerEvent: {}
+[3.963035] (-) TimerEvent: {}
+[4.063547] (-) TimerEvent: {}
+[4.168062] (-) TimerEvent: {}
+[4.268633] (-) TimerEvent: {}
+[4.279113] (arm_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.303161] (arm_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.303574] (arm_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.310052] (arm_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.328459] (arm_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.370038] (-) TimerEvent: {}
+[4.470492] (-) TimerEvent: {}
+[4.571199] (-) TimerEvent: {}
+[4.674037] (-) TimerEvent: {}
+[4.774709] (-) TimerEvent: {}
+[4.783516] (arm_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.874857] (-) TimerEvent: {}
+[4.955484] (arm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.975009] (-) TimerEvent: {}
+[5.077392] (-) TimerEvent: {}
+[5.091121] (arm_controller) StdoutLine: {'line': b'-- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)\n'}
+[5.177557] (-) TimerEvent: {}
+[5.213606] (arm_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.246020] (arm_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.261882] (arm_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.277700] (-) TimerEvent: {}
+[5.307112] (arm_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.355048] (arm_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.356522] (arm_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.377829] (-) TimerEvent: {}
+[5.424148] (arm_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[5.431126] (arm_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.482065] (-) TimerEvent: {}
+[5.494135] (arm_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.494474] (arm_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.494686] (arm_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.494825] (arm_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.561752] (arm_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.582185] (-) TimerEvent: {}
+[5.582570] (arm_controller) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.648070] (arm_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.682352] (-) TimerEvent: {}
+[5.743193] (arm_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.782558] (-) TimerEvent: {}
+[5.785153] (arm_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.793547] (arm_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.883855] (-) TimerEvent: {}
+[5.984510] (-) TimerEvent: {}
+[6.058065] (arm_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[6.083035] (arm_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ros/arm_ws/build/arm_msgs\n'}
+[6.087036] (-) TimerEvent: {}
+[6.101113] (arm_msgs) CommandEnded: {'returncode': 0}
+[6.106105] (arm_msgs) JobProgress: {'identifier': 'arm_msgs', 'progress': 'build'}
+[6.106218] (arm_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_msgs', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '979'), ('SYSTEMD_EXEC_PID', '1347'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4526'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:20866'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1316,unix/ros-virtual-machine:/tmp/.ICE-unix/1316'), ('INVOCATION_ID', '00487b699f7d4c798b6f2c9b5207b5fc'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1623e010-cd7e-4313-86eb-01e292c650ef'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.187164] (-) TimerEvent: {}
+[6.292087] (-) TimerEvent: {}
+[6.395699] (-) TimerEvent: {}
+[6.449095] (arm_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.497801] (arm_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.498269] (-) TimerEvent: {}
+[6.549628] (arm_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.602412] (-) TimerEvent: {}
+[6.668044] (arm_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.703066] (-) TimerEvent: {}
+[6.803595] (-) TimerEvent: {}
+[6.831844] (arm_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.873019] (arm_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.903745] (-) TimerEvent: {}
+[7.004349] (-) TimerEvent: {}
+[7.110078] (-) TimerEvent: {}
+[7.217102] (-) TimerEvent: {}
+[7.322060] (-) TimerEvent: {}
+[7.429054] (-) TimerEvent: {}
+[7.455087] (arm_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.467047] (arm_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.531030] (-) TimerEvent: {}
+[7.637303] (-) TimerEvent: {}
+[7.737889] (-) TimerEvent: {}
+[7.841037] (-) TimerEvent: {}
+[7.941543] (-) TimerEvent: {}
+[8.053036] (-) TimerEvent: {}
+[8.078025] (arm_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.097029] (arm_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.154015] (-) TimerEvent: {}
+[8.260495] (-) TimerEvent: {}
+[8.363053] (arm_controller) StdoutLine: {'line': b'-- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[8.363321] (-) TimerEvent: {}
+[8.373137] (arm_controller) StdoutLine: {'line': b'-- Found hardware_interface: 2.43.1 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[8.467020] (-) TimerEvent: {}
+[8.570042] (-) TimerEvent: {}
+[8.674060] (-) TimerEvent: {}
+[8.778086] (-) TimerEvent: {}
+[8.879181] (-) TimerEvent: {}
+[8.980509] (-) TimerEvent: {}
+[9.083066] (-) TimerEvent: {}
+[9.184160] (-) TimerEvent: {}
+[9.286033] (-) TimerEvent: {}
+[9.392053] (-) TimerEvent: {}
+[9.480006] (arm_controller) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[9.484997] (arm_controller) StdoutLine: {'line': b"-- Checking for module 'libserial'\n"}
+[9.492768] (-) TimerEvent: {}
+[9.594132] (arm_controller) StdoutLine: {'line': b'--   Found libserial, version 1.0.0\n'}
+[9.595494] (-) TimerEvent: {}
+[9.700046] (-) TimerEvent: {}
+[9.801087] (-) TimerEvent: {}
+[9.902179] (-) TimerEvent: {}
+[10.005421] (-) TimerEvent: {}
+[10.106475] (-) TimerEvent: {}
+[10.210041] (-) TimerEvent: {}
+[10.310823] (-) TimerEvent: {}
+[10.411732] (-) TimerEvent: {}
+[10.512658] (-) TimerEvent: {}
+[10.614610] (-) TimerEvent: {}
+[10.708074] (arm_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.714737] (-) TimerEvent: {}
+[10.817036] (-) TimerEvent: {}
+[10.917602] (-) TimerEvent: {}
+[11.010186] (arm_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[11.019355] (-) TimerEvent: {}
+[11.038043] (arm_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/ros/arm_ws/build/arm_controller\n'}
+[11.121137] (-) TimerEvent: {}
+[11.141157] (arm_controller) CommandEnded: {'returncode': 0}
+[11.160213] (arm_controller) JobProgress: {'identifier': 'arm_controller', 'progress': 'build'}
+[11.160381] (arm_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/arm_ws/build/arm_controller', '--', '-j2', '-l2'], 'cwd': '/home/ros/arm_ws/build/arm_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'ros'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '979'), ('SYSTEMD_EXEC_PID', '1347'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4526'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros'), ('JOURNAL_STREAM', '8:20866'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-virtual-machine:@/tmp/.ICE-unix/1316,unix/ros-virtual-machine:/tmp/.ICE-unix/1316'), ('INVOCATION_ID', '00487b699f7d4c798b6f2c9b5207b5fc'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1623e010-cd7e-4313-86eb-01e292c650ef'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/arm_ws/build/arm_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[11.230051] (-) TimerEvent: {}
+[11.334198] (-) TimerEvent: {}
+[11.436198] (-) TimerEvent: {}
+[11.537390] (-) TimerEvent: {}
+[11.639329] (-) TimerEvent: {}
+[11.741663] (-) TimerEvent: {}
+[11.748318] (arm_controller) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/slider_control.dir/src/slider_control.cpp.o\x1b[0m\n'}
+[11.831040] (arm_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/arm_controller.dir/src/arm_interface.cpp.o\x1b[0m\n'}
+[11.842162] (-) TimerEvent: {}
+[11.943055] (-) TimerEvent: {}
+[11.956331] (arm_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros/arm_ws/src/arm_controller/src/arm_interface.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Karm_controller/arm_interface.hpp: No such file or directory\n'}
+[11.956698] (arm_controller) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K"arm_controller/arm_interface.hpp"\x1b[m\x1b[K\n'}
+[11.956832] (arm_controller) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.959077] (arm_controller) StderrLine: {'line': b'compilation terminated.\n'}
+[11.961810] (arm_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/arm_controller.dir/build.make:76: CMakeFiles/arm_controller.dir/src/arm_interface.cpp.o] Error 1\n'}
+[11.964070] (arm_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:168: CMakeFiles/arm_controller.dir/all] Error 2\n'}
+[11.964379] (arm_controller) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[12.045008] (-) TimerEvent: {}
+[12.147035] (-) TimerEvent: {}
+[12.251013] (-) TimerEvent: {}
+[12.351799] (-) TimerEvent: {}
+[12.453089] (-) TimerEvent: {}
+[12.556030] (-) TimerEvent: {}
+[12.656855] (-) TimerEvent: {}
+[12.757703] (-) TimerEvent: {}
+[12.860263] (-) TimerEvent: {}
+[12.961478] (-) TimerEvent: {}
+[13.063275] (-) TimerEvent: {}
+[13.164180] (-) TimerEvent: {}
+[13.265315] (-) TimerEvent: {}
+[13.367481] (-) TimerEvent: {}
+[13.470079] (-) TimerEvent: {}
+[13.570898] (-) TimerEvent: {}
+[13.672456] (-) TimerEvent: {}
+[13.774850] (-) TimerEvent: {}
+[13.877106] (-) TimerEvent: {}
+[13.977809] (-) TimerEvent: {}
+[14.081943] (-) TimerEvent: {}
+[14.144144] (arm_msgs) StdoutLine: {'line': b'[  3%] Built target arm_msgs__cpp\n'}
+[14.182183] (-) TimerEvent: {}
+[14.273623] (arm_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_c.dir/rosidl_generator_c/arm_msgs/srv/detail/add_two_ints__functions.c.o\x1b[0m\n'}
+[14.282354] (-) TimerEvent: {}
+[14.384486] (-) TimerEvent: {}
+[14.391391] (arm_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_arm_msgs\n'}
+[14.483210] (arm_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[14.486716] (-) TimerEvent: {}
+[14.548189] (arm_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_c.dir/rosidl_generator_c/arm_msgs/srv/detail/euler_to_quaternion__functions.c.o\x1b[0m\n'}
+[14.588085] (-) TimerEvent: {}
+[14.695914] (-) TimerEvent: {}
+[14.797120] (-) TimerEvent: {}
+[14.898559] (-) TimerEvent: {}
+[14.999732] (-) TimerEvent: {}
+[15.104878] (-) TimerEvent: {}
+[15.139447] (arm_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_c.dir/rosidl_generator_c/arm_msgs/srv/detail/quaternion_to_euler__functions.c.o\x1b[0m\n'}
+[15.205127] (-) TimerEvent: {}
+[15.306211] (-) TimerEvent: {}
+[15.408468] (-) TimerEvent: {}
+[15.511051] (-) TimerEvent: {}
+[15.516167] (arm_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_c.dir/rosidl_generator_c/arm_msgs/action/detail/fibonacci__functions.c.o\x1b[0m\n'}
+[15.611210] (-) TimerEvent: {}
+[15.715050] (-) TimerEvent: {}
+[15.815910] (-) TimerEvent: {}
+[15.920028] (-) TimerEvent: {}
+[16.020624] (-) TimerEvent: {}
+[16.121543] (-) TimerEvent: {}
+[16.225439] (-) TimerEvent: {}
+[16.248148] (arm_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_c.dir/rosidl_generator_c/arm_msgs/action/detail/arm_task__functions.c.o\x1b[0m\n'}
+[16.325439] (-) TimerEvent: {}
+[16.428047] (-) TimerEvent: {}
+[16.528758] (-) TimerEvent: {}
+[16.630075] (-) TimerEvent: {}
+[16.733308] (-) TimerEvent: {}
+[16.834083] (-) TimerEvent: {}
+[16.910457] (arm_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libarm_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[16.934234] (-) TimerEvent: {}
+[17.037102] (-) TimerEvent: {}
+[17.084136] (arm_msgs) StdoutLine: {'line': b'[ 14%] Built target arm_msgs__rosidl_generator_c\n'}
+[17.128081] (arm_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[17.137222] (-) TimerEvent: {}
+[17.238037] (-) TimerEvent: {}
+[17.343048] (-) TimerEvent: {}
+[17.443914] (-) TimerEvent: {}
+[17.544631] (-) TimerEvent: {}
+[17.645301] (-) TimerEvent: {}
+[17.746036] (-) TimerEvent: {}
+[17.847277] (-) TimerEvent: {}
+[17.950379] (-) TimerEvent: {}
+[18.051863] (-) TimerEvent: {}
+[18.119983] (arm_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_msgs/srv/add_two_ints__type_support.cpp.o\x1b[0m\n'}
+[18.152194] (-) TimerEvent: {}
+[18.256048] (-) TimerEvent: {}
+[18.357057] (-) TimerEvent: {}
+[18.458606] (-) TimerEvent: {}
+[18.561183] (-) TimerEvent: {}
+[18.661998] (-) TimerEvent: {}
+[18.763175] (-) TimerEvent: {}
+[18.866294] (-) TimerEvent: {}
+[18.967249] (-) TimerEvent: {}
+[19.067899] (-) TimerEvent: {}
+[19.170049] (-) TimerEvent: {}
+[19.270924] (-) TimerEvent: {}
+[19.371644] (-) TimerEvent: {}
+[19.474310] (-) TimerEvent: {}
+[19.544986] (arm_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_msgs/srv/euler_to_quaternion__type_support.cpp.o\x1b[0m\n'}
+[19.574476] (-) TimerEvent: {}
+[19.675594] (-) TimerEvent: {}
+[19.778401] (-) TimerEvent: {}
+[19.881012] (-) TimerEvent: {}
+[19.981931] (-) TimerEvent: {}
+[20.082807] (-) TimerEvent: {}
+[20.183802] (-) TimerEvent: {}
+[20.286404] (-) TimerEvent: {}
+[20.389038] (-) TimerEvent: {}
+[20.491059] (-) TimerEvent: {}
+[20.593042] (-) TimerEvent: {}
+[20.694036] (-) TimerEvent: {}
+[20.801053] (-) TimerEvent: {}
+[20.902315] (-) TimerEvent: {}
+[21.003430] (-) TimerEvent: {}
+[21.105019] (-) TimerEvent: {}
+[21.208182] (-) TimerEvent: {}
+[21.310038] (-) TimerEvent: {}
+[21.413015] (-) TimerEvent: {}
+[21.513889] (-) TimerEvent: {}
+[21.616290] (-) TimerEvent: {}
+[21.717301] (-) TimerEvent: {}
+[21.721113] (arm_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_msgs/srv/quaternion_to_euler__type_support.cpp.o\x1b[0m\n'}
+[21.819105] (-) TimerEvent: {}
+[21.924626] (-) TimerEvent: {}
+[22.029041] (-) TimerEvent: {}
+[22.130047] (-) TimerEvent: {}
+[22.231140] (-) TimerEvent: {}
+[22.333708] (-) TimerEvent: {}
+[22.436044] (-) TimerEvent: {}
+[22.538096] (-) TimerEvent: {}
+[22.640075] (-) TimerEvent: {}
+[22.653401] (arm_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_msgs/srv/detail/dds_fastrtps/add_two_ints__type_support.cpp.o\x1b[0m\n'}
+[22.742083] (-) TimerEvent: {}
+[22.843242] (-) TimerEvent: {}
+[22.944179] (-) TimerEvent: {}
+[23.053474] (-) TimerEvent: {}
+[23.158125] (-) TimerEvent: {}
+[23.259226] (-) TimerEvent: {}
+[23.359973] (-) TimerEvent: {}
+[23.462107] (-) TimerEvent: {}
+[23.567032] (-) TimerEvent: {}
+[23.667874] (-) TimerEvent: {}
+[23.771025] (-) TimerEvent: {}
+[23.873065] (-) TimerEvent: {}
+[23.973935] (-) TimerEvent: {}
+[24.063034] (arm_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_msgs/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[24.074042] (-) TimerEvent: {}
+[24.174654] (-) TimerEvent: {}
+[24.278051] (-) TimerEvent: {}
+[24.380041] (-) TimerEvent: {}
+[24.483753] (-) TimerEvent: {}
+[24.587028] (-) TimerEvent: {}
+[24.690041] (-) TimerEvent: {}
+[24.790903] (-) TimerEvent: {}
+[24.893095] (-) TimerEvent: {}
+[24.996054] (-) TimerEvent: {}
+[25.098048] (-) TimerEvent: {}
+[25.205641] (-) TimerEvent: {}
+[25.315172] (-) TimerEvent: {}
+[25.416353] (-) TimerEvent: {}
+[25.517582] (-) TimerEvent: {}
+[25.620032] (-) TimerEvent: {}
+[25.725335] (-) TimerEvent: {}
+[25.828034] (-) TimerEvent: {}
+[25.930019] (-) TimerEvent: {}
+[26.030774] (-) TimerEvent: {}
+[26.123034] (arm_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_msgs/srv/detail/dds_fastrtps/euler_to_quaternion__type_support.cpp.o\x1b[0m\n'}
+[26.132244] (-) TimerEvent: {}
+[26.238047] (-) TimerEvent: {}
+[26.341125] (-) TimerEvent: {}
+[26.445030] (-) TimerEvent: {}
+[26.548083] (-) TimerEvent: {}
+[26.654044] (-) TimerEvent: {}
+[26.755077] (-) TimerEvent: {}
+[26.855715] (-) TimerEvent: {}
+[26.956383] (-) TimerEvent: {}
+[27.063051] (-) TimerEvent: {}
+[27.173378] (-) TimerEvent: {}
+[27.279076] (-) TimerEvent: {}
+[27.388073] (-) TimerEvent: {}
+[27.488803] (-) TimerEvent: {}
+[27.596047] (-) TimerEvent: {}
+[27.700391] (-) TimerEvent: {}
+[27.810052] (-) TimerEvent: {}
+[27.911057] (-) TimerEvent: {}
+[28.011879] (-) TimerEvent: {}
+[28.115060] (-) TimerEvent: {}
+[28.217078] (-) TimerEvent: {}
+[28.319050] (-) TimerEvent: {}
+[28.420078] (-) TimerEvent: {}
+[28.424200] (arm_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_msgs/action/arm_task__type_support.cpp.o\x1b[0m\n'}
+[28.520211] (-) TimerEvent: {}
+[28.623465] (-) TimerEvent: {}
+[28.724636] (-) TimerEvent: {}
+[28.825623] (-) TimerEvent: {}
+[28.926851] (-) TimerEvent: {}
+[29.030744] (-) TimerEvent: {}
+[29.134066] (-) TimerEvent: {}
+[29.237091] (-) TimerEvent: {}
+[29.337968] (-) TimerEvent: {}
+[29.438810] (-) TimerEvent: {}
+[29.541076] (-) TimerEvent: {}
+[29.584117] (arm_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_msgs/srv/detail/dds_fastrtps/quaternion_to_euler__type_support.cpp.o\x1b[0m\n'}
+[29.643073] (-) TimerEvent: {}
+[29.744117] (-) TimerEvent: {}
+[29.846674] (-) TimerEvent: {}
+[29.950388] (-) TimerEvent: {}
+[30.054056] (-) TimerEvent: {}
+[30.155021] (-) TimerEvent: {}
+[30.256045] (-) TimerEvent: {}
+[30.359332] (-) TimerEvent: {}
+[30.461052] (-) TimerEvent: {}
+[30.564052] (-) TimerEvent: {}
+[30.669735] (-) TimerEvent: {}
+[30.770496] (-) TimerEvent: {}
+[30.871483] (-) TimerEvent: {}
+[30.976046] (-) TimerEvent: {}
+[31.079065] (-) TimerEvent: {}
+[31.181070] (-) TimerEvent: {}
+[31.285063] (-) TimerEvent: {}
+[31.388298] (-) TimerEvent: {}
+[31.492412] (-) TimerEvent: {}
+[31.598459] (-) TimerEvent: {}
+[31.699571] (-) TimerEvent: {}
+[31.803016] (-) TimerEvent: {}
+[31.814216] (arm_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32m\x1b[1mLinking CXX shared library libarm_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[31.903119] (-) TimerEvent: {}
+[32.007372] (-) TimerEvent: {}
+[32.076766] (arm_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_msgs/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[32.110061] (-) TimerEvent: {}
+[32.125139] (arm_msgs) StdoutLine: {'line': b'[ 31%] Built target arm_msgs__rosidl_typesupport_cpp\n'}
+[32.210276] (-) TimerEvent: {}
+[32.311724] (-) TimerEvent: {}
+[32.414885] (-) TimerEvent: {}
+[32.515996] (-) TimerEvent: {}
+[32.620048] (-) TimerEvent: {}
+[32.724828] (-) TimerEvent: {}
+[32.829602] (-) TimerEvent: {}
+[32.935316] (-) TimerEvent: {}
+[33.037791] (-) TimerEvent: {}
+[33.139079] (-) TimerEvent: {}
+[33.241787] (-) TimerEvent: {}
+[33.342854] (-) TimerEvent: {}
+[33.446328] (-) TimerEvent: {}
+[33.550167] (-) TimerEvent: {}
+[33.652574] (-) TimerEvent: {}
+[33.756547] (-) TimerEvent: {}
+[33.857849] (-) TimerEvent: {}
+[33.959057] (-) TimerEvent: {}
+[34.064076] (-) TimerEvent: {}
+[34.165151] (-) TimerEvent: {}
+[34.266229] (-) TimerEvent: {}
+[34.367294] (-) TimerEvent: {}
+[34.469677] (-) TimerEvent: {}
+[34.570771] (-) TimerEvent: {}
+[34.577858] (arm_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_msgs/action/detail/dds_fastrtps/arm_task__type_support.cpp.o\x1b[0m\n'}
+[34.671100] (-) TimerEvent: {}
+[34.773813] (-) TimerEvent: {}
+[34.875066] (-) TimerEvent: {}
+[34.977298] (-) TimerEvent: {}
+[35.080751] (-) TimerEvent: {}
+[35.184457] (-) TimerEvent: {}
+[35.285518] (-) TimerEvent: {}
+[35.386556] (-) TimerEvent: {}
+[35.487700] (-) TimerEvent: {}
+[35.590365] (-) TimerEvent: {}
+[35.691402] (-) TimerEvent: {}
+[35.794056] (-) TimerEvent: {}
+[35.895210] (-) TimerEvent: {}
+[35.996362] (-) TimerEvent: {}
+[36.098349] (-) TimerEvent: {}
+[36.200028] (-) TimerEvent: {}
+[36.300849] (-) TimerEvent: {}
+[36.403580] (-) TimerEvent: {}
+[36.478206] (arm_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32m\x1b[1mLinking CXX shared library libarm_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[36.504087] (-) TimerEvent: {}
+[36.607456] (-) TimerEvent: {}
+[36.708847] (-) TimerEvent: {}
+[36.722227] (arm_msgs) StdoutLine: {'line': b'[ 34%] Built target arm_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[36.765029] (arm_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[36.808956] (-) TimerEvent: {}
+[36.911291] (-) TimerEvent: {}
+[37.012381] (-) TimerEvent: {}
+[37.115849] (-) TimerEvent: {}
+[37.217200] (-) TimerEvent: {}
+[37.318106] (-) TimerEvent: {}
+[37.421840] (-) TimerEvent: {}
+[37.522879] (-) TimerEvent: {}
+[37.623805] (-) TimerEvent: {}
+[37.724837] (-) TimerEvent: {}
+[37.828086] (-) TimerEvent: {}
+[37.928935] (-) TimerEvent: {}
+[38.030734] (-) TimerEvent: {}
+[38.131991] (-) TimerEvent: {}
+[38.234352] (-) TimerEvent: {}
+[38.335437] (-) TimerEvent: {}
+[38.436259] (-) TimerEvent: {}
+[38.539353] (-) TimerEvent: {}
+[38.640559] (-) TimerEvent: {}
+[38.741869] (-) TimerEvent: {}
+[38.845348] (-) TimerEvent: {}
+[38.946277] (-) TimerEvent: {}
+[39.047512] (-) TimerEvent: {}
+[39.149090] (-) TimerEvent: {}
+[39.253435] (-) TimerEvent: {}
+[39.355095] (-) TimerEvent: {}
+[39.456261] (-) TimerEvent: {}
+[39.577909] (-) TimerEvent: {}
+[39.679021] (-) TimerEvent: {}
+[39.781655] (-) TimerEvent: {}
+[39.791373] (arm_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_msgs/srv/detail/add_two_ints__type_support.c.o\x1b[0m\n'}
+[39.881838] (-) TimerEvent: {}
+[39.931122] (arm_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_msgs/srv/detail/euler_to_quaternion__type_support.c.o\x1b[0m\n'}
+[39.982197] (-) TimerEvent: {}
+[40.084854] (-) TimerEvent: {}
+[40.089502] (arm_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_msgs/srv/detail/quaternion_to_euler__type_support.c.o\x1b[0m\n'}
+[40.186132] (-) TimerEvent: {}
+[40.244458] (arm_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_msgs/action/detail/fibonacci__type_support.c.o\x1b[0m\n'}
+[40.286418] (-) TimerEvent: {}
+[40.387236] (-) TimerEvent: {}
+[40.441081] (arm_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_msgs/action/detail/arm_task__type_support.c.o\x1b[0m\n'}
+[40.488053] (-) TimerEvent: {}
+[40.590059] (-) TimerEvent: {}
+[40.597149] (arm_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking C shared library libarm_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[40.690226] (-) TimerEvent: {}
+[40.750284] (arm_msgs) StdoutLine: {'line': b'[ 46%] Built target arm_msgs__rosidl_typesupport_introspection_c\n'}
+[40.790441] (-) TimerEvent: {}
+[40.797098] (arm_msgs) StdoutLine: {'line': b'[ 47%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[40.890592] (-) TimerEvent: {}
+[40.992498] (-) TimerEvent: {}
+[41.095231] (-) TimerEvent: {}
+[41.196321] (-) TimerEvent: {}
+[41.297445] (-) TimerEvent: {}
+[41.399279] (-) TimerEvent: {}
+[41.499878] (-) TimerEvent: {}
+[41.601789] (-) TimerEvent: {}
+[41.704750] (-) TimerEvent: {}
+[41.807085] (-) TimerEvent: {}
+[41.911152] (-) TimerEvent: {}
+[42.012890] (-) TimerEvent: {}
+[42.116894] (-) TimerEvent: {}
+[42.223332] (-) TimerEvent: {}
+[42.327256] (-) TimerEvent: {}
+[42.428322] (-) TimerEvent: {}
+[42.536233] (-) TimerEvent: {}
+[42.663108] (-) TimerEvent: {}
+[42.764006] (-) TimerEvent: {}
+[42.865243] (-) TimerEvent: {}
+[42.967076] (-) TimerEvent: {}
+[43.067715] (-) TimerEvent: {}
+[43.168423] (-) TimerEvent: {}
+[43.273328] (-) TimerEvent: {}
+[43.374094] (-) TimerEvent: {}
+[43.475242] (-) TimerEvent: {}
+[43.577834] (-) TimerEvent: {}
+[43.669899] (arm_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_msgs/srv/add_two_ints__type_support.cpp.o\x1b[0m\n'}
+[43.680053] (-) TimerEvent: {}
+[43.780673] (-) TimerEvent: {}
+[43.842147] (arm_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_msgs/srv/euler_to_quaternion__type_support.cpp.o\x1b[0m\n'}
+[43.881011] (-) TimerEvent: {}
+[43.982636] (-) TimerEvent: {}
+[44.045276] (arm_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_msgs/srv/quaternion_to_euler__type_support.cpp.o\x1b[0m\n'}
+[44.084060] (-) TimerEvent: {}
+[44.163828] (arm_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_msgs/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[44.184226] (-) TimerEvent: {}
+[44.287353] (-) TimerEvent: {}
+[44.377539] (arm_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_msgs/action/arm_task__type_support.cpp.o\x1b[0m\n'}
+[44.388090] (-) TimerEvent: {}
+[44.489615] (-) TimerEvent: {}
+[44.582062] (arm_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libarm_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[44.589771] (-) TimerEvent: {}
+[44.698887] (-) TimerEvent: {}
+[44.805554] (-) TimerEvent: {}
+[44.896164] (arm_msgs) StdoutLine: {'line': b'[ 57%] Built target arm_msgs__rosidl_typesupport_c\n'}
+[44.906605] (-) TimerEvent: {}
+[44.956102] (arm_msgs) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[45.011168] (-) TimerEvent: {}
+[45.117762] (-) TimerEvent: {}
+[45.219093] (-) TimerEvent: {}
+[45.322774] (-) TimerEvent: {}
+[45.425184] (-) TimerEvent: {}
+[45.527071] (-) TimerEvent: {}
+[45.628353] (-) TimerEvent: {}
+[45.730268] (-) TimerEvent: {}
+[45.832465] (-) TimerEvent: {}
+[45.934901] (-) TimerEvent: {}
+[46.035775] (-) TimerEvent: {}
+[46.142145] (-) TimerEvent: {}
+[46.247183] (-) TimerEvent: {}
+[46.349051] (-) TimerEvent: {}
+[46.450135] (-) TimerEvent: {}
+[46.550965] (-) TimerEvent: {}
+[46.659048] (-) TimerEvent: {}
+[46.761615] (-) TimerEvent: {}
+[46.866132] (-) TimerEvent: {}
+[46.970052] (-) TimerEvent: {}
+[47.073281] (-) TimerEvent: {}
+[47.175230] (-) TimerEvent: {}
+[47.278355] (-) TimerEvent: {}
+[47.393221] (-) TimerEvent: {}
+[47.493655] (-) TimerEvent: {}
+[47.596153] (-) TimerEvent: {}
+[47.699056] (-) TimerEvent: {}
+[47.799667] (-) TimerEvent: {}
+[47.903025] (-) TimerEvent: {}
+[48.003645] (-) TimerEvent: {}
+[48.106031] (-) TimerEvent: {}
+[48.209299] (-) TimerEvent: {}
+[48.312145] (-) TimerEvent: {}
+[48.415295] (-) TimerEvent: {}
+[48.517513] (-) TimerEvent: {}
+[48.619421] (-) TimerEvent: {}
+[48.723454] (-) TimerEvent: {}
+[48.824680] (-) TimerEvent: {}
+[48.953915] (-) TimerEvent: {}
+[49.056730] (-) TimerEvent: {}
+[49.159291] (-) TimerEvent: {}
+[49.261067] (-) TimerEvent: {}
+[49.363882] (-) TimerEvent: {}
+[49.466260] (-) TimerEvent: {}
+[49.485108] (arm_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_msgs/srv/detail/add_two_ints__type_support.cpp.o\x1b[0m\n'}
+[49.574045] (-) TimerEvent: {}
+[49.678085] (-) TimerEvent: {}
+[49.780039] (-) TimerEvent: {}
+[49.886036] (-) TimerEvent: {}
+[49.989036] (-) TimerEvent: {}
+[50.091263] (-) TimerEvent: {}
+[50.194061] (-) TimerEvent: {}
+[50.296515] (-) TimerEvent: {}
+[50.399063] (-) TimerEvent: {}
+[50.502278] (-) TimerEvent: {}
+[50.604751] (-) TimerEvent: {}
+[50.707446] (-) TimerEvent: {}
+[50.811319] (-) TimerEvent: {}
+[50.922572] (-) TimerEvent: {}
+[51.026563] (-) TimerEvent: {}
+[51.130083] (-) TimerEvent: {}
+[51.233051] (-) TimerEvent: {}
+[51.336087] (-) TimerEvent: {}
+[51.436829] (-) TimerEvent: {}
+[51.539386] (-) TimerEvent: {}
+[51.642215] (-) TimerEvent: {}
+[51.744108] (-) TimerEvent: {}
+[51.848044] (-) TimerEvent: {}
+[51.951105] (-) TimerEvent: {}
+[52.057291] (-) TimerEvent: {}
+[52.159050] (-) TimerEvent: {}
+[52.261080] (-) TimerEvent: {}
+[52.365038] (-) TimerEvent: {}
+[52.465919] (-) TimerEvent: {}
+[52.570073] (-) TimerEvent: {}
+[52.673049] (-) TimerEvent: {}
+[52.774214] (-) TimerEvent: {}
+[52.877104] (-) TimerEvent: {}
+[52.977666] (-) TimerEvent: {}
+[53.079010] (-) TimerEvent: {}
+[53.181061] (-) TimerEvent: {}
+[53.284057] (-) TimerEvent: {}
+[53.385273] (-) TimerEvent: {}
+[53.487059] (-) TimerEvent: {}
+[53.593046] (-) TimerEvent: {}
+[53.693719] (-) TimerEvent: {}
+[53.804059] (-) TimerEvent: {}
+[53.907287] (-) TimerEvent: {}
+[54.009513] (-) TimerEvent: {}
+[54.114057] (-) TimerEvent: {}
+[54.214711] (-) TimerEvent: {}
+[54.318135] (-) TimerEvent: {}
+[54.420408] (-) TimerEvent: {}
+[54.523508] (-) TimerEvent: {}
+[54.627055] (-) TimerEvent: {}
+[54.729611] (-) TimerEvent: {}
+[54.833053] (-) TimerEvent: {}
+[54.935274] (-) TimerEvent: {}
+[55.017187] (arm_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_msgs/srv/detail/euler_to_quaternion__type_support.cpp.o\x1b[0m\n'}
+[55.037044] (-) TimerEvent: {}
+[55.139267] (-) TimerEvent: {}
+[55.242238] (-) TimerEvent: {}
+[55.345263] (-) TimerEvent: {}
+[55.446230] (-) TimerEvent: {}
+[55.550049] (-) TimerEvent: {}
+[55.652043] (-) TimerEvent: {}
+[55.754050] (-) TimerEvent: {}
+[55.854480] (-) TimerEvent: {}
+[55.957043] (-) TimerEvent: {}
+[56.059230] (-) TimerEvent: {}
+[56.161058] (-) TimerEvent: {}
+[56.264060] (-) TimerEvent: {}
+[56.366071] (-) TimerEvent: {}
+[56.468251] (-) TimerEvent: {}
+[56.572027] (-) TimerEvent: {}
+[56.672757] (-) TimerEvent: {}
+[56.777281] (-) TimerEvent: {}
+[56.880259] (-) TimerEvent: {}
+[56.982389] (-) TimerEvent: {}
+[57.085459] (-) TimerEvent: {}
+[57.187061] (-) TimerEvent: {}
+[57.291063] (-) TimerEvent: {}
+[57.394051] (-) TimerEvent: {}
+[57.494579] (-) TimerEvent: {}
+[57.597242] (-) TimerEvent: {}
+[57.699652] (-) TimerEvent: {}
+[57.800884] (-) TimerEvent: {}
+[57.911063] (-) TimerEvent: {}
+[57.928179] (arm_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_msgs/srv/detail/quaternion_to_euler__type_support.cpp.o\x1b[0m\n'}
+[58.013049] (-) TimerEvent: {}
+[58.114639] (-) TimerEvent: {}
+[58.217047] (-) TimerEvent: {}
+[58.319378] (-) TimerEvent: {}
+[58.422250] (-) TimerEvent: {}
+[58.532309] (-) TimerEvent: {}
+[58.634280] (-) TimerEvent: {}
+[58.737070] (-) TimerEvent: {}
+[58.837655] (-) TimerEvent: {}
+[58.939343] (-) TimerEvent: {}
+[59.042381] (-) TimerEvent: {}
+[59.145320] (-) TimerEvent: {}
+[59.249065] (-) TimerEvent: {}
+[59.349626] (-) TimerEvent: {}
+[59.453439] (-) TimerEvent: {}
+[59.557062] (-) TimerEvent: {}
+[59.657618] (-) TimerEvent: {}
+[59.759498] (-) TimerEvent: {}
+[59.862058] (-) TimerEvent: {}
+[59.965613] (-) TimerEvent: {}
+[60.069044] (-) TimerEvent: {}
+[60.171640] (-) TimerEvent: {}
+[60.282065] (-) TimerEvent: {}
+[60.382538] (-) TimerEvent: {}
+[60.485058] (-) TimerEvent: {}
+[60.588236] (-) TimerEvent: {}
+[60.691053] (-) TimerEvent: {}
+[60.794337] (-) TimerEvent: {}
+[60.903170] (-) TimerEvent: {}
+[61.004189] (-) TimerEvent: {}
+[61.106085] (-) TimerEvent: {}
+[61.201134] (arm_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_msgs/action/detail/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[61.207377] (-) TimerEvent: {}
+[61.310063] (-) TimerEvent: {}
+[61.412326] (-) TimerEvent: {}
+[61.515046] (-) TimerEvent: {}
+[61.617049] (-) TimerEvent: {}
+[61.717972] (-) TimerEvent: {}
+[61.821372] (-) TimerEvent: {}
+[61.922361] (-) TimerEvent: {}
+[62.023291] (-) TimerEvent: {}
+[62.124031] (-) TimerEvent: {}
+[62.226275] (-) TimerEvent: {}
+[62.328120] (-) TimerEvent: {}
+[62.429042] (-) TimerEvent: {}
+[62.531576] (-) TimerEvent: {}
+[62.632489] (-) TimerEvent: {}
+[62.733601] (-) TimerEvent: {}
+[62.838209] (-) TimerEvent: {}
+[62.938872] (-) TimerEvent: {}
+[62.979259] (arm_controller) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable slider_control\x1b[0m\n'}
+[63.039048] (-) TimerEvent: {}
+[63.143484] (-) TimerEvent: {}
+[63.246097] (-) TimerEvent: {}
+[63.349064] (-) TimerEvent: {}
+[63.449665] (-) TimerEvent: {}
+[63.551557] (-) TimerEvent: {}
+[63.652372] (-) TimerEvent: {}
+[63.677481] (arm_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_msgs/action/detail/arm_task__type_support.cpp.o\x1b[0m\n'}
+[63.753073] (-) TimerEvent: {}
+[63.856666] (-) TimerEvent: {}
+[63.957405] (-) TimerEvent: {}
+[64.058168] (-) TimerEvent: {}
+[64.158704] (-) TimerEvent: {}
+[64.259373] (-) TimerEvent: {}
+[64.361522] (-) TimerEvent: {}
+[64.462214] (-) TimerEvent: {}
+[64.554448] (arm_controller) StdoutLine: {'line': b'[ 75%] Built target slider_control\n'}
+[64.560038] (arm_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[64.562412] (-) TimerEvent: {}
+[64.564983] (arm_controller) CommandEnded: {'returncode': 2}
+[64.662552] (-) TimerEvent: {}
+[64.763421] (-) TimerEvent: {}
+[64.774730] (arm_controller) JobEnded: {'identifier': 'arm_controller', 'rc': 2}
+[64.865026] (-) TimerEvent: {}
+[64.965720] (-) TimerEvent: {}
+[65.067024] (-) TimerEvent: {}
+[65.167688] (-) TimerEvent: {}
+[65.272305] (-) TimerEvent: {}
+[65.375927] (-) TimerEvent: {}
+[65.476575] (-) TimerEvent: {}
+[65.578477] (-) TimerEvent: {}
+[65.680172] (-) TimerEvent: {}
+[65.781606] (-) TimerEvent: {}
+[65.882633] (-) TimerEvent: {}
+[65.920608] (arm_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libarm_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[65.982876] (-) TimerEvent: {}
+[66.083549] (-) TimerEvent: {}
+[66.183675] (arm_msgs) StdoutLine: {'line': b'[ 68%] Built target arm_msgs__rosidl_typesupport_introspection_cpp\n'}
+[66.184425] (-) TimerEvent: {}
+[66.284990] (-) TimerEvent: {}
+[66.386071] (-) TimerEvent: {}
+[66.487062] (-) TimerEvent: {}
+[66.588125] (-) TimerEvent: {}
+[66.688603] (-) TimerEvent: {}
+[66.789301] (-) TimerEvent: {}
+[66.889941] (-) TimerEvent: {}
+[66.958858] (arm_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[66.961028] (arm_msgs) StdoutLine: {'line': b'creating arm_msgs.egg-info\n'}
+[66.962645] (arm_msgs) StdoutLine: {'line': b'writing arm_msgs.egg-info/PKG-INFO\n'}
+[66.963644] (arm_msgs) StdoutLine: {'line': b'writing dependency_links to arm_msgs.egg-info/dependency_links.txt\n'}
+[66.963907] (arm_msgs) StdoutLine: {'line': b'writing top-level names to arm_msgs.egg-info/top_level.txt\n'}
+[66.966141] (arm_msgs) StdoutLine: {'line': b"writing manifest file 'arm_msgs.egg-info/SOURCES.txt'\n"}
+[66.969627] (arm_msgs) StdoutLine: {'line': b"reading manifest file 'arm_msgs.egg-info/SOURCES.txt'\n"}
+[66.971115] (arm_msgs) StdoutLine: {'line': b"writing manifest file 'arm_msgs.egg-info/SOURCES.txt'\n"}
+[66.990171] (-) TimerEvent: {}
+[67.043663] (arm_msgs) StdoutLine: {'line': b'[ 68%] Built target ament_cmake_python_build_arm_msgs_egg\n'}
+[67.081257] (arm_msgs) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[67.090376] (-) TimerEvent: {}
+[67.190912] (-) TimerEvent: {}
+[67.293351] (-) TimerEvent: {}
+[67.394041] (-) TimerEvent: {}
+[67.495806] (-) TimerEvent: {}
+[67.596490] (-) TimerEvent: {}
+[67.697116] (-) TimerEvent: {}
+[67.797639] (-) TimerEvent: {}
+[67.898169] (-) TimerEvent: {}
+[67.998791] (-) TimerEvent: {}
+[68.099518] (-) TimerEvent: {}
+[68.207092] (-) TimerEvent: {}
+[68.315632] (-) TimerEvent: {}
+[68.438565] (-) TimerEvent: {}
+[68.539836] (-) TimerEvent: {}
+[68.641060] (-) TimerEvent: {}
+[68.742183] (-) TimerEvent: {}
+[68.843355] (-) TimerEvent: {}
+[68.944243] (-) TimerEvent: {}
+[69.045449] (-) TimerEvent: {}
+[69.146831] (-) TimerEvent: {}
+[69.250162] (-) TimerEvent: {}
+[69.351573] (-) TimerEvent: {}
+[69.452572] (-) TimerEvent: {}
+[69.554351] (-) TimerEvent: {}
+[69.654870] (-) TimerEvent: {}
+[69.757087] (-) TimerEvent: {}
+[69.857587] (-) TimerEvent: {}
+[69.958656] (-) TimerEvent: {}
+[69.963196] (arm_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_msgs/srv/detail/add_two_ints__type_support_c.cpp.o\x1b[0m\n'}
+[70.058882] (-) TimerEvent: {}
+[70.159867] (-) TimerEvent: {}
+[70.260830] (-) TimerEvent: {}
+[70.361789] (-) TimerEvent: {}
+[70.462503] (-) TimerEvent: {}
+[70.563106] (-) TimerEvent: {}
+[70.663759] (-) TimerEvent: {}
+[70.764515] (-) TimerEvent: {}
+[70.865172] (-) TimerEvent: {}
+[70.965806] (-) TimerEvent: {}
+[71.066528] (-) TimerEvent: {}
+[71.121292] (arm_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_msgs/srv/detail/euler_to_quaternion__type_support_c.cpp.o\x1b[0m\n'}
+[71.166689] (-) TimerEvent: {}
+[71.269521] (-) TimerEvent: {}
+[71.370111] (-) TimerEvent: {}
+[71.470724] (-) TimerEvent: {}
+[71.571347] (-) TimerEvent: {}
+[71.672085] (-) TimerEvent: {}
+[71.772723] (-) TimerEvent: {}
+[71.873618] (-) TimerEvent: {}
+[71.974289] (-) TimerEvent: {}
+[72.074791] (-) TimerEvent: {}
+[72.115115] (arm_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_msgs/srv/detail/quaternion_to_euler__type_support_c.cpp.o\x1b[0m\n'}
+[72.174926] (-) TimerEvent: {}
+[72.275863] (-) TimerEvent: {}
+[72.376605] (-) TimerEvent: {}
+[72.477405] (-) TimerEvent: {}
+[72.578109] (-) TimerEvent: {}
+[72.678775] (-) TimerEvent: {}
+[72.779476] (-) TimerEvent: {}
+[72.880175] (-) TimerEvent: {}
+[72.980670] (-) TimerEvent: {}
+[73.081723] (-) TimerEvent: {}
+[73.105503] (arm_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_msgs/action/detail/fibonacci__type_support_c.cpp.o\x1b[0m\n'}
+[73.182244] (-) TimerEvent: {}
+[73.285056] (-) TimerEvent: {}
+[73.385545] (-) TimerEvent: {}
+[73.487469] (-) TimerEvent: {}
+[73.589028] (-) TimerEvent: {}
+[73.689461] (-) TimerEvent: {}
+[73.791426] (-) TimerEvent: {}
+[73.892495] (-) TimerEvent: {}
+[73.993287] (-) TimerEvent: {}
+[74.094130] (-) TimerEvent: {}
+[74.194813] (-) TimerEvent: {}
+[74.295599] (-) TimerEvent: {}
+[74.396303] (-) TimerEvent: {}
+[74.437545] (arm_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_msgs/action/detail/arm_task__type_support_c.cpp.o\x1b[0m\n'}
+[74.498055] (-) TimerEvent: {}
+[74.599245] (-) TimerEvent: {}
+[74.700318] (-) TimerEvent: {}
+[74.803475] (-) TimerEvent: {}
+[74.904080] (-) TimerEvent: {}
+[75.004682] (-) TimerEvent: {}
+[75.105389] (-) TimerEvent: {}
+[75.206350] (-) TimerEvent: {}
+[75.307123] (-) TimerEvent: {}
+[75.407721] (-) TimerEvent: {}
+[75.508455] (-) TimerEvent: {}
+[75.609143] (-) TimerEvent: {}
+[75.619204] (arm_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libarm_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[75.709829] (-) TimerEvent: {}
+[75.810644] (-) TimerEvent: {}
+[75.912489] (-) TimerEvent: {}
+[75.961524] (arm_msgs) StdoutLine: {'line': b'[ 79%] Built target arm_msgs__rosidl_typesupport_fastrtps_c\n'}
+[76.013334] (-) TimerEvent: {}
+[76.049899] (arm_msgs) StdoutLine: {'line': b'[ 79%] Built target arm_msgs\n'}
+[76.114284] (-) TimerEvent: {}
+[76.125667] (arm_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[76.215093] (-) TimerEvent: {}
+[76.315800] (-) TimerEvent: {}
+[76.416840] (-) TimerEvent: {}
+[76.517858] (-) TimerEvent: {}
+[76.618791] (-) TimerEvent: {}
+[76.719676] (-) TimerEvent: {}
+[76.820595] (-) TimerEvent: {}
+[76.921358] (-) TimerEvent: {}
+[77.022079] (-) TimerEvent: {}
+[77.124060] (-) TimerEvent: {}
+[77.226055] (-) TimerEvent: {}
+[77.328043] (-) TimerEvent: {}
+[77.430050] (-) TimerEvent: {}
+[77.532310] (-) TimerEvent: {}
+[77.634255] (-) TimerEvent: {}
+[77.737320] (-) TimerEvent: {}
+[77.839281] (-) TimerEvent: {}
+[77.941076] (-) TimerEvent: {}
+[78.043072] (-) TimerEvent: {}
+[78.144058] (-) TimerEvent: {}
+[78.245726] (-) TimerEvent: {}
+[78.346429] (-) TimerEvent: {}
+[78.449249] (-) TimerEvent: {}
+[78.549728] (-) TimerEvent: {}
+[78.651059] (-) TimerEvent: {}
+[78.754039] (-) TimerEvent: {}
+[78.854543] (-) TimerEvent: {}
+[78.956039] (-) TimerEvent: {}
+[79.059082] (-) TimerEvent: {}
+[79.162084] (-) TimerEvent: {}
+[79.262651] (-) TimerEvent: {}
+[79.364191] (-) TimerEvent: {}
+[79.466434] (-) TimerEvent: {}
+[79.568478] (-) TimerEvent: {}
+[79.671196] (-) TimerEvent: {}
+[79.773039] (-) TimerEvent: {}
+[79.873503] (-) TimerEvent: {}
+[79.975395] (-) TimerEvent: {}
+[80.081193] (-) TimerEvent: {}
+[80.184051] (-) TimerEvent: {}
+[80.287211] (-) TimerEvent: {}
+[80.387631] (-) TimerEvent: {}
+[80.490352] (-) TimerEvent: {}
+[80.592130] (-) TimerEvent: {}
+[80.695015] (-) TimerEvent: {}
+[80.795411] (-) TimerEvent: {}
+[80.896915] (-) TimerEvent: {}
+[80.999179] (-) TimerEvent: {}
+[81.104041] (-) TimerEvent: {}
+[81.204552] (-) TimerEvent: {}
+[81.307308] (-) TimerEvent: {}
+[81.409253] (-) TimerEvent: {}
+[81.512278] (-) TimerEvent: {}
+[81.614075] (-) TimerEvent: {}
+[81.714844] (-) TimerEvent: {}
+[81.815338] (-) TimerEvent: {}
+[81.916847] (-) TimerEvent: {}
+[81.931113] (arm_msgs) StdoutLine: {'line': b'[ 80%] Built target arm_msgs__py\n'}
+[82.013170] (arm_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_py.dir/rosidl_generator_py/arm_msgs/srv/_add_two_ints_s.c.o\x1b[0m\n'}
+[82.018017] (-) TimerEvent: {}
+[82.120069] (-) TimerEvent: {}
+[82.221738] (-) TimerEvent: {}
+[82.323479] (-) TimerEvent: {}
+[82.361026] (arm_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_py.dir/rosidl_generator_py/arm_msgs/srv/_euler_to_quaternion_s.c.o\x1b[0m\n'}
+[82.423625] (-) TimerEvent: {}
+[82.526049] (-) TimerEvent: {}
+[82.626607] (-) TimerEvent: {}
+[82.700102] (arm_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_py.dir/rosidl_generator_py/arm_msgs/srv/_quaternion_to_euler_s.c.o\x1b[0m\n'}
+[82.726735] (-) TimerEvent: {}
+[82.828390] (-) TimerEvent: {}
+[82.930421] (-) TimerEvent: {}
+[83.037468] (-) TimerEvent: {}
+[83.039182] (arm_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_py.dir/rosidl_generator_py/arm_msgs/action/_fibonacci_s.c.o\x1b[0m\n'}
+[83.137622] (-) TimerEvent: {}
+[83.240237] (-) TimerEvent: {}
+[83.340699] (-) TimerEvent: {}
+[83.441256] (-) TimerEvent: {}
+[83.499411] (arm_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_generator_py.dir/rosidl_generator_py/arm_msgs/action/_arm_task_s.c.o\x1b[0m\n'}
+[83.541397] (-) TimerEvent: {}
+[83.641900] (-) TimerEvent: {}
+[83.744178] (-) TimerEvent: {}
+[83.844644] (-) TimerEvent: {}
+[83.873024] (arm_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/arm_msgs/libarm_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[83.944780] (-) TimerEvent: {}
+[84.016648] (arm_msgs) StdoutLine: {'line': b'[ 90%] Built target arm_msgs__rosidl_generator_py\n'}
+[84.044967] (-) TimerEvent: {}
+[84.086340] (arm_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[84.146044] (-) TimerEvent: {}
+[84.246581] (-) TimerEvent: {}
+[84.346999] (-) TimerEvent: {}
+[84.448239] (-) TimerEvent: {}
+[84.543108] (arm_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/arm_msgs/arm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[84.548304] (-) TimerEvent: {}
+[84.648898] (-) TimerEvent: {}
+[84.706670] (arm_msgs) StdoutLine: {'line': b'[ 93%] Built target arm_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[84.750549] (-) TimerEvent: {}
+[84.789908] (arm_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[84.852040] (-) TimerEvent: {}
+[84.952476] (-) TimerEvent: {}
+[85.053002] (-) TimerEvent: {}
+[85.154278] (-) TimerEvent: {}
+[85.256244] (-) TimerEvent: {}
+[85.314832] (arm_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/arm_msgs/arm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[85.357061] (-) TimerEvent: {}
+[85.440088] (arm_msgs) StdoutLine: {'line': b'[ 96%] Built target arm_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[85.457184] (-) TimerEvent: {}
+[85.504167] (arm_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/arm_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/arm_msgs/_arm_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[85.557333] (-) TimerEvent: {}
+[85.660151] (-) TimerEvent: {}
+[85.760609] (-) TimerEvent: {}
+[85.861253] (-) TimerEvent: {}
+[85.961755] (-) TimerEvent: {}
+[85.984259] (arm_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/arm_msgs/arm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[86.061914] (-) TimerEvent: {}
+[86.134464] (arm_msgs) StdoutLine: {'line': b'[100%] Built target arm_msgs__rosidl_typesupport_c__pyext\n'}
+[86.163069] (-) TimerEvent: {}
+[86.179566] (arm_msgs) JobEnded: {'identifier': 'arm_msgs', 'rc': 'SIGINT'}
+[86.195445] (arm_description) JobSkipped: {'identifier': 'arm_description'}
+[86.195654] (arm_firmware) JobSkipped: {'identifier': 'arm_firmware'}
+[86.195706] (arm_moveit) JobSkipped: {'identifier': 'arm_moveit'}
+[86.195738] (arm_cpp_examples) JobSkipped: {'identifier': 'arm_cpp_examples'}
+[86.195767] (arm_py_examples) JobSkipped: {'identifier': 'arm_py_examples'}
+[86.195794] (arm_remote) JobSkipped: {'identifier': 'arm_remote'}
+[86.195820] (arm_utils) JobSkipped: {'identifier': 'arm_utils'}
+[86.195848] (-) EventReactorShutdown: {}

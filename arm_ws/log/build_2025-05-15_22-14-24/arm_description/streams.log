@@ -1,0 +1,56 @@
+[0.079s] Invoking command in '/home/ros/arm_ws/build/arm_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_description -- -j2 -l2
+[0.506s] Invoked command in '/home/ros/arm_ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/arm_ws/build/arm_description -- -j2 -l2
+[0.787s] Invoking command in '/home/ros/arm_ws/build/arm_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_description
+[0.880s] -- Install configuration: ""
+[0.881s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/launch
+[0.881s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/launch/display.launch.py
+[0.881s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/launch/gazebo.launch.py
+[0.881s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes
+[0.881s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/triangular_link.STL
+[0.881s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/basement.STL
+[0.883s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/plate.STL
+[0.884s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/base_plate.STL
+[0.884s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/horizontal_arm.STL
+[0.884s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/right_finger.STL
+[0.888s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/vertical_drive_arm.STL
+[0.891s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/forward_drive_arm.STL
+[0.891s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/link.STL
+[0.896s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/round_plate.STL
+[0.896s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/claw_support.STL
+[0.896s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/left_finger.STL
+[0.896s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/meshes/servo_plate.STL
+[0.897s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models
+[0.897s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane
+[0.897s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model.config
+[0.897s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_4.sdf
+[0.897s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_3.sdf
+[0.897s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model.sdf
+[0.897s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_2.sdf
+[0.898s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun
+[0.898s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun/model.config
+[0.904s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun/model-1_4.sdf
+[0.905s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun/model-1_3.sdf
+[0.906s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun/model.sdf
+[0.906s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/models/sun/model-1_2.sdf
+[0.911s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/urdf
+[0.912s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/urdf/arm_ros2_control.xacro
+[0.912s] -- Installing: /home/ros/arm_ws/install/arm_description/share/arm_description/urdf/arm_gazebo.xacro
+[0.912s] -- Installing: /home/ros/arm_ws/install/arm_description/share/arm_description/urdf/arm.urdf.xacro
+[0.912s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/rviz
+[0.912s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/rviz/display.rviz
+[0.913s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/ament_index/resource_index/package_run_dependencies/arm_description
+[0.918s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/ament_index/resource_index/parent_prefix_path/arm_description
+[0.925s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.sh
+[0.926s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.dsv
+[0.928s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/environment/path.sh
+[0.928s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/environment/path.dsv
+[0.929s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/local_setup.bash
+[0.936s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/local_setup.sh
+[0.936s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/local_setup.zsh
+[0.937s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/local_setup.dsv
+[0.937s] -- Installing: /home/ros/arm_ws/install/arm_description/share/arm_description/package.dsv
+[0.937s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/ament_index/resource_index/packages/arm_description
+[0.938s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig.cmake
+[0.944s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig-version.cmake
+[0.944s] -- Up-to-date: /home/ros/arm_ws/install/arm_description/share/arm_description/package.xml
+[0.945s] Invoked command in '/home/ros/arm_ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/arm_ws/build/arm_description

@@ -1,0 +1,38 @@
+[100%] Built target angle_conversion
+[100%] Built target ament_cmake_python_copy_arm_utils
+running egg_info
+writing arm_utils.egg-info/PKG-INFO
+writing dependency_links to arm_utils.egg-info/dependency_links.txt
+writing top-level names to arm_utils.egg-info/top_level.txt
+reading manifest file 'arm_utils.egg-info/SOURCES.txt'
+writing manifest file 'arm_utils.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_arm_utils_egg
+-- Install configuration: ""
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/pythonpath.sh
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/pythonpath.dsv
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info
+-- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils-0.0.0-py3.10.egg-info/top_level.txt
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils/__init__.py
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils/angle_conversion.py
+Listing '/home/ros/arm_ws/install/arm_utils/local/lib/python3.10/dist-packages/arm_utils'...
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/lib/arm_utils/angle_conversion
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/lib/arm_utils/angle_conversion.py
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/ament_index/resource_index/package_run_dependencies/arm_utils
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/ament_index/resource_index/parent_prefix_path/arm_utils
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/path.sh
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/environment/path.dsv
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.bash
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.sh
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.zsh
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/local_setup.dsv
+-- Installing: /home/ros/arm_ws/install/arm_utils/share/arm_utils/package.dsv
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/ament_index/resource_index/packages/arm_utils
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/cmake/arm_utilsConfig.cmake
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/cmake/arm_utilsConfig-version.cmake
+-- Up-to-date: /home/ros/arm_ws/install/arm_utils/share/arm_utils/package.xml
