@@ -1,0 +1,12 @@
+sequence_controller:
+  ros__parameters:
+    home: [0.0, 0.0, 0.0]
+    position_a: [-0.25, -0.15, 0.10]
+    position_b: [0.25, -0.15, 0.10]
+    gripper_open: -0.35
+    gripper_closed: -0.05
+    move_seconds: 4.0
+    pause_seconds: 1.0
+    repetitions: 1
+    server_timeout: 15.0
+    result_margin: 10.0
